@@ -1,25 +1,21 @@
-.container-grid-3 {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-gap: 5px 5px;
-}
-
-.container-grid-1 {
-  display: grid;
-  grid-template-columns: auto;
-}
-
-.grid-item ul {
+.footer-ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-.grid-item-inline ul {
-  display: inline-block;
+.inline-li {
+  display: inline;
+  padding: 1.5% 1.5%;
 }
 
 .left-footer, .right-footer {
   float: left;
   width: 20%;
+
+  div {
+    display: block;
+  }
 }
 
 .main-footer {
@@ -27,8 +23,18 @@
   width: 60%;
 }
 
+.main-left-footer, .main-right-footer {
+  float: left;
+  width: 66%;
+}
+
+.main-center-footer {
+  float: left;
+  width: 33%;
+}
+
 @media screen and (max-width: 800px) {
-  .left-footer, .main-footer, .right-footer {
+  .left-footer, .main-footer, .right-footer, .main-left-footer, .main-right-footer, .main-center-footer {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
   }
 }
