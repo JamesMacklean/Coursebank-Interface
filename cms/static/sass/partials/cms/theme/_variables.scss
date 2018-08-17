@@ -1,0 +1,18 @@
+// Sample red theme to demonstrate SASS overrides
+
+// Theme colors
+//
+// Note: define colors needed by your theme first
+
+// Define the primary cblue color
+$cblue: rgb(41,181,216) !default; // #29B5D8
+$cblue-l1: tint($cblue, 20%) !default;
+$cblue-d1: shade($cblue, 20%) !default;
+
+// Make blue the primary color
+$primary: $cblue;
+$uxpl-cblue-hover-active: darken($primary, 7%);
+$uxpl-blue-hover-active: $uxpl-cblue-hover-active;
+
+// Initialize the Open edX Bootstrap theme
+@import 'edx-bootstrap/sass/open-edx/theme';

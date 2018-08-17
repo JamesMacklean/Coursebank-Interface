@@ -1,0 +1,19 @@
+//custom mixins
+//for @including
+
+@mixin my-header-button {
+  @include button;
+  @include linear-gradient(top, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0));
+
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  border: 1px solid $mediumGrey;
+  border-radius: 3px;
+  background-color: #dfe5eb;
+  color: rgb(92, 103, 122);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+
+  &:hover, &:focus {
+    background-color: rgb(222, 236, 247);
+    color: rgb(92, 103, 122);
+  }
+}

@@ -1,0 +1,130 @@
+## mako
+<%page expression_filter="h"/>
+<%!
+  from django.urls import reverse
+  from django.utils.translation import ugettext as _
+  from branding.api import get_footer
+  from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_enabled
+%>
+<% footer = get_footer(is_secure=is_secure) %>
+<%namespace name='static' file='static_content.html'/>
+
+<div class="wrapper wrapper-footer">
+    <footer id="footer-openedx" class="container-grid-3"
+      ## When rendering the footer through the branding API,
+      ## the direction may not be set on the parent element,
+      ## so we set it here.
+      % if bidi:
+        dir=${bidi}
+      % endif
+    >
+
+        <!-- Logo + Language Selector -->
+        <div class="grid-item container-grid-1">
+          <div class="edx-footer-logo">
+            <a href="${marketing_link('ROOT')}">
+              <img alt="${_('CourseBank')}" src="${footer['logo_image']}">
+            </a>
+          </div>
+
+          % if context.get('include_language_selector', footer_language_selector_is_enabled()):
+            <%include file="${static.get_template_path('widgets/footer-language-selector.html')}"/>
+          % endif
+        </div>
+
+        <!-- CourseBank + More Info + Connect -->
+        <div class="grid-item container-grid-3">
+
+            <!-- CouresBank links-->
+            <div class="grid-item container-grid-1">
+              <h2 class="heading">CourseBank</h2>
+                <ul class="list-unstyled clear-margins  ">
+                % for link in footer["business_links"]:
+                  <li>
+                    <a href="${link['url']}">${link['title']}</a>
+                  </li>
+                % endfor
+                </ul>
+              </div>
+            <!-- More Info links-->
+            <div class="grid-item container-grid-1">
+              <h2 class="heading">More Information</h2>
+                <ul class="list-unstyled clear-margins  ">
+                % for link in footer["more_info_links"]:
+                  <li>
+                    <a href="${link['url']}">${link['title']}</a>
+                  </li>
+                % endfor
+                </ul>
+            </div>
+            <!-- Connect links -->
+            <div class="grid-item container-grid-1">
+              <h2 class="heading">Connect</h2>
+                <ul class="list-unstyled clear-margins  ">
+                % for link in footer["connect_links"]:
+                  <li>
+                    <a href="${link['url']}">${link['title']}</a>
+                  </li>
+                % endfor
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Social + Applinks + Copyright -->
+        <div class="grid-item container-grid-1">
+            <div class="grid-item">
+              <ul class="list-inline list-unstyled social">
+              % for link in footer['social_links']:
+                <li>
+                  <a href="${link['url']}" class="social-links external" title="${link['title']}" rel="noreferrer">
+                    <span class="icon fa ${link['icon-class']}" aria-hidden="true"></span>
+                    <span class="sr">${link['action']}</span>
+                  </a>
+                </li>
+              % endfor
+              </ul>
+            </div>
+            <div class="grid-item">
+              <ul class="list-inline list-unstyled app-links">
+              % for link in footer['mobile_links']:
+                <li>
+                  <a href="${link['url']}" class="app-link external">
+                    <img alt="${link['title']}" src="${link['image']}">
+                  </a>
+                </li>
+              % endfor
+              </ul>
+            </div>
+            <div class="grid-item">
+              ## \u00A9 is the copyright symbol
+              ## \u2013 is the en-dash. It looks like a year, but it isn't
+              <p>© 2018 <a data-rel="coursebank.ph" href="https://coursebank.ph" rel="external" title="This link will open in a new browser window/tab" target="_blank">CourseBank</a>.</p>
+            </div>
+        </div>
+
+    </footer>
+  </div>
+
+% if include_dependencies:
+  <%static:js group='base_vendor'/>
+  <%static:css group='style-vendor'/>
+  <%include file="widgets/segment-io.html" />
+  <%include file="widgets/segment-io-footer.html" />
+% endif
+
+% if footer_css_urls:
+  % for url in footer_css_urls:
+    <link rel="stylesheet" type="text/css" href="${url}"></link>
+  % endfor
+% endif
+
+% if bidi == 'rtl':
+<%static:css group='style-lms-footer-edx-rtl'/>
+% else:
+<%static:css group='style-lms-footer-edx'/>
+% endif
+
+% if footer_js_url:
+  <script type="text/javascript" src="${footer_js_url}"></script>
+% endif
