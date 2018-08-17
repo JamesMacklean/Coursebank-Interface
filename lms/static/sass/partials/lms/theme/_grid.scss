@@ -12,3 +12,23 @@
 .grid-item ul {
   list-style-type: none;
 }
+
+.grid-item-inline ul {
+  display: inline-block;
+}
+
+.left-footer, .right-footer {
+  float: left;
+  width: 20%;
+}
+
+.main-footer {
+  float: left;
+  width: 60%;
+}
+
+@media screen and (max-width: 800px) {
+  .left-footer, .main-footer, .right-footer {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}

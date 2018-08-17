@@ -20,7 +20,7 @@
     >
 
         <!-- Logo + Language Selector -->
-        <div class="grid-item container-grid-1">
+        <div class="left-footer grid-item container-grid-1">
           <div class="edx-footer-logo">
             <a href="${marketing_link('ROOT')}">
               <img alt="${_('CourseBank')}" src="${footer['logo_image']}">
@@ -33,7 +33,7 @@
         </div>
 
         <!-- CourseBank + More Info + Connect -->
-        <div class="grid-item container-grid-3">
+        <div class="main-footer grid-item container-grid-3">
 
             <!-- CouresBank links-->
             <div class="grid-item container-grid-1">
@@ -72,8 +72,8 @@
         </div>
 
         <!-- Social + Applinks + Copyright -->
-        <div class="grid-item container-grid-1">
-            <div>
+        <div class="right-footer grid-item container-grid-1">
+            <div class="grid-item-inline">
               <ul class="list-inline list-unstyled social">
               % for link in footer['social_links']:
                 <li>
@@ -85,7 +85,7 @@
               % endfor
               </ul>
             </div>
-            <div>
+            <div class="grid-item-inline">
               <ul class="list-inline list-unstyled app-links">
               % for link in footer['mobile_links']:
                 <li>
@@ -96,7 +96,7 @@
               % endfor
               </ul>
             </div>
-            <div>
+            <div class="grid-item-inline">
               ## \u00A9 is the copyright symbol
               ## \u2013 is the en-dash. It looks like a year, but it isn't
               <p>© 2018 <a data-rel="coursebank.ph" href="https://coursebank.ph" rel="external" title="This link will open in a new browser window/tab" target="_blank">CourseBank</a>.</p>
