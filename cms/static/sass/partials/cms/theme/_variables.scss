@@ -15,7 +15,7 @@ $uxpl-cblue-hover-active: darken($primary, 7%);
 $uxpl-blue-hover-active: $uxpl-cblue-hover-active;
 
 //change background colors
-$cuxpl-grayscale-x-back: rgb(255, 255, 255);
-$uxpl-grayscale-x-back: $cuxpl-grayscale-x-back;
+$uxpl-whitenedgrayscale-x-back: rgb(255, 255, 255);
+$uxpl-grayscale-x-back: $uxpl-whitenedgrayscale-x-back;
 // Initialize the Open edX Bootstrap theme
 @import 'edx-bootstrap/sass/open-edx/theme';
