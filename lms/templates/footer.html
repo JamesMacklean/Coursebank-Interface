@@ -6,7 +6,7 @@
   from branding.api import get_footer
   from openedx.core.djangoapps.lang_pref.api import footer_language_selector_is_enabled
 %>
-<% footer = get_footer(is_secure=true) %>
+<% footer = get_footer(is_secure=is_secure) %>
 <%namespace name='static' file='static_content.html'/>
 
 <div class="wrapper wrapper-footer" style="box-shadow:none;">
@@ -23,7 +23,8 @@
         <div class="left-footer">
           <div class="edx-footer-logo">
             <a href="${marketing_link('ROOT')}">
-              <img alt="${_('CourseBank')}" src="${footer['logo_image']}" height="40" width="120">
+              <!--img alt="${_('CourseBank')}" src="${footer['logo_image']}" height="40" width="120"-->
+              <img alt="${_('CourseBank')}" src="${branding_api.get_logo_url(is_secure)}" height="40" width="120">
             </a>
           </div>
 
