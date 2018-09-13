@@ -1,0 +1,8 @@
+#my-banner {
+  background-image: url('#{$static-path}/images/banner.png');
+  height: 90%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}

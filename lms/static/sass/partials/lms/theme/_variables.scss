@@ -1,5 +1,3 @@
-// Sample red theme to demonstrate SASS overrides
-
 // Theme colors
 //
 // Note: define colors needed by your theme first
@@ -10,7 +8,11 @@ $cblue: #29B5D8;
 // Make blue the primary color
 $primary: $cblue;
 
+//$homepage-bg-image: url('#{$static-path}/images/banner.png') no-repeat;
+
 // Initialize the Open edX Bootstrap theme
 @import 'edx-bootstrap/sass/open-edx/theme';
 
 @import 'grid';
+
+@import 'myindex';
