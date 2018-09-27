@@ -13,19 +13,19 @@
   background: transparent;
 }
 
-.title h1 {
+h1.banner-block {
   font-size: 3rem;
   font-weight: 800;
   margin-bottom: 0;
 }
 
-.title p {
+p.banner-block {
   font-size: 1.4rem;
   line-height: 1.1em;
   font-weight: 600;
 }
 
-.title h1, p {
+.banner-block {
   text-align: left;
   color: white;
   text-shadow: 1px 1px gray;
