@@ -11,6 +11,7 @@
 .home > header .title {
   margin-left: 0;
   background: transparent;
+  box-shadow: none;
 }
 
 h1.banner-block {
@@ -28,5 +29,4 @@ p.banner-block {
 .banner-block {
   text-align: left;
   color: white;
-  text-shadow: 1px 1px gray;
 }
