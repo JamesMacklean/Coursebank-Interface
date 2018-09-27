@@ -13,13 +13,15 @@ from openedx.core.djangolib.markup import HTML, Text
       <header id="my-banner">
         <div class="outer-wrapper">
           <div class="title">
-            <div class="heading-group">
+            <h1>Welcome to CourseBank.ph!</h1>
+            <p>This is the CourseBank Learning Management System.</p>
+            <!-- <div class="heading-group">
               % if homepage_overlay_html:
                 ${homepage_overlay_html | n, decode.utf8}
               % else:
                 <%include file="index_overlay.html" />
               % endif
-            </div>
+            </div> -->
             % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
               <div class="course-search">
                 <form method="get" action="/courses">
