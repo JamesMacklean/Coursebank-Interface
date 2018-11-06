@@ -9,20 +9,15 @@
         <h1>
             <%block name="pageheader">${page_header or _("About")}</%block>
         </h1>
-        <!-- left intentionally black block - - >
         <p>
-            <%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
-        </p>
-        < - - - - - - - - - - - - - - - - - - -->
-        <p>
-          CourseBank is powered by Open EdX&copy;.
+          <a href="https://coursebank.ph">CourseBank</a> is powered by Open EdX&copy;.
         </p>
 
         <div class="footer-about-openedx">
           <p>
-            Read more about Open EdX: 
-            <a href="${footer['openedx_link']['url']}">
-              <img src="${footer['openedx_link']['image']}" alt="${footer['openedx_link']['title']}" width="140" />
+            Read more about Open EdX:
+            <a href="https://open.edx.org/">
+              <img src="https://open.edx.org/sites/all/themes/edx_open/logo.png" alt="Link to Open EdX Site" width="140" />
             </a>
           </p>
         </div>
