@@ -19,21 +19,12 @@ $uxpl-whitenedgrayscale-x-back: rgb(255, 255, 255);
 $uxpl-grayscale-x-back: $uxpl-whitenedgrayscale-x-back;
 
 //Font Things
-@include font-face(
-	'Montserrat',
-	'fonts/Montserrat-Regular/fonts',
-	400,
-  normal,
-  woff woff2 tff
-);
-
-@include font-face(
-	'Montserrat',
-	'fonts/Montserrat-Regular/fonts',
-	700,
-  normal,
-  woff woff2 tff
-);
+@font-face {
+  font-family: 'Montserrat';
+  src: url('fonts/Montserrat-Regular/fonts/Montserrat-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('fonts/Montserrat-Regular/fonts/Montserrat-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('fonts/Montserrat-Regular/fonts/Montserrat-Regular.ttf')  format('truetype') /* Safari, Android, iOS */
+}
 
 $font-family-sans-serif: 'Montserrat';
 
