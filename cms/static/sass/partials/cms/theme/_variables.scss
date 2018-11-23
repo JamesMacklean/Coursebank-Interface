@@ -17,5 +17,23 @@ $uxpl-blue-hover-active: $uxpl-cblue-hover-active;
 //change background colors
 $uxpl-whitenedgrayscale-x-back: rgb(255, 255, 255);
 $uxpl-grayscale-x-back: $uxpl-whitenedgrayscale-x-back;
+
+//Font Things
+@include font-face(
+	'Montserrat',
+	'fonts/Montserrat-Regular/fonts',
+	400,
+	$file-formats: woff woff2 tff
+);
+
+@include font-face(
+	'Montserrat',
+	'fonts/Montserrat-Regular/fonts',
+	700,
+	$file-formats: woff woff2 tff
+);
+
+$font-family-sans-serif: 'Montserrat';
+
 // Initialize the Open edX Bootstrap theme
 @import 'edx-bootstrap/sass/open-edx/theme';
