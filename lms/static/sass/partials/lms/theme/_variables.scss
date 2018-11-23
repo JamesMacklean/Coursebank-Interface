@@ -10,6 +10,23 @@ $primary: $cblue;
 
 //$homepage-bg-image: url('#{$static-path}/images/banner.png') no-repeat;
 
+//Font Things
+@include font-face(
+	'Montserrat',
+	'fonts/Montserrat-Regular/fonts',
+	400,
+	$file-formats: woff woff2 tff
+);
+
+@include font-face(
+	'Montserrat',
+	'fonts/Montserrat-Regular/fonts',
+	700,
+	$file-formats: woff woff2 tff
+);
+
+$font-family-sans-serif: 'Montserrat';
+
 // Initialize the Open edX Bootstrap theme
 @import 'edx-bootstrap/sass/open-edx/theme';
 
