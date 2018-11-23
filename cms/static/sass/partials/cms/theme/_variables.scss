@@ -23,14 +23,16 @@ $uxpl-grayscale-x-back: $uxpl-whitenedgrayscale-x-back;
 	'Montserrat',
 	'fonts/Montserrat-Regular/fonts',
 	400,
-	$file-formats: woff woff2 tff
+  normal,
+  woff woff2 tff
 );
 
 @include font-face(
 	'Montserrat',
 	'fonts/Montserrat-Regular/fonts',
 	700,
-	$file-formats: woff woff2 tff
+  normal,
+  woff woff2 tff
 );
 
 $font-family-sans-serif: 'Montserrat';
