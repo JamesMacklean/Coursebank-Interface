@@ -11,14 +11,7 @@ $primary: $cblue;
 //$homepage-bg-image: url('#{$static-path}/images/banner.png') no-repeat;
 
 //Font Things
-@font-face {
-  font-family: 'Montserrat';
-  src: url('fonts/Montserrat-Regular/fonts/Montserrat-Regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/Montserrat-Regular/fonts/Montserrat-Regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('fonts/Montserrat-Regular/fonts/Montserrat-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url("fonts/Montserrat-Regular/fonts/Montserrat-Regular.eot?") format("eot"),
-       url("fonts/Montserrat-Regular/fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");}
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 $font-family-sans-serif: 'Montserrat';
 
 // Initialize the Open edX Bootstrap theme
