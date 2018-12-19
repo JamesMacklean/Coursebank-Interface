@@ -13,7 +13,7 @@
 <%namespace name='static' file='static_content.html'/>
 
 <div class="wrapper wrapper-footer" style="box-shadow:none;">
-    <footer id="footer-openedx"
+    <footer id="footer-openedx" class="p-4 bg-bahamablue text-white"
       ## When rendering the footer through the branding API,
       ## the direction may not be set on the parent element,
       ## so we set it here.
@@ -22,89 +22,133 @@
       % endif
     >
 
-        <!-- Logo + Language Selector -->
-        <div class="left-footer">
-          <div class="edx-footer-logo">
-            <a href="${marketing_link('ROOT')}">
-              <!--img alt="${_('CourseBank')}" src="${footer['logo_image']}" height="40" width="120"-->
-              <img alt="${_('CourseBank')}" src="${branding_api.get_logo_url(is_secure)}" height="40" width="120">
-            </a>
-          </div>
+    <div class="fluid-container text-center text-lg-left">
+            <div class="row">
+                <div class="col-md-12 col-lg-1 mx-auto">
+                    <h5 class="font-weight-bold text-uppercase mb-4">Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="clearfix w-100 d-lg-none">
+                <div class="col-md-12 col-lg-1 mx-auto">
+                    <h5 class="font-weight-bold text-uppercase mb-4">Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="clearfix w-100 d-lg-none">
+                <div class="col-md-12 col-lg-1  mx-auto">
+                    <h5 class="font-weight-bold text-uppercase mb-4">Links</h5>
 
-          % if context.get('include_language_selector', footer_language_selector_is_enabled()):
-            <%include file="${static.get_template_path('widgets/footer-language-selector.html')}"/>
-          % endif
-        </div>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="clearfix w-100 d-lg-none">
+                <div class="col-md-12 col-lg-1 mx-auto">
+                    <h5 class="font-weight-bold text-uppercase mb-4">Links</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a href="#!">Link 4</a>
+                        </li>
+                    </ul>
 
-        <!-- CourseBank + More Info + Connect -->
-        <div class="main-footer">
-
-            <!-- CourseBank links-->
-            <div class="main-left-footer">
-              <h2 class="heading">CourseBank</h2>
-                <ul class="footer-ul">
-                  <li>
-                    <a href="/about">About</a>
-                  </li>
-                  <li>
-                    <a href="https://open.edx.org">Open EdX</a>
-                  </li>
-                </ul>
+                </div>
+                <hr class="clearfix w-100 d-lg-none">
+                <div class="col mx-auto text-lg-right text-center">
+                    <img id="logo-footer" class="mb-2" src="images/Coursebank%20Logo%20-%20White.png">
+                    <p class="mb-4">© 2018 Coursebank</p>
+                    <a href="#">Legal &#38; Privacy</a><br>
+                    <a href="#">Regulatory Information</a><br>
+                    <a href="#">Site Map</a>
+                </div>
             </div>
-            <!-- More Info links-->
-            <div class="main-center-footer">
-              <h2 class="heading">More Information</h2>
-                <ul class="footer-ul">
-                % for link in footer["more_info_links"]:
-                  <li>
-                    <a href="${link['url']}">${link['title']}</a>
-                  </li>
-                % endfor
-                </ul>
-            </div>
-            <!-- Connect links -->
-            <div class="main-right-footer">
-              <h2 class="heading">Connect</h2>
-                <ul class="footer-ul">
-                % for link in footer["connect_links"]:
-                  <li>
-                    <a href="${link['url']}">${link['title']}</a>
-                  </li>
-                % endfor
-                </ul>
-            </div>
-
-        </div>
-
-        <!-- Social + Applinks + Copyright -->
-        <div class="right-footer">
-            <div>
-              <ul class="footer-ul">
-              % for link in footer['social_links']:
-                <li class="inline-li">
-                  <a href="${link['url']}" class="social-links external" title="${link['title']}" rel="noreferrer">
-                    <span class="icon fa ${link['icon-class']}" aria-hidden="true"></span>
-                    <span class="sr">${link['action']}</span>
-                  </a>
-                </li>
-              % endfor
-              </ul>
-            </div>
-            <div>
-              <ul class="footer-ul app-links">
-              % for link in footer['mobile_links']:
-                <li class="inline-li">
-                  <a href="${link['url']}" class="app-link external">
-                    <img alt="${link['title']}" src="${link['image']}">
-                  </a>
-                </li>
-              % endfor
-              </ul>
-            </div>
-            <div>
-              ## \u00A9 is the copyright symbol
-              ## \u2013 is the en-dash. It looks like a year, but it isn't
-              <p>© 2018 <a data-rel="coursebank.ph" href="https://coursebank.ph" rel="external" title="This link will open in a new browser window/tab" target="_blank">CourseBank</a>.</p>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <ul class="list-unstyled list-inline text-center d-inline float-lg-left mx-auto">
+                        <li class="list-inline-item mb-1 mr-0">
+                            <a href="#!" class="font-weight-bold mr-5 text-white">Log In</a>
+                        </li>
+                        <li class="list-inline-item mr-0"><label class="border-spacing-right h-75">&nbsp;</label></li>
+                        <li class="list-inline-item ml-5">
+                            <a href="#!" class="btn bg-white btn-rounded bahamablue font-weight-bold px-4 py-0 cerulean">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+                <hr class="w-100 d-lg-none">
+                <div class="col-lg-6 col-12">
+                    <ul class="list-unstyled list-inline text-center font-1 mb-0 d-inline float-lg-right float-center">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-fb mx-1">
+                                <i class="fab fa-facebook"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-tw mx-1">
+                                <i class="fab fa-twitter"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-gplus mx-1">
+                                <i class="fab fa-instagram"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-li mx-1">
+                                <i class="fab fa-youtube"> </i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-li mx-1">
+                                <i class="fab fa-linkedin"> </i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 

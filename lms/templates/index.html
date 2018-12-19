@@ -8,51 +8,143 @@ from django.urls import reverse
 from openedx.core.djangolib.markup import HTML, Text
 %>
 
-<main id="main" aria-label="Content" tabindex="-1">
-    <section class="home">
-      <header id="my-banner">
-        <div class="outer-wrapper">
-          <div class="title">
-            <h1 class="banner-block">Welcome to Coursebank</h1>
-            <p class="banner-block">This is the Coursebank Learning Management System.</p>
-            <!-- <div class="heading-group">
-              % if homepage_overlay_html:
-                ${homepage_overlay_html | n, decode.utf8}
-              % else:
-                <%include file="index_overlay.html" />
-              % endif
-            </div> -->
-            % if settings.FEATURES.get('ENABLE_COURSE_DISCOVERY'):
-              <div class="course-search">
-                <form method="get" action="/courses">
-                  <label><span class="sr">${_("Search for a course")}</span>
-                    <input class="search-input" name="search_query" type="text" placeholder="${_("Search for a course")}"></input>
-                  </label>
-                  <button class="search-button" type="submit">
-                    <span class="icon fa fa-search" aria-hidden="true"></span><span class="sr">${_("Search")}</span>
-                  </button>
-                </form>
-              </div>
-            % endif
-
-          </div>
-
-          <%include file="index_promo_video.html" />
+<!-- MAIN BANNER - CAROUSEL SLIDE -->
+<div class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="fluid-container parent-that-centers-vertically">
+                <div class="position-absolute mx-3 mx-sm-5 z-index-1 font-weight-light">
+                    <h1 class="title cerulean font-weight-bold mb-0">learning</h1>
+                    <h1 class="title mb-3 text-white">begins<br>here.</h1>
+                    <p class="subtitle mb-0 py-0 text-white">
+                        Go beyond the ordinary.<br>
+                        Discovery new ideas and skills.<br>
+                        Coursebank is where learning begins.
+                    </p>
+                    <button class="btn bg-cerulean text-white rounded-1 font-weight-bold subtitle mt-5 px-4">Get Started</button>
+                </div>
+                <div class="parallax-1"></div>
+            </div>
         </div>
-
-      </header>
-      <%include file="${courses_list}" />
-
-    </section>
-</main>
-
-% if show_homepage_promo_video:
-  <section id="video-modal" class="modal home-page-video-modal video-modal">
-    <div class="inner-wrapper">
-      <iframe title="YouTube Video" width="640" height="360" src="//www.youtube.com/embed/${homepage_promo_video_youtube_id}?showinfo=0" frameborder="0" allowfullscreen></iframe>
+        <div class="carousel-item">
+            <div class="fluid-container parent-that-centers-vertically">
+                <div class="position-absolute mx-3 mx-sm-5 z-index-1 font-weight-light">
+                    <h1 class="title cerulean font-weight-bold mb-0">the future</h1>
+                    <h1 class="title mb-3 text-white">begins<br>here.</h1>
+                    <p class="subtitle mb-0 py-0 text-white">
+                        Go beyond the ordinary.<br>
+                        Discovery new ideas and skills.<br>
+                        Coursebank is where learning begins.
+                    </p>
+                    <button class="btn bg-cerulean text-white rounded-1 font-weight-bold subtitle mt-5 px-4">Get Started</button>
+                </div>
+                <div class="parallax-2"></div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="fluid-container parent-that-centers-vertically">
+                <div class="position-absolute mx-3 mx-sm-5 z-index-1 font-weight-light">
+                    <h1 class="title cerulean font-weight-bold mb-0">education</h1>
+                    <h1 class="title mb-3 text-white">begins<br>here.</h1>
+                    <p class="subtitle mb-0 py-0 text-white">
+                        Go beyond the ordinary.<br>
+                        Discovery new ideas and skills.<br>
+                        Coursebank is where learning begins.
+                    </p>
+                    <button class="btn bg-cerulean text-white rounded-1 font-weight-bold subtitle mt-5 px-4">Get Started</button>
+                </div>
+                <div class="parallax-3"></div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="fluid-container parent-that-centers-vertically font-weight-light">
+                <div class="position-absolute mx-3 mx-sm-5 z-index-1">
+                    <h1 class="title cerulean font-weight-bold mb-0">success</h1>
+                    <h1 class="title mb-3 text-white">begins<br>here.</h1>
+                    <p class="subtitle mb-0 py-0 text-white">
+                        Go beyond the ordinary.<br>
+                        Discovery new ideas and skills.<br>
+                        Coursebank is where learning begins.
+                    </p>
+                    <button class="btn bg-cerulean text-white rounded-1 font-weight-bold subtitle mt-5 px-4">Get Started</button>
+                </div>
+                <div class="parallax-4"></div>
+            </div>
+        </div>
     </div>
-  </section>
-% endif
+</div>
+
+<!-- COLLABORATION SECTION -->
+<div class="fluid-container parent-that-centers-vertically half-page p-5 text-center" id="logo-section">
+            <p class="title-2 mb-0"><label class="cerulean font-weight-bold mb-0">Collaboration</label>&nbsp;at its finest.</p>
+            <p class="font-1-2 font-weight-light">Partnering with esteemed institutions, we deliver top quality courses.<br>Learn programs needed for your career or pursue new and in-trend knowledge.</p>
+            <div class="row px-5 mt-5">
+                <div class="col-xl-3 col-md-6 col-12 align-items-center my-auto"><a href="https://www.sosajbph.com/"><img src="images/logo_sosajb.png" class="img-fluid max-height"></a></div>
+                <div class="col-xl-3 col-md-6 col-12 align-items-center my-auto"><a href="https://www.jsongcpa.com/"><img src="images/logo_juanchosong.png" class="img-fluid max-height"></a></div>
+                <div class="col-xl-3 col-md-6 col-12 align-items-center my-auto"><a href="https://www.iqvia.com/"><img src="images/logo_iqvia.png" class="img-fluid max-height"></a></div>
+                <div class="col-xl-3 col-md-6 col-12 align-items-center my-auto"><a href="https://www.iacademy.edu.ph/"><img src="images/logo_iacademy.png" class="img-fluid max-height"></a></div>
+            </div>
+</div>
+
+<!-- GET STARTED SECTION -->
+<div id="deserve" class="py-4 px-1 text-center text-white parent-that-centers-vertically">
+    <section>
+        <h1 class="title-2 mb-3">Because you deserve the <span class="font-weight-bold">best.</span></h1>
+        <p class="font-1-2 font-weight-light">Coursebank offers top-notch courses that will develop your career or academic wise.<br>It&#39;s time for you to discover more because this is where learning begins.</p>
+        <button class="btn bg-white cerulean font-weight-bold font-1-2 px-5 rounded-1-5 my-4">Get Started</button>
+    </section>
+</div>
+
+<!-- POWER OF LEARNING SECTION -->
+<div id="power" class="fluid-container py-5 px-2 px-sm-1">
+  <h1 class="title-2 text-center">We believe in the <label class="cerulean font-weight-bold">power of learning.</label></h1>
+  <p class="text-center text-secondary font-1-2 px-2 font-weight-light">Through careful construction of courses and collaboration with industry partners,<br>Coursebank offers an interactive and convenient learning atmosphere for everybody.</p>
+  <div class="my-5 px-1 px-sm-2 px-md-2 px-lg-5">
+    <div class="row">
+      <div class="col col-sm-9 col-md-7 col-xl-4 px-4 my-lg-4 mx-sm-auto">
+        <section class="reason-sec position-relative text-white parent-that-centers-vertically">
+          <figure class="tint-reason">
+                                <img class="rounded-circle" src="images/04-1.jpg" alt="reason">
+                            </figure>
+                            <h2 class="title-2 ml-3 ml-sm-2 ml-md-0 power-text-center">Coursework</h2>
+                            <p class="position-absolute text-center fixed-bottom">Hover for more <i class="fas fa-angle-right font-1-5 align-middle"></i></p>
+                            <section class="position-absolute fixed-top text-left hover-content h-100 px-5 py-2 parent-that-centers-vertically">
+                                <h2 class="font-1-5">Coursework</h2>
+                                <p class="font-1-2">Self-paced learning featuring pre-recorded videos, assessments, projects and other interactive learning experiences.</p>
+                            </section>
+                        </section>
+                    </div>
+                    <hr class="my-5 d-xl-none w-100">
+                    <div class="col col-sm-9 col-md-7 col-xl-4 px-4 my-lg-4 mx-sm-auto">
+                        <section class="reason-sec position-relative text-white parent-that-centers-vertically">
+                            <figure class="tint-reason">
+                                <img class="rounded-circle" src="images/04-2.jpg" alt="reason">
+                            </figure>
+                            <h2 class="title-2 ml-3 ml-sm-2 ml-md-0 power-text-center">Student Support</h2>
+                            <p class="position-absolute text-center fixed-bottom">Hover for more <i class="fas fa-angle-right font-1-5 align-middle"></i></p>
+                            <section class="position-absolute fixed-top text-left hover-content h-100 px-5 py-2 parent-that-centers-vertically">
+                                <h2 class="font-1-5">Student Support</h2>
+                                <p class="font-1-2 font-weight-light">Connect with your peers and other professionals online to discuss, debate, and gain mastery of topics.</p>
+                            </section>
+                        </section>
+                    </div>
+                    <hr class="my-5 d-xl-none w-100">
+                    <div class="col col-sm-9 col-md-7 col-xl-4 px-4 my-lg-4 mx-sm-auto">
+                        <section class="reason-sec position-relative text-white parent-that-centers-vertically">
+                            <figure class="tint-reason">
+                                <img class="rounded-circle" src="images/04-3.jpg" alt="reason">
+                            </figure>
+                            <h2 class="title-2 ml-3 ml-sm-2 ml-md-0 power-text-center">CPD &#38; Credentials</h2>
+                            <p class="position-absolute text-center fixed-bottom">Hover for more <i class="fas fa-angle-right font-1-5 align-middle"></i></p>
+                            <section class="position-absolute fixed-top text-left hover-content h-100 px-5 py-2 parent-that-centers-vertically">
+                                <h2 class="font-1-5">CPD &#38; Credentials</h2>
+                                <p class="font-1-2 font-weight-light">Earn certificate and CPD units upon completion from accredited providers by the Professional Regulatory Board.</p>
+                            </section>
+                        </section>
+                    </div>
+                </div>
+            </div>
+</div>
 
 <%block name="js_extra">
    <script type="text/javascript">

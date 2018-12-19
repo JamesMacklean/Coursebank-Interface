@@ -37,33 +37,21 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
             props={}
         )}
     % endif
-    <nav id="header" class="navbar navbar-expand-lg fixed-top navbar-shadow p-3 px-4" data-startColor="navbar-shadow" data-intoColor="navbar-secondary">
-        <a class="navbar-brand" href="#"><img id="logo" src="images/Coursebank%20Logo%20-%20Main.png"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="d-block d-lg-none mt-2">
-                    <input id="search-bar" class="form-control mr-2 mt-sm-0 bg-cerulean text-white" type="text" placeholder="What do you want to learn?" aria-label="Search" required="true">
-                </li>
-                <!-- HEADER OPTIONS WHEN USER IS LOGGED IN -->
-                % if user.is_authenticated:
-                  <%include file="new-navbar-authenticated.html" args="online_help_token=online_help_token"/>
-                <!-- HEADER OPTIONS WHEN USER IS LOGGED OUT -->
-                % else:
-                  <%include file="new-navbar-not-authenticated.html" args="online_help_token=online_help_token"/>
-                % endif
-                <li class="ml-5 mr-2 my-auto d-none d-lg-block">
-                    <i id="sb" class="fa fa-search"></i>
-                    <form class="search-box form-inline position-absolute bg-cerulean rounded-1-5 p-2">
-                        <div class="form-group mb-0">
-                            <input id="search-bar" class="form-control mr-3 mt-sm-0 bg-cerulean text-white m" type="text" placeholder="What do you want to learn?" aria-label="Search" required="true">
-                            <a href="#"><i class="fas fa-angle-right text-white font-1-5 float-right"></i></a>
-                        </div>
-                    </form>
-                </li>
-            </ul>
+    <div class="main-header">
+        <%include file="navbar-logo-header.html" args="online_help_token=online_help_token"/>
+        <div class="hamburger-menu" role="button" aria-label=${_("Options Menu")} aria-expanded="false" aria-controls="mobile-menu" tabindex="0">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
         </div>
-    </nav>
+        % if user.is_authenticated:
+            <%include file="navbar-authenticated.html" args="online_help_token=online_help_token"/>
+        % else:
+            <%include file="navbar-not-authenticated.html" args="online_help_token=online_help_token"/>
+        % endif
+    </div>
+    <div class="mobile-menu hidden" aria-label=${_("More Options")} role="menu" id="mobile-menu"></div>
 </header>
 
 % if course:

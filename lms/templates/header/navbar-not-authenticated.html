@@ -19,51 +19,49 @@ from six import text_type
   restrict_enroll_for_course = course and settings.FEATURES.get('RESTRICT_ENROLL_BY_REG_METHOD') and course.enrollment_domain
   allow_public_account_creation = static.get_value('ALLOW_PUBLIC_ACCOUNT_CREATION', settings.FEATURES.get('ALLOW_PUBLIC_ACCOUNT_CREATION'))
 %>
-<nav class="nav-links" aria-label=${_("Supplemental Links")}>
-  <div class="main">
-  % if mktg_site_enabled:
-    <div class="mobile-nav-item hidden-mobile nav-item">
-      <a href="${marketing_link('HOW_IT_WORKS')}">${_("How it Works")}</a>
-    </div>
-    % if courses_are_browsable:
-      <div class="mobile-nav-item hidden-mobile nav-item">
-        <a href="${marketing_link('COURSES')}">${_("Courses")}</a>
-      </div>
+
+% if mktg_site_enabled:
+<li>
+  <a href="${marketing_link('HOW_IT_WORKS')}">${_("How it Works")}</a>
+</li>
+% if courses_are_browsable:
+<li>
+  <a href="${marketing_link('COURSES')}">${_("Courses")}</a>
+</li>
+% endif
+<li>
+  <a href="${marketing_link('SCHOOLS')}">${_("Schools")}</a>
+</li>
+% endif
+% if allows_login:
+  % if can_discover_courses:
+  <li>
+    <a class="nav-link mx-lg-5 px-2" href="/courses" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Catalog</a>
+  %endif
+% endif
+</li>
+<li>
+  <a class="nav-link mx-lg-5 px-2" href="#">Partners</a>
+</li>
+<li class="parent-that-centers-vertically">
+  <label class="border-spacing-right d-none d-md-none d-lg-block d-xl-block mx-5 mb-0 h-75">&nbsp;</label>
+</li>
+% if allows_login:
+  % if restrict_enroll_for_course:
+  <li>
+    <a class="nav-link waves-effect waves-light px-2 mx-lg-5 text-nowrap" href="${reverse('course-specific-register', args=[text_type(course.id)])}">${_("Sign Up")}</a>
+  </li>
+  <li>
+    <a class="nav-link waves-effect waves-light px-2 mx-lg-5 text-nowrap" href="${reverse('course-specific-login', args=[text_type(course.id)])}${login_query()}">${_("Log in")}</a>
+  </li>
+  % else:
+    % if allow_public_account_creation:
+      <li>
+        <a class="nav-link waves-effect waves-light px-2 mx-lg-5 text-nowrap" href="/register${login_query()}">${_("Sign Up")}</a> up</a>
+      </li>
     % endif
-    <div class="mobile-nav-item hidden-mobile nav-item">
-      <a href="${marketing_link('SCHOOLS')}">${_("Schools")}</a>
-    </div>
+    <li>
+      <a class="nav-link waves-effect waves-light px-2 mx-lg-5 text-nowrap" href="/login${login_query()}">${_("Log in")}</a>
+    </li>
   % endif
-  % if allows_login:
-    % if can_discover_courses:
-      <div class="mobile-nav-item hidden-mobile nav-item">
-        <a href="/courses">${_('Explore courses')}</a>
-      </div>
-    %endif
-  % endif
-  </div>
-  <div class="secondary">
-    <div>
-      % if allows_login:
-        % if restrict_enroll_for_course:
-          <div class="mobile-nav-item hidden-mobile nav-item">
-            <a class="register-btn btn" href="${reverse('course-specific-register', args=[text_type(course.id)])}">${_("Register")}</a>
-          </div>
-          <div class="mobile-nav-item hidden-mobile nav-item">
-            <a class="sign-in-btn btn" href="${reverse('course-specific-login', args=[text_type(course.id)])}${login_query()}">${_("Sign in")}</a>
-          </div>
-        % else:
-          % if allow_public_account_creation:
-            <div class="mobile-nav-item hidden-mobile nav-item">
-              <a class="register-btn btn" href="/register${login_query()}">${_("Register")}</a>
-              <!-- <a class="register-btn btn" href="#">Register(Disabled)</a> -->
-            </div>
-          % endif
-          <div class="mobile-nav-item hidden-mobile nav-item">
-            <a class="sign-in-btn btn" href="/login${login_query()}">${_("Sign in")}</a>
-          </div>
-        % endif
-      % endif
-    </div>
-  </div>
-</nav>
+% endif
