@@ -38,7 +38,7 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
         )}
     % endif
     <nav id="header" class="navbar navbar-expand-lg fixed-top navbar-shadow p-3 px-4" data-startColor="navbar-shadow" data-intoColor="navbar-secondary">
-        <a class="navbar-brand" href="#"><img id="logo" src="images/Coursebank%20Logo%20-%20Main.png"></a>
+        <a class="navbar-brand" href="#"><img id="logo" src="/static/images/mymain/Coursebank%20Logo%20-%20Main.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
@@ -47,10 +47,10 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
                 </li>
                 <!-- HEADER OPTIONS WHEN USER IS LOGGED IN -->
                 % if user.is_authenticated:
-                  <%include file="new-navbar-authenticated.html" args="online_help_token=online_help_token"/>
+                  <%include file="navbar-authenticated.html" args="online_help_token=online_help_token"/>
                 <!-- HEADER OPTIONS WHEN USER IS LOGGED OUT -->
                 % else:
-                  <%include file="new-navbar-not-authenticated.html" args="online_help_token=online_help_token"/>
+                  <%include file="navbar-not-authenticated.html" args="online_help_token=online_help_token"/>
                 % endif
                 <li class="ml-5 mr-2 my-auto d-none d-lg-block">
                     <i id="sb" class="fa fa-search"></i>
