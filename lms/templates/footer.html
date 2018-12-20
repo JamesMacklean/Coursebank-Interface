@@ -12,7 +12,7 @@
 <% footer = get_footer(is_secure=is_secure) %>
 <%namespace name='static' file='static_content.html'/>
 
-<div class="wrapper wrapper-footer" style="box-shadow:none;">
+<div class="wrapper wrapper-footer" style="box-shadow:none; padding: 0;">
     <footer id="footer-openedx" class="p-4 bg-bahamablue text-white"
       ## When rendering the footer through the branding API,
       ## the direction may not be set on the parent element,
@@ -111,11 +111,11 @@
                 <div class="col">
                     <ul class="list-unstyled list-inline text-center d-inline float-lg-left mx-auto">
                         <li class="list-inline-item mb-1 mr-0">
-                            <a href="#!" class="font-weight-bold mr-5 text-white">Log In</a>
+                            <a href="/login" class="font-weight-bold mr-5 text-white">Log In</a>
                         </li>
                         <li class="list-inline-item mr-0"><label class="border-spacing-right h-75">&nbsp;</label></li>
                         <li class="list-inline-item ml-5">
-                            <a href="#!" class="btn bg-white btn-rounded bahamablue font-weight-bold px-4 py-0 cerulean">Sign Up</a>
+                            <a href="/register" class="btn bg-white btn-rounded bahamablue font-weight-bold px-4 py-0 cerulean">Sign Up</a>
                         </li>
                     </ul>
                 </div>
@@ -123,7 +123,7 @@
                 <div class="col-lg-6 col-12">
                     <ul class="list-unstyled list-inline text-center font-1 mb-0 d-inline float-lg-right float-center">
                         <li class="list-inline-item">
-                            <a href="#" class="btn-floating btn-fb mx-1">
+                            <a href="https://www.facebook.com/coursebank.ph/" class="btn-floating btn-fb mx-1">
                                 <i class="fab fa-facebook"> </i>
                             </a>
                         </li>
