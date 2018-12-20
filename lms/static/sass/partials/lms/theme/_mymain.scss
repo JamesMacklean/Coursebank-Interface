@@ -163,7 +163,7 @@ nav > div > ul > li:nth-child(5) > a{font-weight: 900;}
 .blog-height{min-height:65vh;}
 .blog-img{height:30vh;width:100%;}
 .blog-bg-img{background-image: linear-gradient(to bottom right, var(--cerulean), white);}
-#blog-carousel > div > div.carousel-item.active.fluid-container.mr-5 > div > div > div > div.card-body > label{font-size:.9rem, font-family: $font-family-sans-serif;}
+#blog-carousel > div > div.carousel-item.active.fluid-container.mr-5 > div > div > div > div.card-body > label{font-size:.9rem}
 .power-text-center {
     position: absolute;
     top: 50%;
@@ -177,4 +177,5 @@ section.reason-sec figure img{height: 100%;width:100%;}
 section.reason-sec > h2,section.reason-sec > p {transition: .4s;}
 section.reason-sec:hover > h2,section.reason-sec:hover > p {opacity: 0}
 
-h1{text-align: left;;}
+button, button:hover {background-image: none}
+label{font-family: $font-family-sans-serif}
