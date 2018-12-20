@@ -29,8 +29,8 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
     </%block>
 % endif
 
-<header class="global-header ${'slim' if course else ''}" style="border-bottom:None;">
     % if use_cookie_banner:
+    <header class="global-header ${'slim' if course else ''}" style="padding-bottom:0; border-bottom:0;">
         ${static.renderReact(
             component="CookiePolicyBanner",
             id="cookie-policy-banner",
