@@ -29,7 +29,7 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
     </%block>
 % endif
 
-<header class="global-header ${'slim' if course else ''}">
+<header class="global-header ${'slim' if course else ''}" style="border-bottom:None;">
     % if use_cookie_banner:
         ${static.renderReact(
             component="CookiePolicyBanner",
@@ -38,7 +38,7 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
         )}
     % endif
     <nav id="header" class="navbar navbar-expand-lg fixed-top navbar-shadow p-3 px-4" data-startColor="navbar-shadow" data-intoColor="navbar-secondary">
-        <a class="navbar-brand" href="#"><img id="logo" src="${static.url('images/mymain/Coursebank%20Logo%20-%20Main.png')}"></a>
+        <a class="navbar-brand" href="#"><img id="logo" src="${static.url('my-bootstrap/images/mymain/Coursebank%20Logo%20-%20Main.png')}"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
