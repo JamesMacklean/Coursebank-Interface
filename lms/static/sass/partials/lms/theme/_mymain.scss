@@ -4,31 +4,31 @@ a.width-auto{width:auto}
 div.bg-color-reset{background-color:unset!important}
 height-fit-content{height:fit-content!important}
 img.max-height{max-height:10vh}.color-reset{color:unset!important}
-.btn-text-big{font-size:2.5rem}.font-1-2{font-size:1.2rem;}.font-1-35{font-size:1.35rem;}.font-1-5{font-size:1.5rem}.font-2{font-size:2rem}.font-2-5{font-size:2.5rem}.font-3-5{font-size:3.5rem}.font-5-5{font-size:5.5rem}
-.title,body > div.carousel.slide > div > div > div > div.position-absolute.mx-3.mx-sm-5.z-index-1.font-weight-light > h1.mb-3.text-white {font-size: 4rem;font-weight: 300;line-height: 1.2;}
+.my-boo-btn-text-big{font-size:2.5rem}.font-1-2{font-size:1.2rem;}.font-1-35{font-size:1.35rem;}.font-1-5{font-size:1.5rem}.font-2{font-size:2rem}.font-2-5{font-size:2.5rem}.font-3-5{font-size:3.5rem}.font-5-5{font-size:5.5rem}
+.title,body > div.my-boo-carousel.slide > div > div > div > div.my-boo-position-absolute.my-boo-mx-3.my-boo-mx-sm-5.z-index-1.my-boo-font-weight-light > h1.my-boo-mb-3.my-boo-text-white {font-size: 4rem;font-weight: 300;line-height: 1.2;}
 .subtitle{font-size: 1.4rem;line-height: 1.6em;}nav{font-size:0.87rem;}
 .title-2{font-size:2rem}
 .font-1{font-size:1rem}
 .font-0-8{font-size:0.8rem}
 div.half-page{min-height:500px;}
 div.parallax-1,div.parallax-2,div.parallax-3,div.parallax-4{height:1000px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}
-div.parallax-1{background-image:url("../images/mymain/01-1.jpg");}
-div.parallax-2{background-image:url("../images/mymain/01-2.jpg");}
-div.parallax-3{background-image:url("../images/mymain/01-3.jpg");}
-div.parallax-4{background-image:url("../images/mymain/01-4.jpg");}
+div.parallax-1{background-image:url("../images/01-1.jpg");}
+div.parallax-2{background-image:url("../images/01-2.jpg");}
+div.parallax-3{background-image:url("../images/01-3.jpg");}
+div.parallax-4{background-image:url("../images/01-4.jpg");}
 .line-height-one{line-height:1}
 .z-index-1{z-index:1}
 .font-small{font-size:.8rem}.circle{height:80;width:80}
 a,a:hover{text-decoration:none;text-decoration-line:none;text-decoration-color:transparent;color:black}
-body > div.carousel.slide > div > div.carousel-item.active > div > div.position-absolute.mx-3.mx-sm-5.z-index- > h1.display-1.mb-3.text-white,body > div.carousel.slide > div > div.carousel-item.active > div > div.position-absolute.mx-3.mx-sm-5.z-index-1 > p,a.course > section > section > div.row > div.col-8.px-0 > p,a.course > section > section > span,#blog-carousel > div > div > div > div > div > div.card-body > label,#blog-carousel > div > div.carousel-item.fluid-container.mr-5.active > div > div > div > div.card-body > p,#power > div > div > div > section p,footer > div > div:nth-child(1) > div > ul > li > a,footer > div > div > div.col.mx-auto.text-lg-right.text-center > p{
+body > div.my-boo-carousel.slide > div > div.my-boo-carousel-item.active > div > div.my-boo-position-absolute.my-boo-mx-3.my-boo-mx-sm-5.z-index- > h1.display-1.my-boo-mb-3.my-boo-text-white,body > div.my-boo-carousel.slide > div > div.my-boo-carousel-item.active > div > div.my-boo-position-absolute.my-boo-mx-3.my-boo-mx-sm-5.z-index-1 > p,a.course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > p,a.course > section > section > span,#blog-carousel > div > div > div > div > div > div.my-boo-card-body > label,#blog-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active > div > div > div > div.my-boo-card-body > p,#power > div > div > div > section p,footer > div > div:nth-child(1) > div > ul > li > a,footer > div > div > div.my-boo-col.my-boo-mx-auto.my-boo-text-lg-right.my-boo-text-center > p{
     font-weight:300!important
 }
 
-#course-carousel > div > div.carousel-item.fluid-container.mr-5.active.carousel-item-left > div > div > a > section > section > div.row > div.col-8.px-0 > h2 > span{
+#course-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active.my-boo-carousel-item-left > div > div > a > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > h2 > span{
     font-weight:600!important
 }
 
-strong,.course > section > section > div.row > div.col-8.px-0 > label,#blog-carousel > div > div.carousel-item.fluid-container.mr-5.active > div > div > div > div.card-body > h4,#blog-carousel > div > div.carousel-item.fluid-container.mr-5.active > div > div > div > div.card-footer.bg-cerulean.py-1.pr-2 > a,#power > div > div > div > section h2,#course-carousel > div > div.carousel-item.fluid-container.mr-5.active > div > div > a > section > section > div.row > div.col-4.px-0.my-auto > p{font-weight:700!important}
+strong,.course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > label,#blog-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active > div > div > div > div.my-boo-card-body > h4,#blog-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active > div > div > div > div.my-boo-card-footer.bg-cerulean.my-boo-py-1.my-boo-pr-2 > a,#power > div > div > div > section h2,#course-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active > div > div > a > section > section > div.my-boo-row > div.my-boo-col-4.my-boo-px-0.my-auto > p{font-weight:700!important}
 
 .full-page-height{min-height:1000px;height:auto;}
 .border-spacing-right{border-right:3px solid #dee2e6}
@@ -36,14 +36,14 @@ strong,.course > section > section > div.row > div.col-8.px-0 > label,#blog-caro
 .parent-that-centers-vertically {display: flex;flex-direction: column;justify-content: center;}
 footer {background-color: var(--bigstone);}
 footer > div > div:nth-child(1) > div > ul > li > a,footer > div > div:nth-child(1) > div > a {color: #fff !important;}
-footer, footer .btn, footer h5{font-size:.8125rem}
-footer > div > div:nth-child(3) > div.col-lg-6.col-12 > ul > li> a{color:white}
-#navbarSupportedContent > ul > li.nav-item.dropdown > div > div > div > div:hover{border-color: #fff!important;}
+footer, footer .my-boo-btn, footer h5{font-size:.8125rem}
+footer > div > div:nth-child(3) > div.my-boo-col-lg-6.my-boo-col-12 > ul > li> a{color:white}
+#navbarSupportedContent > ul > li.my-boo-nav-item.my-boo-dropdown > div > div > div > div:hover{border-color: #fff!important;}
 #navbarSupportedContent > ul > li> div > div > div > div > ul > li:hover{background-color:#007bff!important;}
 @media screen and (min-width: 992px) {
-    .navbar .dropdown {position:static;}
-    .navbar .dropdown-menu {width:100%;left:0;right:0;top:45px;display:block;visibility: hidden;opacity: 0;transition:visibility 0s, opacity 0.3s linear;}
-    .navbar .dropdown:hover .dropdown-menu, .navbar .dropdown .dropdown-menu:hover { display:block; visibility: visible; opacity: 1;transition: visibility 0s, opacity 0.3s linear;}
+    .my-boo-navbar .my-boo-dropdown {position:static;}
+    .my-boo-navbar .my-boo-dropdown-menu {width:100%;left:0;right:0;top:45px;display:block;visibility: hidden;opacity: 0;transition:visibility 0s, opacity 0.3s linear;}
+    .my-boo-navbar .my-boo-dropdown:hover .my-boo-dropdown-menu, .my-boo-navbar .my-boo-dropdown .my-boo-dropdown-menu:hover { display:block; visibility: visible; opacity: 1;transition: visibility 0s, opacity 0.3s linear;}
 }
 ul{margin-bottom:0px;}
 #logo-section{background-image: linear-gradient(to bottom, var(--onahau) 1%, white); background-color: var(--onahau);}
@@ -60,13 +60,13 @@ ul{margin-bottom:0px;}
 .tint-reason:before {border-radius:50%;}
 .course section{color:white}
 .course section h2 span {color:var(--cerulean);background-color:white;z-index: 2;}
-.course > section > section > div.row > div.col-8.px-0 > h2 > span{font-size:1rem}
+.course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > h2 > span{font-size:1rem}
 .course:hover .tint:before,.reason-sec:hover .tint-reason:before { background:rgba(6,190,229,0.8); }
 .course:hover section h2 span {color:white;background-color:var(--cerulean);z-index: 2;}
-.course:hover section h2, .course:hover section p, .course:hover section label, .course:hover section section div div.col-4.px-0.my-auto p, .course:hover section section > span{ color:var(--cerulean); z-index: 3;opacity: 100}
-.course > section > section > div.row > div.col-4 > p{opacity:0;transition:0.4s}
-.course > section > section > div.row > div> p{font-size:0.8rem}
-.course > section > section > div.row > div.col-8.px-0 > label{font-size:1.2rem}
+.course:hover section h2, .course:hover section p, .course:hover section label, .course:hover section section div div.my-boo-col-4.my-boo-px-0.my-auto p, .course:hover section section > span{ color:var(--cerulean); z-index: 3;opacity: 100}
+.course > section > section > div.my-boo-row > div.my-boo-col-4 > p{opacity:0;transition:0.4s}
+.course > section > section > div.my-boo-row > div> p{font-size:0.8rem}
+.course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > label{font-size:1.2rem}
 .w-60{width:60%;}
 .course{margin-bottom:1rem!important;}
 .course-img{border-radius:2rem;}
@@ -85,12 +85,9 @@ ul{margin-bottom:0px;}
 }
 .course:hover .overlay {left:-1%;width: 102%;}
 
-#my-h2{color:white; font-family: $font-family-sans-serif;}
-#hover-for-more{margin-bottom: 1rem;}
-
 nav.navbar-secondary{background-color: #fff;}
 html,body {overflow-x: hidden;}body {padding-top: 0vh;}
-.navbar { border: none;transition: 0.4s; }
+.my-boo-navbar { border: none;transition: 0.4s; }
 nav.navbar-shadow{background-color: rgba(0,0,0,0);}
 
 @media (max-width: 575.99px) {
@@ -98,11 +95,11 @@ nav.navbar-shadow{background-color: rgba(0,0,0,0);}
     #logo-section > p {font-size:3rem!important}
     #logo-section > p.font-1-5 {font-size:1.25rem!important;}
     .course:hover .overlay {width: 65%;}
-    .course > section > section > div.row > div.col-8.px-0 > label{width: 100%;}
+    .course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > label{width: 100%;}
 }
 @media (min-width: 576px) {
     .course, .course-img{min-height: 40vh;max-height: 40vh; width:60vw;}
-    .course > section > section > div.row > div.col-8.px-0 > label{width: 95%;}
+    .course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > label{width: 95%;}
 }
 @media (min-width: 768px) {
     .course, .course-img{min-height: 35vh;max-height: 35vh; width:55vw;}
@@ -156,14 +153,14 @@ nav > div > ul > li:nth-child(5) > a{font-weight: 900;}
 .hide-extra-text-70,.hide-extra-text{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
 .hide-extra-text-70{max-width: 70%;}
 .hide-extra-text{max-width: 100%;}
-.line-hide-2, .line-hide-3,.course > section > section > div.row > div.col-8.px-0 > p:nth-child(1),.course > section > section > div.row > div.col-8.px-0 > label{overflow: hidden;display: -webkit-box;-webkit-box-orient: vertical;}
-.line-hide-2,.course > section > section > div.row > div.col-8.px-0 > p:nth-child(1),.course > section > section > div.row > div.col-8.px-0 > label{-webkit-line-clamp: 2;}
+.line-hide-2, .line-hide-3,.course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > p:nth-child(1),.course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > label{overflow: hidden;display: -webkit-box;-webkit-box-orient: vertical;}
+.line-hide-2,.course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > p:nth-child(1),.course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > label{-webkit-line-clamp: 2;}
 .line-hide-3{-webkit-line-clamp: 3;}
 
 .blog-height{min-height:65vh;}
 .blog-img{height:30vh;width:100%;}
 .blog-bg-img{background-image: linear-gradient(to bottom right, var(--cerulean), white);}
-#blog-carousel > div > div.carousel-item.active.fluid-container.mr-5 > div > div > div > div.card-body > label{font-size:.9rem}
+#blog-carousel > div > div.my-boo-carousel-item.active.fluid-container.my-boo-mr-5 > div > div > div > div.my-boo-card-body > label{font-size:.9rem}
 .power-text-center {
     position: absolute;
     top: 50%;
@@ -173,9 +170,6 @@ nav > div > ul > li:nth-child(5) > a{font-weight: 900;}
 .hover-content{opacity:0;transition:.5s;}
 #power > div > div > div > section:hover section{opacity:100;z-index:21}
 #power > div > div > div > section:hover figure{z-index:20}
-section.reason-sec figure img{height: 100%;width:100%;}
+section.reason-sec figure img{height: 100%;width:100%; max-width: 505px; max-height: 509.5px}
 section.reason-sec > h2,section.reason-sec > p {transition: .4s;}
 section.reason-sec:hover > h2,section.reason-sec:hover > p {opacity: 0}
-
-button, button:hover {background-image: none}
-label, h5{font: normal 1em "Montserrat"}

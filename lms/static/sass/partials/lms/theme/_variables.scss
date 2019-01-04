@@ -17,6 +17,8 @@ $font-family-sans-serif: 'Montserrat';
 // Initialize the Open edX Bootstrap theme
 @import 'edx-bootstrap/sass/open-edx/theme';
 
+@import 'myboo';
+
 @import 'mymain';
 
 @import 'grid';

@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var navBar = $(".navbar"),data = navBar.data();
+    var navBar = $(".my-boo-navbar"),data = navBar.data();
     var scrolling = false,scrolledPast = false;
     $(window).scroll(function () {return scrolling = true;});
     setInterval(function () {
