@@ -29,8 +29,8 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
     </%block>
 % endif
 
-    % if use_cookie_banner:
-    <header class="global-header ${'slim' if course else ''}" style="padding-bottom:0; border-bottom:0;">
+<header class="global-header ${'slim' if course else ''}" style="padding-bottom:0; border-bottom:0;">
+      % if use_cookie_banner:
         ${static.renderReact(
             component="CookiePolicyBanner",
             id="cookie-policy-banner",
@@ -38,36 +38,39 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
         )}
     % endif
   % if user.is_authenticated:
-    <nav id="header" class="my-boo-navbar my-boo-navbar-expand-lg navbar-shadow my-boo-p-3 my-boo-px-4" data-startColor="navbar-shadow" data-intoColor="navbar-secondary">
+    <nav id="header" class="main-header my-boo-navbar my-boo-navbar-expand-lg navbar-shadow my-boo-p-3 my-boo-px-4" data-startColor="navbar-shadow" data-intoColor="navbar-secondary">
   % else:
-    <nav id="header" class="my-boo-navbar my-boo-navbar-expand-lg my-boo-fixed-top navbar-shadow my-boo-p-3 my-boo-px-4" data-startColor="navbar-shadow" data-intoColor="navbar-secondary">
+    <nav id="header" class="main-header my-boo-navbar my-boo-navbar-expand-lg my-boo-fixed-top navbar-shadow my-boo-p-3 my-boo-px-4" data-startColor="navbar-shadow" data-intoColor="navbar-secondary">
   % endif
-      <a class="my-boo-navbar-brand" href="/dashboard"><img id="logo" src="/static/my-bootstrap/images/mymain/Coursebank%20Logo%20-%20Main.png"></a>
-          <div class="my-boo-navbar-toggler" type="button" data-toggle="my-boo-collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></div>
-          <div class="my-boo-collapse my-boo-navbar-collapse" id="navbarSupportedContent">
-              <ul class="my-boo-navbar-nav my-boo-ml-auto">
-                <!-- <li class="d-block d-lg-none mt-2">
-                    <input id="search-bar" class="form-control mr-2 mt-sm-0 bg-cerulean text-white" type="text" placeholder="What do you want to learn?" aria-label="Search" required="true">
-                </li> -->
-                % if user.is_authenticated:
-                <!-- HEADER OPTIONS WHEN USER IS LOGGED IN -->
-                  <%include file="navbar-authenticated.html" args="online_help_token=online_help_token"/>
-                % else:
-                <!-- HEADER OPTIONS WHEN USER IS LOGGED OUT -->
-                  <%include file="navbar-not-authenticated.html" args="online_help_token=online_help_token"/>
-                % endif
-                <!-- <li class="ml-5 mr-2 my-auto d-none d-lg-block">
-                    <i id="sb" class="fa fa-search"></i>
-                    <form class="search-box form-inline position-absolute bg-cerulean rounded-1-5 p-2">
-                        <div class="form-group mb-0">
-                            <input id="search-bar" class="form-control mr-3 mt-sm-0 bg-cerulean text-white m" type="text" placeholder="What do you want to learn?" aria-label="Search" required="true">
-                            <a href="#"><i class="fas fa-angle-right text-white font-1-5 float-right"></i></a>
-                        </div>
-                    </form>
-                </li> -->
-            </ul>
-        </div>
+      <a class="my-boo-navbar-brand" href="/dashboard">
+        <img id="logo" src="/static/my-bootstrap/images/mymain/Coursebank%20Logo%20-%20Main.png">
+      </a>
+      <div class="my-boo-navbar-toggler" type="button" data-toggle="my-boo-collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></div>
+      <div class="my-boo-collapse my-boo-navbar-collapse" id="navbarSupportedContent">
+        <ul class="my-boo-navbar-nav my-boo-ml-auto">
+          <!-- <li class="d-block d-lg-none mt-2">
+            <input id="search-bar" class="form-control mr-2 mt-sm-0 bg-cerulean text-white" type="text" placeholder="What do you want to learn?" aria-label="Search" required="true">
+          </li> -->
+          % if user.is_authenticated:
+          <!-- HEADER OPTIONS WHEN USER IS LOGGED IN -->
+            <%include file="navbar-authenticated.html" args="online_help_token=online_help_token"/>
+          % else:
+            <!-- HEADER OPTIONS WHEN USER IS LOGGED OUT -->
+            <%include file="navbar-not-authenticated.html" args="online_help_token=online_help_token"/>
+          % endif
+          <!-- <li class="ml-5 mr-2 my-auto d-none d-lg-block">
+              <i id="sb" class="fa fa-search"></i>
+              <form class="search-box form-inline position-absolute bg-cerulean rounded-1-5 p-2">
+                  <div class="form-group mb-0">
+                      <input id="search-bar" class="form-control mr-3 mt-sm-0 bg-cerulean text-white m" type="text" placeholder="What do you want to learn?" aria-label="Search" required="true">
+                      <a href="#"><i class="fas fa-angle-right text-white font-1-5 float-right"></i></a>
+                  </div>
+              </form>
+          </li> -->
+        </ul>
+      </div>
     </nav>
+  <div class="mobile-menu hidden" aria-label=${_("More Options")} role="menu" id="mobile-menu"></div>
 </header>
 
 % if course:
