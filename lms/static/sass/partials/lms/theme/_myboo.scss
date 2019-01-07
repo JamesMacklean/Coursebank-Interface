@@ -1727,45 +1727,6 @@ input[type="button"].my-boo-btn-block {
   border-bottom-left-radius: 0;
 }
 
-.nav-tabs .my-boo-nav-link {
-  border: 1px solid transparent;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-}
-
-.nav-tabs .my-boo-nav-link:hover, .nav-tabs .my-boo-nav-link:focus {
-  border-color: #e9ecef #e9ecef #dee2e6;
-}
-
-.nav-tabs .my-boo-nav-link.disabled {
-  color: #6c757d;
-  background-color: transparent;
-  border-color: transparent;
-}
-
-.nav-tabs .my-boo-nav-link.active,
-.nav-tabs .nav-item.show .my-boo-nav-link {
-  color: #495057;
-  background-color: #fff;
-  border-color: #dee2e6 #dee2e6 #fff;
-}
-
-.nav-tabs .my-boo-dropdown-menu {
-  margin-top: -1px;
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-}
-
-.nav-pills .my-boo-nav-link {
-  border-radius: 0.25rem;
-}
-
-.nav-pills .my-boo-nav-link.active,
-.nav-pills .show > .my-boo-nav-link {
-  color: #fff;
-  background-color: #007bff;
-}
-
 .my-boo-navbar {
   position: relative;
   display: -webkit-box;

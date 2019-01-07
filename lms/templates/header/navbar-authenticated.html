@@ -28,40 +28,40 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 
 % if show_dashboard_tabs:
   <li>
-    <a class="${'active ' if reverse('dashboard') == request.path else ''}tab-nav-link nav-link mx-lg-5 px-2" href="${reverse('dashboard')}">
+    <a class="${'active ' if reverse('dashboard') == request.path else ''}tab-nav-link my-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="${reverse('dashboard')}">
       ${_("Courses")}
     </a>
   </li>
   % if show_program_listing:
   <li>
-    <a class="${'active ' if reverse('program_listing_view') in request.path else ''}tab-nav-link nav-link mx-lg-5 px-2" href="${reverse('program_listing_view')}">
+    <a class="${'active ' if reverse('program_listing_view') in request.path else ''}tab-nav-link my-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="${reverse('program_listing_view')}">
       ${_("Programs")}
     </a>
   </li>
   % endif
   <li>
-    <a class="${'active ' if '/u/' in request.path  else ''}tab-nav-link nav-link mx-lg-5 px-2" href="${reverse('learner_profile', args=[self.real_user.username])}">
+    <a class="${'active ' if '/u/' in request.path  else ''}tab-nav-linkmy-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="${reverse('learner_profile', args=[self.real_user.username])}">
       ${_("Profile")}
     </a>
   </li>
 % endif
 % if show_explore_courses:
   <li>
-    <a class="tab-nav-link nav-link my-boo-mx-lg-5 my-boo-px-2" href="${marketing_link('COURSES')}">${_('Catalog')}</a>
+    <a class="tab-nav-link my-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="${marketing_link('COURSES')}">${_('Catalog')}</a>
   </li>
 % endif
 <li>
-  <a class="nav-link my-boo-mx-lg-5 my-boo-px-2" href="#">Partners</a>
+  <a class="my-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="#">Partners</a>
 </li>
 <li class="parent-that-centers-vertically"><label class="border-spacing-right my-boo-d-none my-boo-d-md-none my-boo-d-lg-block my-boo-d-xl-block my-boo-mx-5 my-boo-mb-0 my-boo-h-75">&nbsp;</label></li>
 % if show_sysadmin_dashboard:
     ## Translators: This is short for "System administration".
   <li>
-    <a class="tab-nav-link my-boo-mx-lg-5 my-boo-px-2" href="${reverse('sysadmin')}">${_("Sysadmin")}</a>
+    <a class="tab-nav-link my-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="${reverse('sysadmin')}">${_("Sysadmin")}</a>
   </li>
 % endif
 <li>
-  <a class="help-link" href="${help_link}" target="_blank">${_("Help")}</a>
+  <a class="help-link my-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="${help_link}" target="_blank">${_("Help")}</a>
 </li>
 <li>
   <%include file="user_dropdown.html"/>

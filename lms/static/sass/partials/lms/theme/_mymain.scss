@@ -49,15 +49,17 @@ ul{margin-bottom:0px;}
 #logo-section{background-image: linear-gradient(to bottom, var(--onahau) 1%, white); background-color: var(--onahau);}
 #deserve{ min-height: 400px; background-image: linear-gradient(to bottom right, var(--cerulean), white); }
 
-.tint,.tint-reason {position: relative;float: left;cursor: pointer;}
+.tint,.tint-reason {position: relative;float: left;cursor: pointer; max-width: 505px; max-height: 509.5px;}
 .tint:before,.tint-reason:before {
     content: "";display: block;position: absolute;
     top: 0;bottom: 0;left: 0;right: 0;
     background-color: rgba(6,190,229,0.4);
     transition: all .3s linear;
+    max-width: 505px;
+    max-height: 509.5px;
 }
 .tint:before {border-radius:2rem;}
-.tint-reason:before {border-radius:50%;}
+.tint-reason:before {border-radius:50%; max-width: 505px; max-height: 509.5px;}
 .course section{color:white}
 .course section h2 span {color:var(--cerulean);background-color:white;z-index: 2;}
 .course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > h2 > span{font-size:1rem}
@@ -176,3 +178,7 @@ section.reason-sec:hover > h2,section.reason-sec:hover > p {opacity: 0}
 
 .my-boo-carousel h1 {text-align: left;}
 label.cerulean {font: inherit;}
+.my-boo-carousel-link {color: white;}
+ .my-boo-carousel-link:hover {text-decoration: none;}
+ .my-boo-reason-h2 {color: white; font-family: inherit;}
+.my-boo-reason-p {max-width: 455px;}
