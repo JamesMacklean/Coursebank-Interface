@@ -75,6 +75,7 @@
                 </div>
                 <hr>
                 <div class="my-boo-row">
+                    % if not user.is_authenticated:
                     <div class="my-boo-col">
                         <ul class="my-boo-list-unstyled my-boo-list-inline my-boo-text-center my-boo-d-inline my-boo-float-lg-left my-boo-mx-auto">
                             <li class="my-boo-list-inline-item my-boo-mb-1 my-boo-mr-0">
@@ -86,8 +87,13 @@
                             </li>
                         </ul>
                     </div>
+                    % endif
                     <hr class="my-boo-w-100 my-boo-d-lg-none">
+                    % if user.is_authenticated:
+                    <div class="my-boo-col-lg-12 my-boo-col-12" style="right: 2.5%;">
+                    % else:
                     <div class="my-boo-col-lg-6 my-boo-col-12">
+                    % endif
                         <ul class="my-boo-list-unstyled my-boo-list-inline my-boo-text-center font-1 my-boo-mb-0 my-boo-d-inline my-boo-float-lg-right float-center">
                             <li class="my-boo-list-inline-item">
                                 <a href="https://facebook.com/coursebank.ph/" class="btn-floating btn-fb my-boo-mx-1">
