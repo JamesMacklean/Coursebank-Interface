@@ -2749,6 +2749,9 @@ input[type="button"].my-boo-btn-block {
 }
 
 @media (min-width: 576px) {
+  .my-boo-d-sm-none {
+    display: none !important;
+  }
   .my-boo-d-sm-block {
     display: block !important;
   }
