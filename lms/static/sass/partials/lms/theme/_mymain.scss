@@ -186,5 +186,25 @@ label.cerulean {font: inherit; cursor: auto;}
 a.my-boo-carousel-link {color: white;}
 a.my-boo-carousel-link:hover {text-decoration: none;}
 .my-boo-reason-h2 {color: white; font-family: inherit;}
-.my-boo-reason-p {max-width: 455px;}
-.reason-sec p {margin: 0 90px 20px 0;}
+
+@media (min-width: 576px) {
+  .reason-sec h2 {
+    font-size: 1.5rem;
+  }
+  .reason-sec section h2 {
+    font-size: 1.25rem;
+  }
+  .reason-sec section p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .reason-sec h2 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .reason-sec h2 {
+    font-size: 1.5rem;
+  }
+}
