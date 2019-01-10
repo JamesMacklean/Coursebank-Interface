@@ -11,7 +11,7 @@ img.max-height{max-height:10vh}.color-reset{color:unset!important}
 .font-1{font-size:1rem}
 .font-0-8{font-size:0.8rem}
 div.half-page{min-height:500px;}
-div.parallax-1,div.parallax-2,div.parallax-3,div.parallax-4{height:1000px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}
+div.parallax-1,div.parallax-2,div.parallax-3,div.parallax-4{height:105vh;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}
 div.parallax-1{background-image:url("../images/mymain/01-1.jpg");}
 div.parallax-2{background-image:url("../images/mymain/01-2.jpg");}
 div.parallax-3{background-image:url("../images/mymain/01-3.jpg");}
@@ -22,6 +22,11 @@ div.parallax-4{background-image:url("../images/mymain/01-4.jpg");}
 a,a:hover{text-decoration:none;text-decoration-line:none;text-decoration-color:transparent;color:black}
 body > div.my-boo-carousel.slide > div > div.my-boo-carousel-item.active > div > div.my-boo-position-absolute.my-boo-mx-3.my-boo-mx-sm-5.z-index- > h1.display-1.my-boo-mb-3.my-boo-text-white,body > div.my-boo-carousel.slide > div > div.my-boo-carousel-item.active > div > div.my-boo-position-absolute.my-boo-mx-3.my-boo-mx-sm-5.z-index-1 > p,a.my-boo-course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > p,a.my-boo-course > section > section > span,#blog-carousel > div > div > div > div > div > div.my-boo-card-body > label,#blog-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active > div > div > div > div.my-boo-card-body > p,#power > div > div > div > section p,footer > div > div:nth-child(1) > div > ul > li > a,footer > div > div > div.my-boo-col.my-boo-mx-auto.my-boo-text-lg-right.my-boo-text-center > p{
     font-weight:300!important
+}
+
+@media screen and (max-width: 768px) {
+  .title {font-size: 3rem;}
+  .subtitle {font-size: 1rem;}
 }
 
 #my-boo-course-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active.my-boo-carousel-item-left > div > div > a > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > h2 > span{
@@ -94,7 +99,7 @@ nav.navbar-shadow{background-color: rgba(0,0,0,0);}
 
 @media (max-width: 575.99px) {
     .my-boo-course, .my-boo-course-img{min-height: 35vh;max-height: 35vh; width:65vw;}
-    #logo-section > p {font-size:3rem!important}
+    #logo-section > p {font-size:1.2rem!important}
     #logo-section > p.font-1-5 {font-size:1.25rem!important;}
     .my-boo-course:hover .overlay {width: 65%;}
     .my-boo-course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > label{width: 100%;}
