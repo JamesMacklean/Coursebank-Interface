@@ -1,0 +1,76 @@
+.cert-frame{
+  width: 11in;
+  height: 8.5in;
+  border: 1px solid pink;
+  background-size: 11in 8.5in;
+  background-image: url("../images/certificates/certbg.jpg");
+  background-repeat: no-repeat;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-footer {
+  vertical-align: bottom;
+}
+
+.logo-partner{
+  width: 240px;
+  height: 100px;
+  text-align: right;
+
+}
+
+.logo-coursebank{
+  width: 151px;
+  height: 24px;
+}
+
+.img-signature{
+  width: 111px;
+  height: 44px;
+  text-align: right;
+}
+
+.right{
+  align: right;
+}
+
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.text-verify{
+  color: #23c29a;
+  line-height: 1;
+  font-size:25pt;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.text-content{
+  color: #87898c;
+  line-height: 1.5;
+  font-size:12pt;
+}
+.text-content-name {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.text-signature{
+  color: #87898c;
+  line-height: 1;
+  font-size:12pt;
+  text-align: right;
+}
+
+.text-course{
+  color: #29b5d8;
+  line-height: 1;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
