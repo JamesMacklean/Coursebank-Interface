@@ -1,0 +1,80 @@
+.cpd-styles {
+  font-family: $font-family-sans-serif;
+}
+
+.cpd-styles h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.cpd-styles .well {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+}
+
+.cpd-styles h1,
+.cpd-styles h2,
+.cpd-styles h3 {
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.1;
+  color: inherit;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.cpd-styles h1 {
+  font-size: 36px;
+}
+.cpd-styles h2 {
+  font-size: 30px;
+}
+.cpd-styles h3 {
+  font-size: 24px;
+}
+
+@media print {
+  .cpd-styles h2,
+  .cpd-styles h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  .cpd-styles h2,
+  .cpd-styles h3 {
+    page-break-after: avoid;
+  }
+}
+
+.cpd-styles input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+html .cpd-styles input[type="button"],
+.cpd-styles input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+html .cpd-styles input[disabled] {
+  cursor: default;
+}
+
+.cpd-styles input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.cpd-styles input {
+  line-height: normal;
+}
+.cpd-styles input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
