@@ -38,11 +38,11 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
         )}
     % endif
   % if user.is_authenticated:
-    <nav id="header" class="main-header my-boo-navbar my-boo-navbar-expand-lg navbar-shadow my-boo-p-3 my-boo-px-4" data-startColor="navbar-shadow" data-intoColor="navbar-secondary" style="height: auto;">
+    <nav id="header" class="main-header my-boo-navbar my-boo-navbar-expand-lg navbar-shadow my-boo-p-3 my-boo-px-5" data-startColor="navbar-shadow" data-intoColor="navbar-secondary" style="height: auto;">
   % else:
-    <nav id="header" class="main-header my-boo-navbar my-boo-navbar-expand-lg my-boo-fixed-top navbar-shadow my-boo-p-3 my-boo-px-4" data-startColor="navbar-shadow" data-intoColor="navbar-secondary" style="height: auto;">
+    <nav id="header" class="main-header my-boo-navbar my-boo-navbar-expand-lg my-boo-fixed-top navbar-shadow my-boo-p-3 my-boo-px-5" data-startColor="navbar-shadow" data-intoColor="navbar-secondary" style="height: auto;">
   % endif
-      <a class="my-boo-navbar-brand my-boo-ml-auto my-boo-mr-auto" href="/dashboard">
+      <a class="my-boo-navbar-brand" href="/dashboard">
         <img id="logo" src="/static/my-bootstrap/images/mymain/Coursebank%20Logo%20-%20Main.png">
       </a>
       <hr class="my-boo-my-5 my-boo-d-xl-none my-boo-d-lg-none my-boo-d-md-none my-boo-d-sm-none my-boo-w-100">
@@ -50,7 +50,7 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
         <i class="fas fa-bars"></i>
       </div>
       <div class="my-boo-collapse my-boo-navbar-collapse" id="navbarSupportedContent"-->
-        <ul class="my-boo-navbar-nav my-boo-ml-auto my-boo-mr-auto">
+        <ul class="my-boo-navbar-nav my-boo-sm-mx-auto">
           <!-- <li class="d-block d-lg-none mt-2">
             <input id="search-bar" class="form-control mr-2 mt-sm-0 bg-cerulean text-white" type="text" placeholder="What do you want to learn?" aria-label="Search" required="true">
           </li> -->

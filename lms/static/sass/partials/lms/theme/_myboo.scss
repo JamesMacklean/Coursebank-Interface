@@ -1845,6 +1845,10 @@ input[type="button"].my-boo-btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+  .my-boo-sm-mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (min-width: 576px) {
