@@ -208,3 +208,45 @@ a.my-boo-carousel-link:hover {text-decoration: none;}
     font-size: 1.5rem;
   }
 }
+
+//////////////////////////
+// CONTACT PAGE STYLES //
+////////////////////////
+
+.contact-form-email aside {
+    background: #1f8dd6; /* same color as selected state on site menu */
+    padding: 0.3em 1em;
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 2em;
+}
+.contact-form-email .content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
+}
+.contact-form-email .is-center {
+  text-align: center;
+}
+.contact-form-email .button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(28, 184, 65); /* this is a green */
+}
+.contact-form-email .button-xlarge {
+  font-size: 125%;
+}
+.contact-form-email button {
+  float: right;
+}
+.contact-form-email #name, .contact-form-email #email {
+  width: 30%;
+}
+.contact-form-email #message {
+  width: 50%;
+}
+.contact-form-email #honeypot {
+  display: none; /*makes the field not visible to humans*/
+}
