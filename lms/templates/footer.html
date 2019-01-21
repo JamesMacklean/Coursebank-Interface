@@ -13,7 +13,7 @@
 <%namespace name='static' file='static_content.html'/>
 
 <div class="wrapper wrapper-footer" style="box-shadow:none; padding: 0;bottom: 0;margin-top: auto;">
-    <footer id="footer-openedx" class="p-4 bg-bahamablue text-white" style="width: inherit;"
+    <footer id="footer-openedx" class="my-boo-p-4 bg-bahamablue my-boo-text-white" style="width: inherit;"
       ## When rendering the footer through the branding API,
       ## the direction may not be set on the parent element,
       ## so we set it here.
@@ -22,11 +22,11 @@
       % endif
     >
 
-    <div class="fluid-container text-center text-lg-left">
-                <div class="row">
-                    <div class="col-md-12 col-lg-1 mx-auto">
-                        <h5 class="font-weight-bold text-uppercase mb-4" style="color: inherit;font-family: inherit;">Coursebank</h5>
-                        <ul class="list-unstyled">
+    <div class="fluid-container my-boo-text-center my-boo-text-lg-left">
+                <div class="my-boo-row">
+                    <div class="my-boo-col-md-12 my-boo-col-lg-1 my-boo-mx-auto">
+                        <h5 class="my-boo-font-weight-bold my-boo-text-uppercase my-boo-mb-4" style="color: inherit;font-family: inherit;">Coursebank</h5>
+                        <ul class="my-boo-list-unstyled">
                             <li>
                                 <a href="/about">About</a>
                             </li>
@@ -35,10 +35,10 @@
                             </li>
                         </ul>
                     </div>
-                    <hr class="clearfix w-100 d-lg-none">
-                    <div class="col-md-12 col-lg-1 mx-auto">
-                        <h5 class="font-weight-bold text-uppercase mb-4" style="color: inherit;font-family: inherit;">Connect</h5>
-                        <ul class="list-unstyled">
+                    <hr class="my-boo-clearfix my-boo-w-100 my-boo-d-lg-none">
+                    <div class="my-boo-col-md-12 my-boo-col-lg-1 my-boo-mx-auto">
+                        <h5 class="my-boo-font-weight-bold my-boo-text-uppercase my-boo-mb-4" style="color: inherit;font-family: inherit;">Connect</h5>
+                        <ul class="my-boo-list-unstyled">
                             <li>
                                 <a href="/blog">Blog</a>
                             </li>
@@ -47,11 +47,11 @@
                             </li>
                         </ul>
                     </div>
-                    <hr class="clearfix w-100 d-lg-none">
-                    <div class="col-md-12 col-lg-1  mx-auto">
-                        <h5 class="font-weight-bold text-uppercase mb-4" style="color: inherit;font-family: inherit;">More Information</h5>
+                    <hr class="my-boo-clearfix my-boo-w-100 my-boo-d-lg-none">
+                    <div class="my-boo-col-md-12 my-boo-col-lg-1  my-boo-mx-auto">
+                        <h5 class="my-boo-font-weight-bold my-boo-text-uppercase my-boo-mb-4" style="color: inherit;font-family: inherit;">More Information</h5>
 
-                        <ul class="list-unstyled">
+                        <ul class="my-boo-list-unstyled">
                             <!-- <li>
                                 <a href="/privacy">Privacy Policy</a>
                             </li> -->
@@ -64,59 +64,59 @@
                         </ul>
                     </div>
 
-                    <hr class="clearfix w-100 d-lg-none">
-                    <div class="col mx-auto text-lg-right text-center">
-                        <img id="logo-footer" class="mb-2" src="/static/my-bootstrap/images/mymain/Coursebank%20Logo%20-%20White.png">
-                        <p class="mb-4">© 2019 Coursebank</p>
+                    <hr class="my-boo-clearfix my-boo-w-100 my-boo-d-lg-none">
+                    <div class="my-boo-col my-boo-mx-auto my-boo-text-lg-right my-boo-text-center">
+                        <img id="logo-footer" class="my-boo-mb-2" src="/static/my-bootstrap/images/mymain/Coursebank%20Logo%20-%20White.png">
+                        <p class="my-boo-mb-4">© 2019 Coursebank</p>
                         <a href="/privacy">Legal &#38; Privacy</a><br>
                         <!-- <a href="#">Regulatory Information</a><br> -->
                         <a href="#">Site Map</a>
                     </div>
                 </div>
                 <hr>
-                <div class="row">
+                <div class="my-boo-row">
                     % if not user.is_authenticated:
-                    <div class="col">
-                        <ul class="list-unstyled list-inline text-center d-inline float-lg-left mx-auto">
-                            <li class="list-inline-item mb-1 mr-0">
-                                <a href="/login" class="btn font-weight-bold ml-2 mr-2 text-white">Log In</a>
+                    <div class="my-boo-col">
+                        <ul class="my-boo-list-unstyled my-boo-list-inline my-boo-text-center my-boo-d-inline my-boo-float-lg-left my-boo-mx-auto">
+                            <li class="my-boo-list-inline-item my-boo-mb-1 my-boo-mr-0">
+                                <a href="/login" class="my-boo-btn my-boo-font-weight-bold my-boo-ml-2 my-boo-mr-2 my-boo-text-white">Log In</a>
                             </li>
-                            <li class="list-inline-item mr-0"><label class="border-spacing-right h-75">&nbsp;</label></li>
-                            <li class="list-inline-item ml-5">
-                                <a href="/register" class="btn bg-white btn-rounded bahamablue font-weight-bold ml-2 mr-5 px-4 py-0 cerulean">Pre-Register</a>
+                            <li class="my-boo-list-inline-item my-boo-mr-0"><label class="border-spacing-right my-boo-h-75">&nbsp;</label></li>
+                            <li class="my-boo-list-inline-item my-boo-ml-5">
+                                <a href="/register" class="my-boo-btn my-boo-bg-white btn-rounded bahamablue my-boo-font-weight-bold my-boo-ml-2 my-boo-mr-5 my-boo-px-4 my-boo-py-0 cerulean">Pre-Register</a>
                             </li>
                         </ul>
                     </div>
                     % endif
-                    <hr class="w-100 d-lg-none">
+                    <hr class="my-boo-w-100 my-boo-d-lg-none">
                     % if user.is_authenticated:
-                    <div class="col-lg-12 col-12" style="right: 2.5%;">
+                    <div class="my-boo-col-lg-12 my-boo-col-12" style="right: 2.5%;">
                     % else:
-                    <div class="col-lg-6 col-12">
+                    <div class="my-boo-col-lg-6 my-boo-col-12">
                     % endif
-                        <ul class="list-unstyled list-inline text-center font-1 mb-0 d-inline float-lg-right float-center">
-                            <li class="list-inline-item">
-                                <a href="https://facebook.com/coursebank.ph/" class="btn-floating btn-fb mx-1">
+                        <ul class="my-boo-list-unstyled my-boo-list-inline my-boo-text-center font-1 my-boo-mb-0 my-boo-d-inline my-boo-float-lg-right float-center">
+                            <li class="my-boo-list-inline-item">
+                                <a href="https://facebook.com/coursebank.ph/" class="btn-floating btn-fb my-boo-mx-1">
                                     <i class="fab fa-facebook"> </i>
                                 </a>
                             </li>
-                            <!-- <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-tw mx-1">
+                            <!-- <li class="my-boo-list-inline-item">
+                                <a href="#" class="btn-floating btn-tw my-boo-mx-1">
                                     <i class="fab fa-twitter"> </i>
                                 </a>
                             </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-gplus mx-1">
+                            <li class="my-boo-list-inline-item">
+                                <a href="#" class="btn-floating btn-gplus my-boo-mx-1">
                                     <i class="fab fa-instagram"> </i>
                                 </a>
                             </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-li mx-1">
+                            <li class="my-boo-list-inline-item">
+                                <a href="#" class="btn-floating btn-li my-boo-mx-1">
                                     <i class="fab fa-youtube"> </i>
                                 </a>
                             </li>
-                            <li class="list-inline-item">
-                                <a href="#" class="btn-floating btn-li mx-1">
+                            <li class="my-boo-list-inline-item">
+                                <a href="#" class="btn-floating btn-li my-boo-mx-1">
                                     <i class="fab fa-linkedin"> </i>
                                 </a>
                             </li> -->

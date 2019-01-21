@@ -1,0 +1,125 @@
+<%page expression_filter="h"/>
+<%inherit file="main.html" />
+<%namespace name='static' file='static_content.html'/>
+<%!
+from django.utils.translation import ugettext as _
+from django.urls import reverse
+
+from openedx.core.djangolib.markup import HTML, Text
+%>
+
+<!-- MAIN BANNER - CAROUSEL SLIDE -->
+<div class="fluid-container parent-that-centers-vertically">
+  <div class="position-absolute mx-3 mx-sm-5 z-index-1 font-weight-light">
+    <h1 class="title cerulean font-weight-bold mb-0" style="text-align: left">Enhance</h1>
+    <h1 class="title mb-3 text-white" style="text-align: left">your<br>career.</h1>
+    <p class="subtitle mb-0 py-0 text-white">
+      Stay ahead in your professional development.<br>
+      Learn new knowledge and skills online.
+    </p>
+    <div class="btn bg-cerulean text-white rounded-1 font-weight-bold subtitle mt-5 px-4">
+      <a class="carousel-link" href="/register" style="color: inherit;">Pre-Register</a>
+    </div>
+  </div>
+  <div class="parallax-1"></div>
+</div>
+
+<!-- COLLABORATION SECTION -->
+<div class="fluid-container parent-that-centers-vertically half-page p-5 text-center align-items-center" id="logo-section">
+  <h1 class="title-2 mb-3"><label class="cerulean font-weight-bold mb-0">Collaboration</label>&nbsp;at its finest</h1>
+  <p class="font-1-2 font-weight-light text-secondary" style="line-height: 1.4;">Partnering with esteemed institutions, we deliver top quality courses.<br>Learn programs needed for your career or pursue new and in-trend knowledge.</p>
+  <div class="row px-5 mt-5">
+    <div class="col align-items-center my-auto"><a href="https://www.iacademy.edu.ph/"><img src="${static.url('images/mymain/logo_iacademy.png')}" class="img-fluid max-height"></a></div>
+    <div class="col align-items-center my-auto"><a href="#"><img src="${static.url('images/mymain/logo_norphil.png')}" class="img-fluid max-height"></a></div>
+    <div class="col align-items-center my-auto"><a href="#"><img src="${static.url('images/mymain/logo_readabilitycenter.png')}" class="img-fluid max-height"></a></div>
+    <div class="col align-items-center my-auto"><a href="https://www.sosajbph.com/"><img src="${static.url('images/mymain/logo_sosajb.png')}" class="img-fluid max-height"></a></div>
+    <!-- <div class="col align-items-center my-auto"><a href="https://www.jsongcpa.com/"><img src="${static.url('images/mymain/logo_juanchosong.png')}" class="img-fluid max-height"></a></div> -->
+    <!-- <div class="col align-items-center my-auto"><a href="https://www.iqvia.com/"><img src="${static.url('images/mymain/logo_iqvia.png')}" class="img-fluid max-height"></a></div> -->
+  </div>
+  <div class="btn bg-cerulean text-white rounded-1-5 font-weight-bold subtitle mt-5 px-4">
+    <a class="carousel-link" href="/contact" style="color: inherit;">Become a Partner</a>
+  </div>
+</div>
+
+<!-- GET STARTED SECTION -->
+<div id="deserve" class="py-4 px-1 text-center text-white parent-that-centers-vertically">
+  <section>
+    <h1 class="title-2 mb-3 cerulean">You deserve the <span class="font-weight-bold">best.</span></h1>
+    <p class="font-1-2 font-weight-light" style="line-height: 1.4;">Coursebank offers top-notch courses that will develop your career or academic wise.<br>It&#39;s time for you to discover more because this is where learning begins.</p>
+    <div class="btn bg-white cerulean font-weight-bold font-1-2 px-5 rounded-1-5 my-4">
+      <a href="/register">Pre-Register</a>
+    </div>
+  </section>
+</div>
+
+<!-- POWER OF LEARNING SECTION -->
+<div id="power" class="fluid-container py-5 px-2 px-sm-1">
+  <h1 class="title-2 text-center"><label class="cerulean font-weight-bold">Learning experience</label> like no other</h1>
+  <p class="text-center text-secondary font-1-2 px-2 font-weight-light" style="line-height: 1.4;">Through careful construction of courses and collaboration with industry partners,<br>Coursebank offers an interactive and convenient learning atmosphere for everybody.</p>
+  <br>
+  <br>
+  <div class="my-5 px-1 px-sm-2 px-md-2 px-lg-5">
+    <div class="row">
+      <div class="col xl-4 lg-4 md-4 sm-12 px-4 my-lg-4 mx-sm-auto">
+        <section class="reason-sec position-relative text-white parent-that-centers-vertically">
+          <figure class="tint-reason">
+            <img class="rounded-circle" src="${static.url('images/mymain/04-1.jpg')}" alt="reason">
+          </figure>
+          <h2 class="reason-h2 title-2 ml-3 ml-sm-2 ml-md-0 power-text-center">Coursework</h2>
+          <p class="position-absolute text-center fixed-bottom" style="padding-bottom: 10px;">Hover for more <i class="fas fa-angle-right font-1-5 align-middle"></i></p>
+          <section class="position-absolute fixed-top text-left hover-content h-100 px-5 py-2 parent-that-centers-vertically">
+            <h2 class="reason-h2 font-1-5">Coursework</h2>
+            <p class="reason-p font-1-2">Self-paced learning featuring pre-recorded videos, assessments, projects, and other interactive learning experiences.</p>
+          </section>
+        </section>
+      </div>
+      <hr class="my-5 d-xl-none d-lg-none d-md-none w-100">
+      <div class="col xl-4 lg-4 md-4 sm-12 px-4 my-lg-4 mx-sm-auto">
+        <section class="reason-sec position-relative text-white parent-that-centers-vertically">
+          <figure class="tint-reason">
+            <img class="rounded-circle" src="${static.url('images/mymain/04-2.jpg')}" alt="reason">
+          </figure>
+          <h2 class="reason-h2 title-2 ml-3 ml-sm-2 ml-md-0 power-text-center">Student Support</h2>
+          <p class="position-absolute text-center fixed-bottom" style="padding-bottom: 10px;">Hover for more <i class="fas fa-angle-right font-1-5 align-middle"></i></p>
+          <section class="position-absolute fixed-top text-left hover-content h-100 px-5 py-2 parent-that-centers-vertically">
+            <h2 class="reason-h2 font-1-5">Student Support</h2>
+            <p class="reason-p font-1-2 font-weight-light">Connect with your peers and other professionals online to discuss, debate, and gain mastery of topics.</p>
+          </section>
+        </section>
+      </div>
+      <hr class="my-5 d-xl-none d-lg-none d-md-none w-100">
+      <div class="col xl-4 lg-4 md-4 sm-12 px-4 my-lg-4 mx-sm-auto">
+        <section class="reason-sec position-relative text-white parent-that-centers-vertically">
+          <figure class="tint-reason">
+            <img class="rounded-circle" src="${static.url('images/mymain/04-3.jpg')}" alt="reason">
+          </figure>
+        <h2 class="reason-h2 title-2 ml-3 ml-sm-2 ml-md-0 power-text-center">CPD &#38; Credentials</h2>
+        <p class="position-absolute text-center fixed-bottom" style="padding-bottom: 10px;">Hover for more <i class="fas fa-angle-right font-1-5 align-middle"></i></p>
+        <section class="position-absolute fixed-top text-left hover-content h-100 px-5 py-2 parent-that-centers-vertically">
+          <h2 class="reason-h2 font-1-5">CPD &#38; Credentials</h2>
+          <p class="reason-p font-1-2 font-weight-light">Earn certificate and CPD units upon completion from accredited providers by the Professional Regulatory Board.</p>
+        </section>
+      </section>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<%block name="js_extra">
+   <script type="text/javascript">
+      $(window).load(function() {
+         if(getParameterByName('next')) {
+              $('#login').trigger("click");
+         }
+      })
+   </script>
+</%block>
+
+% if show_signup_immediately is not UNDEFINED:
+  ## NOTE: This won't work in production, because anonymous views are cached, so it will
+  ## show either with or without this extra js for 3 minutes at a time.
+<script type="text/javascript">
+  $(window).load(function() {$('#signup_action').trigger("click");});
+</script>
+% endif

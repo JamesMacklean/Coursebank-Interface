@@ -38,19 +38,19 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
         )}
     % endif
   % if user.is_authenticated:
-    <nav id="header" class="main-header my-boo-navbar my-boo-navbar-expand-lg navbar-shadow my-boo-p-3 my-boo-px-5" data-startColor="navbar-shadow" data-intoColor="navbar-secondary" style="height: auto;">
+    <nav id="header" class="main-header navbar navbar-expand-lg navbar-shadow p-3 px-5" data-startColor="navbar-shadow" data-intoColor="navbar-secondary" style="height: auto;">
   % else:
-    <nav id="header" class="main-header my-boo-navbar my-boo-navbar-expand-lg my-boo-fixed-top navbar-shadow my-boo-p-3 my-boo-px-5" data-startColor="navbar-shadow" data-intoColor="navbar-secondary" style="height: auto;">
+    <nav id="header" class="main-header navbar navbar-expand-lg fixed-top navbar-shadow p-3 px-5" data-startColor="navbar-shadow" data-intoColor="navbar-secondary" style="height: auto;">
   % endif
-      <a class="my-boo-navbar-brand my-boo-sm-mx-auto" href="/dashboard">
+      <a class="navbar-brand sm-mx-auto" href="/dashboard">
         <img id="logo" src="/static/my-bootstrap/images/mymain/Coursebank%20Logo%20-%20Main.png">
       </a>
-      <hr class="my-boo-my-5 my-boo-d-xl-none my-boo-d-lg-none my-boo-d-md-none my-boo-d-sm-none my-boo-w-100">
-      <!--div class="my-boo-navbar-toggler" type="button" data-toggle="my-boo-collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <hr class="my-5 d-xl-none d-lg-none d-md-none d-sm-none w-100">
+      <!--div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars"></i>
       </div>
-      <div class="my-boo-collapse my-boo-navbar-collapse" id="navbarSupportedContent"-->
-      <ul class="my-boo-navbar-nav my-boo-ml-auto my-boo-sm-mx-auto">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"-->
+      <ul class="navbar-nav ml-auto sm-mx-auto">
           <!-- <li class="d-block d-lg-none mt-2">
             <input id="search-bar" class="form-control mr-2 mt-sm-0 bg-cerulean text-white" type="text" placeholder="What do you want to learn?" aria-label="Search" required="true">
           </li> -->
