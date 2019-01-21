@@ -3,7 +3,7 @@ a.width-auto{width:auto}
 .rounded-1{border-radius:1rem}.rounded-1-5{border-radius:1.5rem}.rounded-2{border-radius:2rem}
 div.bg-color-reset{background-color:unset!important}
 height-fit-content{height:fit-content!important}
-img.max-height{max-height:10vh}.color-reset{color:unset!important}
+img.max-height{max-height:9vh}.color-reset{color:unset!important}
 .btn-text-big{font-size:2.5rem}.font-1-2{font-size:1.2rem;}.font-1-35{font-size:1.35rem;}.font-1-5{font-size:1.5rem}.font-2{font-size:2rem}.font-2-5{font-size:2.5rem}.font-3-5{font-size:3.5rem}.font-5-5{font-size:5.5rem}
 .title,body > div.carousel.slide > div > div > div > div.position-absolute.mx-3.mx-sm-5.z-index-1.font-weight-light > h1.mb-3.text-white {font-size: 4rem;font-weight: 300;line-height: 1.2;}
 .subtitle{font-size: 1.4rem;line-height: 1.6em;}nav{font-size:0.87rem;}
@@ -11,7 +11,7 @@ img.max-height{max-height:10vh}.color-reset{color:unset!important}
 .font-1{font-size:1rem}
 .font-0-8{font-size:0.8rem}
 div.half-page{min-height:500px;}
-div.parallax-1,div.parallax-2,div.parallax-3,div.parallax-4{height:1000px;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}
+div.parallax-1,div.parallax-2,div.parallax-3,div.parallax-4{height:105vh;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}
 div.parallax-1{background-image:url("../images/mymain/01-1.jpg");}
 div.parallax-2{background-image:url("../images/mymain/01-2.jpg");}
 div.parallax-3{background-image:url("../images/mymain/01-3.jpg");}
@@ -22,6 +22,11 @@ div.parallax-4{background-image:url("../images/mymain/01-4.jpg");}
 a,a:hover{text-decoration:none;text-decoration-line:none;text-decoration-color:transparent;color:black}
 body > div.carousel.slide > div > div.carousel-item.active > div > div.position-absolute.mx-3.mx-sm-5.z-index- > h1.display-1.mb-3.text-white,body > div.carousel.slide > div > div.carousel-item.active > div > div.position-absolute.mx-3.mx-sm-5.z-index-1 > p,a.my-course > section > section > div.row > div.col-8.px-0 > p,a.my-course > section > section > span,#blog-carousel > div > div > div > div > div > div.card-body > label,#blog-carousel > div > div.carousel-item.fluid-container.mr-5.active > div > div > div > div.card-body > p,#power > div > div > div > section p,footer > div > div:nth-child(1) > div > ul > li > a,footer > div > div > div.col.mx-auto.text-lg-right.text-center > p{
     font-weight:300!important
+}
+
+@media screen and (max-width: 768px) {
+  .title {font-size: 3rem;}
+  .subtitle {font-size: 1rem;}
 }
 
 #course-carousel > div > div.carousel-item.fluid-container.mr-5.active.carousel-item-left > div > div > a > section > section > div.row > div.col-8.px-0 > h2 > span{
@@ -49,15 +54,17 @@ ul{margin-bottom:0px;}
 #logo-section{background-image: linear-gradient(to bottom, var(--onahau) 1%, white); background-color: var(--onahau);}
 #deserve{ min-height: 400px; background-image: linear-gradient(to bottom right, var(--cerulean), white); }
 
-.tint,.tint-reason {position: relative;float: left;cursor: pointer;}
+.tint,.tint-reason {position: relative;float: left;cursor: pointer; max-width: 505px; max-height: 509.5px;}
 .tint:before,.tint-reason:before {
     content: "";display: block;position: absolute;
     top: 0;bottom: 0;left: 0;right: 0;
     background-color: rgba(6,190,229,0.4);
     transition: all .3s linear;
+    max-width: 505px;
+    max-height: 509.5px;
 }
 .tint:before {border-radius:2rem;}
-.tint-reason:before {border-radius:50%;}
+.tint-reason:before {border-radius:50%; max-width: 505px; max-height: 509.5px;}
 .my-course section{color:white}
 .my-course section h2 span {color:var(--cerulean);background-color:white;z-index: 2;}
 .my-course > section > section > div.row > div.col-8.px-0 > h2 > span{font-size:1rem}
@@ -92,7 +99,7 @@ nav.navbar-shadow{background-color: rgba(0,0,0,0);}
 
 @media (max-width: 575.99px) {
     .my-course, .my-course-img{min-height: 35vh;max-height: 35vh; width:65vw;}
-    #logo-section > p {font-size:3rem!important}
+    #logo-section > p {font-size:1.2rem!important}
     #logo-section > p.font-1-5 {font-size:1.25rem!important;}
     .my-course:hover .overlay {width: 65%;}
     .my-course > section > section > div.row > div.col-8.px-0 > label{width: 100%;}
@@ -170,6 +177,76 @@ nav > div > ul > li:nth-child(5) > a{font-weight: 900;}
 .hover-content{opacity:0;transition:.5s;}
 #power > div > div > div > section:hover section{opacity:100;z-index:21}
 #power > div > div > div > section:hover figure{z-index:20}
-section.reason-sec figure img{height: 100%;width:100%;}
+section.reason-sec figure img{height: 100%;width:100%; max-width: 505px; max-height: 509.5px}
 section.reason-sec > h2,section.reason-sec > p {transition: .4s;}
 section.reason-sec:hover > h2,section.reason-sec:hover > p {opacity: 0}
+
+.carousel h1 {text-align: left;}
+label.cerulean {font: inherit; cursor: auto;}
+a.carousel-link {color: white;}
+a.carousel-link:hover {text-decoration: none;}
+.reason-h2 {color: white; font-family: inherit;}
+
+@media (min-width: 576px) {
+  .reason-sec h2 {
+    font-size: 1.5rem;
+  }
+  .reason-sec section h2 {
+    font-size: 1.25rem;
+  }
+  .reason-sec section p {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .reason-sec h2 {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 992px) {
+  .reason-sec h2 {
+    font-size: 1.5rem;
+  }
+}
+
+//////////////////////////
+// CONTACT PAGE STYLES //
+////////////////////////
+
+.contact-form-email aside {
+    background: #1f8dd6; /* same color as selected state on site menu */
+    padding: 0.3em 1em;
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 2em;
+}
+.contact-form-email .content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
+}
+.contact-form-email .is-center {
+  text-align: center;
+}
+.contact-form-email .button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(28, 184, 65); /* this is a green */
+}
+.contact-form-email .button-xlarge {
+  font-size: 125%;
+}
+.contact-form-email button {
+  float: right;
+}
+.contact-form-email #name, .contact-form-email #email {
+  width: 30%;
+}
+.contact-form-email #message {
+  width: 50%;
+}
+.contact-form-email #honeypot {
+  display: none; /*makes the field not visible to humans*/
+}

@@ -29,9 +29,7 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
     </%block>
 % endif
 
-<div class="bootstrap-iso">
-
-<header class="global-header ${'slim' if course else ''}">
+<header class="global-header ${'slim' if course else ''}" style="padding-bottom:0; border-bottom:0;">
       % if use_cookie_banner:
         ${static.renderReact(
             component="CookiePolicyBanner",
@@ -39,43 +37,44 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
             props={}
         )}
     % endif
-% if user.is_authenticated:
-  <nav id="header" class="navbar navbar-expand-lg navbar-shadow p-3 px-4" data-startColor="navbar-shadow" data-intoColor="navbar-secondary">
-% else:
-  <nav id="header" class="navbar navbar-expand-lg fixed-top navbar-shadow p-3 px-4" data-startColor="navbar-shadow" data-intoColor="navbar-secondary">
-% endif
-    <a class="navbar-brand" href="/dashboard"><img id="logo" src="/static/my-bootstrap/images/mymain/Coursebank%20Logo%20-%20Main.png"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <!-- SEARCH FUNCTION -->
-        <!-- <li class="d-block d-lg-none mt-2">
-          <input id="search-bar" class="form-control mr-2 mt-sm-0 bg-cerulean text-white" type="text" placeholder="What do you want to learn?" aria-label="Search" required="true">
-        </li> -->
-      % if user.is_authenticated:
-        <!-- HEADER OPTIONS WHEN USER IS LOGGED IN -->
-        <%include file="navbar-authenticated.html" args="online_help_token=online_help_token"/>
-      % else:
-        <!-- HEADER OPTIONS WHEN USER IS LOGGED OUT -->
-        <%include file="navbar-not-authenticated.html" args="online_help_token=online_help_token"/>
-      % endif
-        <!-- SEARCH OVERLAY -->
-        <!-- <li class="ml-5 mr-2 my-auto d-none d-lg-block">
-          <i id="sb" class="fa fa-search"></i>
-          <form class="search-box form-inline position-absolute bg-cerulean rounded-1-5 p-2">
-            <div class="form-group mb-0">
-              <input id="search-bar" class="form-control mr-3 mt-sm-0 bg-cerulean text-white m" type="text" placeholder="What do you want to learn?" aria-label="Search" required="true">
-              <a href="#"><i class="fas fa-angle-right text-white font-1-5 float-right"></i></a>
-            </div>
-          </form>
-        </li> -->
-      </ul>
-    </div>
-  </nav>
+  % if user.is_authenticated:
+    <nav id="header" class="main-header navbar navbar-expand-lg navbar-shadow p-3 px-5" data-startColor="navbar-shadow" data-intoColor="navbar-secondary" style="height: auto;">
+  % else:
+    <nav id="header" class="main-header navbar navbar-expand-lg fixed-top navbar-shadow p-3 px-5" data-startColor="navbar-shadow" data-intoColor="navbar-secondary" style="height: auto;">
+  % endif
+      <a class="navbar-brand sm-mx-auto" href="/dashboard">
+        <img id="logo" src="/static/my-bootstrap/images/mymain/Coursebank%20Logo%20-%20Main.png">
+      </a>
+      <hr class="my-5 d-xl-none d-lg-none d-md-none d-sm-none w-100">
+      <!--div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent"-->
+      <ul class="navbar-nav ml-auto sm-mx-auto">
+          <!-- <li class="d-block d-lg-none mt-2">
+            <input id="search-bar" class="form-control mr-2 mt-sm-0 bg-cerulean text-white" type="text" placeholder="What do you want to learn?" aria-label="Search" required="true">
+          </li> -->
+          % if user.is_authenticated:
+          <!-- HEADER OPTIONS WHEN USER IS LOGGED IN -->
+            <%include file="navbar-authenticated.html" args="online_help_token=online_help_token"/>
+          % else:
+            <!-- HEADER OPTIONS WHEN USER IS LOGGED OUT -->
+            <%include file="navbar-not-authenticated.html" args="online_help_token=online_help_token"/>
+          % endif
+          <!-- <li class="ml-5 mr-2 my-auto d-none d-lg-block">
+              <i id="sb" class="fa fa-search"></i>
+              <form class="search-box form-inline position-absolute bg-cerulean rounded-1-5 p-2">
+                  <div class="form-group mb-0">
+                      <input id="search-bar" class="form-control mr-3 mt-sm-0 bg-cerulean text-white m" type="text" placeholder="What do you want to learn?" aria-label="Search" required="true">
+                      <a href="#"><i class="fas fa-angle-right text-white font-1-5 float-right"></i></a>
+                  </div>
+              </form>
+          </li> -->
+        </ul>
+    <!-- </div> -->
+    </nav>
   <div class="mobile-menu hidden" aria-label=${_("More Options")} role="menu" id="mobile-menu"></div>
 </header>
-
-</div>
 
 % if course:
 <!--[if lte IE 9]>

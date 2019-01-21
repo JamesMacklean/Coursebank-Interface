@@ -20,7 +20,7 @@ div.parallax-4{background-image:url("../images/mymain/01-4.jpg");}
 .z-index-1{z-index:1}
 .font-small{font-size:.8rem}.circle{height:80;width:80}
 a,a:hover{text-decoration:none;text-decoration-line:none;text-decoration-color:transparent;color:black}
-body > div.my-boo-carousel.slide > div > div.my-boo-carousel-item.active > div > div.my-boo-position-absolute.my-boo-mx-3.my-boo-mx-sm-5.z-index- > h1.display-1.my-boo-mb-3.my-boo-text-white,body > div.my-boo-carousel.slide > div > div.my-boo-carousel-item.active > div > div.my-boo-position-absolute.my-boo-mx-3.my-boo-mx-sm-5.z-index-1 > p,a.my-boo-course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > p,a.my-boo-course > section > section > span,#blog-carousel > div > div > div > div > div > div.my-boo-card-body > label,#blog-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active > div > div > div > div.my-boo-card-body > p,#power > div > div > div > section p,footer > div > div:nth-child(1) > div > ul > li > a,footer > div > div > div.my-boo-col.my-boo-mx-auto.my-boo-text-lg-right.my-boo-text-center > p{
+body > div.my-boo-carousel.slide > div > div.my-boo-carousel-item.active > div > div.my-boo-position-absolute.my-boo-mx-3.my-boo-mx-sm-5.z-index- > h1.display-1.my-boo-mb-3.my-boo-text-white,body > div.my-boo-carousel.slide > div > div.my-boo-carousel-item.active > div > div.my-boo-position-absolute.my-boo-mx-3.my-boo-mx-sm-5.z-index-1 > p,a.my-course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > p,a.my-course > section > section > span,#blog-carousel > div > div > div > div > div > div.my-boo-card-body > label,#blog-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active > div > div > div > div.my-boo-card-body > p,#power > div > div > div > section p,footer > div > div:nth-child(1) > div > ul > li > a,footer > div > div > div.my-boo-col.my-boo-mx-auto.my-boo-text-lg-right.my-boo-text-center > p{
     font-weight:300!important
 }
 
@@ -33,7 +33,7 @@ body > div.my-boo-carousel.slide > div > div.my-boo-carousel-item.active > div >
     font-weight:600!important
 }
 
-strong,.my-boo-course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > label,#blog-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active > div > div > div > div.my-boo-card-body > h4,#blog-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active > div > div > div > div.my-boo-card-footer.bg-cerulean.my-boo-py-1.my-boo-pr-2 > a,#power > div > div > div > section h2,#my-boo-course-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active > div > div > a > section > section > div.my-boo-row > div.my-boo-col-4.my-boo-px-0.my-auto > p{font-weight:700!important}
+strong,.my-course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > label,#blog-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active > div > div > div > div.my-boo-card-body > h4,#blog-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active > div > div > div > div.my-boo-card-footer.bg-cerulean.my-boo-py-1.my-boo-pr-2 > a,#power > div > div > div > section h2,#my-boo-course-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active > div > div > a > section > section > div.my-boo-row > div.my-boo-col-4.my-boo-px-0.my-auto > p{font-weight:700!important}
 
 .full-page-height{min-height:1000px;height:auto;}
 .border-spacing-right{border-right:3px solid #dee2e6}
@@ -65,18 +65,18 @@ ul{margin-bottom:0px;}
 }
 .tint:before {border-radius:2rem;}
 .tint-reason:before {border-radius:50%; max-width: 505px; max-height: 509.5px;}
-.my-boo-course section{color:white}
-.my-boo-course section h2 span {color:var(--cerulean);background-color:white;z-index: 2;}
-.my-boo-course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > h2 > span{font-size:1rem}
-.my-boo-course:hover .tint:before,.reason-sec:hover .tint-reason:before { background:rgba(6,190,229,0.8); }
-.my-boo-course:hover section h2 span {color:white;background-color:var(--cerulean);z-index: 2;}
-.my-boo-course:hover section h2, .my-boo-course:hover section p, .my-boo-course:hover section label, .my-boo-course:hover section section div div.my-boo-col-4.my-boo-px-0.my-auto p, .my-boo-course:hover section section > span{ color:var(--cerulean); z-index: 3;opacity: 100}
-.my-boo-course > section > section > div.my-boo-row > div.my-boo-col-4 > p{opacity:0;transition:0.4s}
-.my-boo-course > section > section > div.my-boo-row > div> p{font-size:0.8rem}
-.my-boo-course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > label{font-size:1.2rem}
+.my-course section{color:white}
+.my-course section h2 span {color:var(--cerulean);background-color:white;z-index: 2;}
+.my-course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > h2 > span{font-size:1rem}
+.my-course:hover .tint:before,.reason-sec:hover .tint-reason:before { background:rgba(6,190,229,0.8); }
+.my-course:hover section h2 span {color:white;background-color:var(--cerulean);z-index: 2;}
+.my-course:hover section h2, .my-course:hover section p, .my-course:hover section label, .my-course:hover section section div div.my-boo-col-4.my-boo-px-0.my-auto p, .my-course:hover section section > span{ color:var(--cerulean); z-index: 3;opacity: 100}
+.my-course > section > section > div.my-boo-row > div.my-boo-col-4 > p{opacity:0;transition:0.4s}
+.my-course > section > section > div.my-boo-row > div> p{font-size:0.8rem}
+.my-course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > label{font-size:1.2rem}
 .w-60{width:60%;}
-.my-boo-course{margin-bottom:1rem!important;}
-.my-boo-course-img{border-radius:2rem;}
+.my-course{margin-bottom:1rem!important;}
+.my-course-img{border-radius:2rem;}
 .overlay {
     position: absolute;
     bottom: 0;
@@ -90,7 +90,7 @@ ul{margin-bottom:0px;}
     border-radius:2rem;
     z-index: -1;
 }
-.my-boo-course:hover .overlay {left:-1%;width: 102%;}
+.my-course:hover .overlay {left:-1%;width: 102%;}
 
 nav.navbar-secondary{background-color: #fff;}
 html,body {overflow-x: hidden;}body {padding-top: 0vh;}
@@ -98,26 +98,26 @@ html,body {overflow-x: hidden;}body {padding-top: 0vh;}
 nav.navbar-shadow{background-color: rgba(0,0,0,0);}
 
 @media (max-width: 575.99px) {
-    .my-boo-course, .my-boo-course-img{min-height: 35vh;max-height: 35vh; width:65vw;}
+    .my-course, .my-course-img{min-height: 35vh;max-height: 35vh; width:65vw;}
     #logo-section > p {font-size:1.2rem!important}
     #logo-section > p.font-1-5 {font-size:1.25rem!important;}
-    .my-boo-course:hover .overlay {width: 65%;}
-    .my-boo-course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > label{width: 100%;}
+    .my-course:hover .overlay {width: 65%;}
+    .my-course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > label{width: 100%;}
 }
 @media (min-width: 576px) {
-    .my-boo-course, .my-boo-course-img{min-height: 40vh;max-height: 40vh; width:60vw;}
-    .my-boo-course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > label{width: 95%;}
+    .my-course, .my-course-img{min-height: 40vh;max-height: 40vh; width:60vw;}
+    .my-course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > label{width: 95%;}
 }
 @media (min-width: 768px) {
-    .my-boo-course, .my-boo-course-img{min-height: 35vh;max-height: 35vh; width:55vw;}
+    .my-course, .my-course-img{min-height: 35vh;max-height: 35vh; width:55vw;}
 }
 
 @media (min-width: 992px) {
-    .my-boo-course, .my-boo-course-img{min-height: 30vh;max-height: 30vh; width:50vw;}
+    .my-course, .my-course-img{min-height: 30vh;max-height: 30vh; width:50vw;}
 }
 
 @media (min-width: 1200px) {
-    .my-boo-course, .my-boo-course-img{min-height: 27vh;max-height: 27vh; width:27vw;}
+    .my-course, .my-course-img{min-height: 27vh;max-height: 27vh; width:27vw;}
 }
 :root{
     --cerulean:#06BEE5;
@@ -160,8 +160,8 @@ nav > div > ul > li:nth-child(5) > a{font-weight: 900;}
 .hide-extra-text-70,.hide-extra-text{overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
 .hide-extra-text-70{max-width: 70%;}
 .hide-extra-text{max-width: 100%;}
-.line-hide-2, .line-hide-3,.my-boo-course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > p:nth-child(1),.my-boo-course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > label{overflow: hidden;display: -webkit-box;-webkit-box-orient: vertical;}
-.line-hide-2,.my-boo-course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > p:nth-child(1),.my-boo-course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > label{-webkit-line-clamp: 2;}
+.line-hide-2, .line-hide-3,.my-course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > p:nth-child(1),.my-course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > label{overflow: hidden;display: -webkit-box;-webkit-box-orient: vertical;}
+.line-hide-2,.my-course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > p:nth-child(1),.my-course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > label{-webkit-line-clamp: 2;}
 .line-hide-3{-webkit-line-clamp: 3;}
 
 .blog-height{min-height:65vh;}
