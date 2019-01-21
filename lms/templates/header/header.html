@@ -10,11 +10,19 @@ from django.utils.translation import ugettext as _
 
 from lms.djangoapps.ccx.overrides import get_current_ccx
 from openedx.core.djangolib.markup import HTML, Text
+from openedx.core.djangoapps.user_api.accounts.utils import retrieve_last_sitewide_block_completed
 
 # App that handles subdomain specific branding
 from branding import api as branding_api
 from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_enabled, released_languages
 
+%>
+
+<%
+## This template should not use the target student's details when masquerading, see TNL-4895
+self.real_user = getattr(user, 'real_user', user)
+username = self.real_user.username
+resume_block = retrieve_last_sitewide_block_completed(username)
 %>
 
 ## Provide a hook for themes to inject branding on top.
@@ -75,6 +83,17 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
     </nav>
   <div class="mobile-menu hidden" aria-label=${_("More Options")} role="menu" id="mobile-menu"></div>
 </header>
+
+<div class="dropdown-user-menu hidden" aria-label=${_("More Options")} role="menu" id="user-menu" tabindex="-1">
+  % if resume_block:
+  <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="${resume_block}" role="menuitem">${_("Resume")}</a></div>
+  % endif
+  <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="${reverse('dashboard')}" role="menuitem">${_("Dashboard")}</a></div>
+  <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="${reverse('learner_profile', kwargs={'username': username})}" role="menuitem">${_("Profile")}</a></div>
+  <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="${reverse('account_settings')}" role="menuitem">${_("Account")}</a></div>
+  <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="${reverse('user-credentials', kwargs={'username': username})}" role="menuitem">${_("CPD Credentials")}</a></div>
+  <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="${reverse('logout')}" role="menuitem">${_("Sign Out")}</a></div>
+</div>
 
 % if course:
 <!--[if lte IE 9]>
