@@ -27,37 +27,37 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
 %>
 
 % if show_dashboard_tabs:
-  <li class="mt-auto mb-auto">
-    <a class="${'active ' if reverse('dashboard') == request.path else ''}tab-nav-link nav-link mx-lg-5 px-2" href="${reverse('dashboard')}">
+  <li class="my-boo-mt-auto my-boo-mb-auto">
+    <a class="${'active ' if reverse('dashboard') == request.path else ''}tab-nav-link my-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="${reverse('dashboard')}">
       ${_("Dashboard")}
     </a>
   </li>
   % if show_program_listing:
-  <li class="mt-auto mb-auto">
-    <a class="${'active ' if reverse('program_listing_view') in request.path else ''}tab-nav-link nav-link mx-lg-5 px-2" href="${reverse('program_listing_view')}">
+  <li class="my-boo-mt-auto my-boo-mb-auto">
+    <a class="${'active ' if reverse('program_listing_view') in request.path else ''}tab-nav-link my-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="${reverse('program_listing_view')}">
       ${_("Programs")}
     </a>
   </li>
   % endif
 % endif
 % if show_explore_courses:
-  <li class="mt-auto mb-auto">
-    <a class="tab-nav-link nav-link mx-lg-5 px-2" href="${marketing_link('COURSES')}">${_('Catalog')}</a>
+  <li class="my-boo-mt-auto my-boo-mb-auto">
+    <a class="tab-nav-link my-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="${marketing_link('COURSES')}">${_('Catalog')}</a>
   </li>
 % endif
 <li>
-  <!-- <a class="tab-nav-link nav-link mx-lg-5 px-2" href="#">${_('Partners')}</a> -->
+  <!-- <a class="tab-nav-link my-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="#">${_('Partners')}</a> -->
 </li>
-<li class="parent-that-centers-vertically"><label class="border-spacing-right d-none d-md-none d-lg-block d-xl-block mx-5 mb-0 h-75">&nbsp;</label></li>
+<li class="parent-that-centers-vertically"><label class="border-spacing-right my-boo-d-none my-boo-d-md-none my-boo-d-lg-block my-boo-d-xl-block my-boo-mx-5 my-boo-mb-0 my-boo-h-75">&nbsp;</label></li>
 % if show_sysadmin_dashboard:
     ## Translators: This is short for "System administration".
   <li>
-    <a class="tab-nav-link nav-link mx-lg-5 px-2" href="${reverse('sysadmin')}">${_("Sysadmin")}</a>
+    <a class="tab-nav-link my-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="${reverse('sysadmin')}">${_("Sysadmin")}</a>
   </li>
 % endif
-<li class="mt-auto mb-auto">
-  <a class="help-link nav-link mx-lg-5 px-2" href="${help_link}" target="_blank">${_("Help")}</a>
+<li class="my-boo-mt-auto my-boo-mb-auto">
+  <a class="help-link my-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="${help_link}" target="_blank">${_("Help")}</a>
 </li>
-<li class="mt-auto mb-auto">
+<li class="my-boo-mt-auto my-boo-mb-auto">
   <%include file="user_dropdown.html"/>
 </li>

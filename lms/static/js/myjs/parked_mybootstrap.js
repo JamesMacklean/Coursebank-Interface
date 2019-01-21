@@ -540,9 +540,9 @@ var Carousel = function ($$$1) {
    * Constants
    * ------------------------------------------------------------------------
    */
-  var NAME = 'carousel';
+  var NAME = 'my-boo-carousel';
   var VERSION = '4.0.0';
-  var DATA_KEY = 'bs.carousel';
+  var DATA_KEY = 'bs.my-boo-carousel';
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';
   var JQUERY_NO_CONFLICT = $$$1.fn[NAME];
@@ -584,23 +584,23 @@ var Carousel = function ($$$1) {
     CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY
   };
   var ClassName = {
-    CAROUSEL: 'carousel',
+    CAROUSEL: 'my-boo-carousel',
     ACTIVE: 'active',
     SLIDE: 'slide',
-    RIGHT: 'carousel-item-right',
-    LEFT: 'carousel-item-left',
-    NEXT: 'carousel-item-next',
-    PREV: 'carousel-item-prev',
-    ITEM: 'carousel-item'
+    RIGHT: 'my-boo-carousel-item-right',
+    LEFT: 'my-boo-carousel-item-left',
+    NEXT: 'my-boo-carousel-item-next',
+    PREV: 'my-boo-carousel-item-prev',
+    ITEM: 'my-boo-carousel-item'
   };
   var Selector = {
     ACTIVE: '.active',
-    ACTIVE_ITEM: '.active.carousel-item',
-    ITEM: '.carousel-item',
-    NEXT_PREV: '.carousel-item-next, .carousel-item-prev',
-    INDICATORS: '.carousel-indicators',
+    ACTIVE_ITEM: '.active.my-boo-carousel-item',
+    ITEM: '.my-boo-carousel-item',
+    NEXT_PREV: '.my-boo-carousel-item-next, .my-boo-carousel-item-prev',
+    INDICATORS: '.my-boo-carousel-indicators',
     DATA_SLIDE: '[data-slide], [data-slide-to]',
-    DATA_RIDE: '[data-ride="carousel"]'
+    DATA_RIDE: '[data-ride="my-boo-carousel"]'
     /**
      * ------------------------------------------------------------------------
      * Class Definition
@@ -1039,9 +1039,9 @@ var Collapse = function ($$$1) {
    * Constants
    * ------------------------------------------------------------------------
    */
-  var NAME = 'collapse';
+  var NAME = 'my-boo-collapse';
   var VERSION = '4.0.0';
-  var DATA_KEY = 'bs.collapse';
+  var DATA_KEY = 'bs.my-boo-collapse';
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';
   var JQUERY_NO_CONFLICT = $$$1.fn[NAME];
@@ -1063,9 +1063,9 @@ var Collapse = function ($$$1) {
   };
   var ClassName = {
     SHOW: 'show',
-    COLLAPSE: 'collapse',
+    COLLAPSE: 'my-boo-collapse',
     COLLAPSING: 'collapsing',
-    COLLAPSED: 'collapsed'
+    COLLAPSED: 'my-boo-collapsed'
   };
   var Dimension = {
     WIDTH: 'width',
@@ -1073,7 +1073,7 @@ var Collapse = function ($$$1) {
   };
   var Selector = {
     ACTIVES: '.show, .collapsing',
-    DATA_TOGGLE: '[data-toggle="collapse"]'
+    DATA_TOGGLE: '[data-toggle="my-boo-collapse"]'
     /**
      * ------------------------------------------------------------------------
      * Class Definition
@@ -1089,7 +1089,7 @@ var Collapse = function ($$$1) {
       this._isTransitioning = false;
       this._element = element;
       this._config = this._getConfig(config);
-      this._triggerArray = $$$1.makeArray($$$1("[data-toggle=\"collapse\"][href=\"#" + element.id + "\"]," + ("[data-toggle=\"collapse\"][data-target=\"#" + element.id + "\"]")));
+      this._triggerArray = $$$1.makeArray($$$1("[data-toggle=\"my-boo-collapse\"][href=\"#" + element.id + "\"]," + ("[data-toggle=\"my-boo-collapse\"][data-target=\"#" + element.id + "\"]")));
       var tabToggles = $$$1(Selector.DATA_TOGGLE);
 
       for (var i = 0; i < tabToggles.length; i++) {
@@ -1293,7 +1293,7 @@ var Collapse = function ($$$1) {
         parent = $$$1(this._config.parent)[0];
       }
 
-      var selector = "[data-toggle=\"collapse\"][data-parent=\"" + this._config.parent + "\"]";
+      var selector = "[data-toggle=\"my-boo-collapse\"][data-parent=\"" + this._config.parent + "\"]";
       $$$1(parent).find(selector).each(function (i, element) {
         _this3._addAriaAndCollapsedClass(Collapse._getTargetFromElement(element), [element]);
       });
@@ -1408,9 +1408,9 @@ var Dropdown = function ($$$1) {
    * Constants
    * ------------------------------------------------------------------------
    */
-  var NAME = 'dropdown';
+  var NAME = 'my-boo-dropdown';
   var VERSION = '4.0.0';
-  var DATA_KEY = 'bs.dropdown';
+  var DATA_KEY = 'bs.my-boo-dropdown';
   var EVENT_KEY = "." + DATA_KEY;
   var DATA_API_KEY = '.data-api';
   var JQUERY_NO_CONFLICT = $$$1.fn[NAME];
@@ -1443,16 +1443,16 @@ var Dropdown = function ($$$1) {
     DROPUP: 'dropup',
     DROPRIGHT: 'dropright',
     DROPLEFT: 'dropleft',
-    MENURIGHT: 'dropdown-menu-right',
-    MENULEFT: 'dropdown-menu-left',
+    MENURIGHT: 'my-boo-dropdown-menu-right',
+    MENULEFT: 'my-boo-dropdown-menu-left',
     POSITION_STATIC: 'position-static'
   };
   var Selector = {
-    DATA_TOGGLE: '[data-toggle="dropdown"]',
-    FORM_CHILD: '.dropdown form',
-    MENU: '.dropdown-menu',
-    NAVBAR_NAV: '.navbar-nav',
-    VISIBLE_ITEMS: '.dropdown-menu .dropdown-item:not(.disabled)'
+    DATA_TOGGLE: '[data-toggle="my-boo-dropdown"]',
+    FORM_CHILD: '.my-boo-dropdown form',
+    MENU: '.my-boo-dropdown-menu',
+    NAVBAR_NAV: '.my-boo-navbar-nav',
+    VISIBLE_ITEMS: '.my-boo-dropdown-menu .my-boo-dropdown-item:not(.disabled)'
   };
   var AttachmentMap = {
     TOP: 'top-start',
@@ -1921,7 +1921,7 @@ var Modal = function ($$$1) {
     DATA_DISMISS: '[data-dismiss="modal"]',
     FIXED_CONTENT: '.fixed-top, .fixed-bottom, .is-fixed, .sticky-top',
     STICKY_CONTENT: '.sticky-top',
-    NAVBAR_TOGGLER: '.navbar-toggler'
+    NAVBAR_TOGGLER: '.my-boo-navbar-toggler'
     /**
      * ------------------------------------------------------------------------
      * Class Definition
@@ -3329,8 +3329,8 @@ var ScrollSpy = function ($$$1) {
     LOAD_DATA_API: "load" + EVENT_KEY + DATA_API_KEY
   };
   var ClassName = {
-    DROPDOWN_ITEM: 'dropdown-item',
-    DROPDOWN_MENU: 'dropdown-menu',
+    DROPDOWN_ITEM: 'my-boo-dropdown-item',
+    DROPDOWN_MENU: 'my-boo-dropdown-menu',
     ACTIVE: 'active'
   };
   var Selector = {
@@ -3340,9 +3340,9 @@ var ScrollSpy = function ($$$1) {
     NAV_LINKS: '.nav-link',
     NAV_ITEMS: '.nav-item',
     LIST_ITEMS: '.list-group-item',
-    DROPDOWN: '.dropdown',
-    DROPDOWN_ITEMS: '.dropdown-item',
-    DROPDOWN_TOGGLE: '.dropdown-toggle'
+    DROPDOWN: '.my-boo-dropdown',
+    DROPDOWN_ITEMS: '.my-boo-dropdown-item',
+    DROPDOWN_TOGGLE: '.my-boo-dropdown-toggle'
   };
   var OffsetMethod = {
     OFFSET: 'offset',
@@ -3633,20 +3633,20 @@ var Tab = function ($$$1) {
     CLICK_DATA_API: "click" + EVENT_KEY + DATA_API_KEY
   };
   var ClassName = {
-    DROPDOWN_MENU: 'dropdown-menu',
+    DROPDOWN_MENU: 'my-boo-dropdown-menu',
     ACTIVE: 'active',
     DISABLED: 'disabled',
     FADE: 'fade',
     SHOW: 'show'
   };
   var Selector = {
-    DROPDOWN: '.dropdown',
+    DROPDOWN: '.my-boo-dropdown',
     NAV_LIST_GROUP: '.nav, .list-group',
     ACTIVE: '.active',
     ACTIVE_UL: '> li > .active',
     DATA_TOGGLE: '[data-toggle="tab"], [data-toggle="pill"], [data-toggle="list"]',
-    DROPDOWN_TOGGLE: '.dropdown-toggle',
-    DROPDOWN_ACTIVE_CHILD: '> .dropdown-menu .active'
+    DROPDOWN_TOGGLE: '.my-boo-dropdown-toggle',
+    DROPDOWN_ACTIVE_CHILD: '> .my-boo-dropdown-menu .active'
     /**
      * ------------------------------------------------------------------------
      * Class Definition

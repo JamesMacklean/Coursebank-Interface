@@ -8,101 +8,315 @@ from django.urls import reverse
 from openedx.core.djangolib.markup import HTML, Text
 %>
 
-<!-- MAIN BANNER - CAROUSEL SLIDE -->
-<div class="fluid-container parent-that-centers-vertically">
-  <div class="my-boo-position-absolute my-boo-mx-3 my-boo-mx-sm-5 my-boo-z-index-1 my-boo-font-weight-light">
-    <h1 class="title cerulean my-boo-font-weight-bold my-boo-mb-0" style="text-align: left">Enhance</h1>
-    <h1 class="title my-boo-mb-3 my-boo-text-white" style="text-align: left">your<br>career.</h1>
-    <p class="subtitle my-boo-mb-0 my-boo-py-0 my-boo-text-white">
-      Stay ahead in your professional development.<br>
-      Learn new knowledge and skills online.
-    </p>
-    <div class="my-boo-btn bg-cerulean my-boo-text-white rounded-1 my-boo-font-weight-bold subtitle my-boo-mt-5 my-boo-px-4">
-      <a class="my-boo-carousel-link" href="/register" style="color: inherit;">Pre-Register</a>
-    </div>
-  </div>
-  <div class="parallax-1"></div>
-</div>
+<div class="bootstrap-iso">
 
-<!-- COLLABORATION SECTION -->
-<div class="fluid-container parent-that-centers-vertically half-page my-boo-p-5 my-boo-text-center my-boo-align-items-center" id="logo-section">
-  <h1 class="title-2 my-boo-mb-3"><label class="cerulean my-boo-font-weight-bold my-boo-mb-0">Collaboration</label>&nbsp;at its finest</h1>
-  <p class="font-1-2 my-boo-font-weight-light my-boo-text-secondary" style="line-height: 1.4;">Partnering with esteemed institutions, we deliver top quality courses.<br>Learn programs needed for your career or pursue new and in-trend knowledge.</p>
-  <div class="my-boo-row my-boo-px-5 my-boo-mt-5">
-    <div class="my-boo-col my-boo-align-items-center my-boo-my-auto"><a href="https://www.iacademy.edu.ph/"><img src="${static.url('images/mymain/logo_iacademy.png')}" class="img-fluid max-height"></a></div>
-    <div class="my-boo-col my-boo-align-items-center my-boo-my-auto"><a href="#"><img src="${static.url('images/mymain/logo_norphil.png')}" class="img-fluid max-height"></a></div>
-    <div class="my-boo-col my-boo-align-items-center my-boo-my-auto"><a href="#"><img src="${static.url('images/mymain/logo_readabilitycenter.png')}" class="img-fluid max-height"></a></div>
-    <div class="my-boo-col my-boo-align-items-center my-boo-my-auto"><a href="https://www.sosajbph.com/"><img src="${static.url('images/mymain/logo_sosajb.png')}" class="img-fluid max-height"></a></div>
-    <!-- <div class="my-boo-col my-boo-align-items-center my-boo-my-auto"><a href="https://www.jsongcpa.com/"><img src="${static.url('images/mymain/logo_juanchosong.png')}" class="img-fluid max-height"></a></div> -->
-    <!-- <div class="my-boo-col my-boo-align-items-center my-boo-my-auto"><a href="https://www.iqvia.com/"><img src="${static.url('images/mymain/logo_iqvia.png')}" class="img-fluid max-height"></a></div> -->
-  </div>
-  <div class="my-boo-btn bg-cerulean my-boo-text-white rounded-1-5 my-boo-font-weight-bold subtitle my-boo-mt-5 my-boo-px-4">
-    <a class="my-boo-carousel-link" href="/contact" style="color: inherit;">Become a Partner</a>
-  </div>
-</div>
+  <!-- BANNER/CAROUSEL -->
+  <div class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                  <div class="carousel-item active">
+                      <div class="fluid-container parent-that-centers-vertically">
+                          <div class="position-absolute mx-3 mx-sm-5 z-index-1 font-weight-light">
+                              <h1 class="title cerulean font-weight-bold mb-0">Enhance</h1>
+                              <h1 class="title mb-3 text-white">your<br>career.</h1>
+                              <p class="subtitle mb-0 py-0 text-white">
+                                  Stay ahead in your professional development.<br>
+                                  Learn new knowledge and skills online.
+                              </p>
+                              <button class="btn bg-cerulean text-white rounded-1 font-weight-bold subtitle mt-5 px-4">Get Started</button>
+                          </div>
+                          <div class="parallax-1"></div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="fluid-container parent-that-centers-vertically">
+                          <div class="position-absolute mx-3 mx-sm-5 z-index-1 font-weight-light">
+                              <h1 class="title cerulean font-weight-bold mb-0">Enhance</h1>
+                              <h1 class="title mb-3 text-white">your<br>career.</h1>
+                              <p class="subtitle mb-0 py-0 text-white">
+                                  Stay ahead in your professional development.<br>
+                                  Learn new knowledge and skills online.
+                              </p>
+                              <button class="btn bg-cerulean text-white rounded-1 font-weight-bold subtitle mt-5 px-4">Get Started</button>
+                          </div>
+                          <div class="parallax-2"></div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="fluid-container parent-that-centers-vertically">
+                          <div class="position-absolute mx-3 mx-sm-5 z-index-1 font-weight-light">
+                              <h1 class="title cerulean font-weight-bold mb-0">Enhance</h1>
+                              <h1 class="title mb-3 text-white">your<br>career.</h1>
+                              <p class="subtitle mb-0 py-0 text-white">
+                                  Stay ahead in your professional development.<br>
+                                  Learn new knowledge and skills online.
+                              </p>
+                              <button class="btn bg-cerulean text-white rounded-1 font-weight-bold subtitle mt-5 px-4">Get Started</button>
+                          </div>
+                          <div class="parallax-3"></div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                      <div class="fluid-container parent-that-centers-vertically font-weight-light">
+                          <div class="position-absolute mx-3 mx-sm-5 z-index-1">
+                              <h1 class="title cerulean font-weight-bold mb-0">Enhance</h1>
+                              <h1 class="title mb-3 text-white">your<br>career.</h1>
+                              <p class="subtitle mb-0 py-0 text-white">
+                                  Stay ahead in your professional development.<br>
+                                  Learn new knowledge and skills online.
+                              </p>
+                              <button class="btn bg-cerulean text-white rounded-1 font-weight-bold subtitle mt-5 px-4">Get Started</button>
+                          </div>
+                          <div class="parallax-4"></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
-<!-- GET STARTED SECTION -->
-<div id="deserve" class="my-boo-py-4 my-boo-px-1 my-boo-text-center my-boo-text-white parent-that-centers-vertically">
-  <section>
-    <h1 class="title-2 my-boo-mb-3 cerulean">You deserve the <span class="my-boo-font-weight-bold">best.</span></h1>
-    <p class="font-1-2 my-boo-font-weight-light" style="line-height: 1.4;">Coursebank offers top-notch courses that will develop your career or academic wise.<br>It&#39;s time for you to discover more because this is where learning begins.</p>
-    <div class="my-boo-btn my-boo-bg-white cerulean my-boo-font-weight-bold font-1-2 my-boo-px-5 rounded-1-5 my-4">
-      <a href="/register">Pre-Register</a>
-    </div>
-  </section>
-</div>
+          <!-- PARTNERS -->
+          <div class="fluid-container parent-that-centers-vertically half-page p-5 text-center" id="logo-section">
+              <p class="title-2 mb-0"><label class="cerulean font-weight-bold mb-0">Collaboration</label>&nbsp;at its finest</p>
+              <p class="font-1-2 font-weight-light">Partnering with esteemed institutions, we deliver top quality courses.<br>Learn programs needed for your career or pursue new and in-trend knowledge.</p>
+              <div class="row px-5 mt-5">
+                <div class="col-xl-3 col-md-6 col-12 align-items-center my-auto"><a href="https://www.iacademy.edu.ph/"><img src="${static.url('images/mymain/logo_iacademy.png')}" class="img-fluid max-height"></a></div>
+                <div class="col-xl-3 col-md-6 col-12 align-items-center my-auto"><a href="#"><img src="${static.url('images/mymain/logo_norphil.png')}" class="img-fluid max-height"></a></div>
+                <div class="col-xl-3 col-md-6 col-12 align-items-center my-auto"><a href="#"><img src="${static.url('images/mymain/logo_readabilitycenter.png')}" class="img-fluid max-height"></a></div>
+                <div class="col-xl-3 col-md-6 col-12 align-items-center my-auto"><a href="https://www.sosajbph.com/"><img src="${static.url('images/mymain/logo_sosajb.png')}" class="img-fluid max-height"></a></div>
+                <!-- <div class="col-xl-3 col-md-6 col-12 align-items-center my-auto"><a href="https://www.jsongcpa.com/"><img src="${static.url('images/mymain/logo_juanchosong.png')}" class="img-fluid max-height"></a></div> -->
+                <!-- <div class="col-xl-3 col-md-6 col-12 align-items-center my-auto"><a href="https://www.iqvia.com/"><img src="${static.url('images/mymain/logo_iqvia.png')}" class="img-fluid max-height"></a></div> -->
+              </div>
+          </div>
 
-<!-- POWER OF LEARNING SECTION -->
-<div id="power" class="fluid-container my-boo-py-5 my-boo-px-2 my-boo-px-sm-1">
-  <h1 class="title-2 my-boo-text-center"><label class="cerulean my-boo-font-weight-bold">Learning experience</label> like no other</h1>
-  <p class="my-boo-text-center my-boo-text-secondary font-1-2 my-boo-px-2 my-boo-font-weight-light" style="line-height: 1.4;">Through careful construction of courses and collaboration with industry partners,<br>Coursebank offers an interactive and convenient learning atmosphere for everybody.</p>
-  <br>
-  <br>
-  <div class="my-boo-my-5 my-boo-px-1 my-boo-px-sm-2 my-boo-px-md-2 my-boo-px-lg-5">
-    <div class="my-boo-row">
-      <div class="my-boo-col my-boo-xl-4 my-boo-lg-4 my-boo-md-4 my-boo-sm-12 my-boo-px-4 my-boo-my-lg-4 my-boo-mx-sm-auto">
-        <section class="reason-sec my-boo-position-relative my-boo-text-white parent-that-centers-vertically">
-          <figure class="tint-reason">
-            <img class="my-boo-rounded-circle" src="${static.url('images/mymain/04-1.jpg')}" alt="reason">
-          </figure>
-          <h2 class="my-boo-reason-h2 title-2 my-boo-ml-3 my-boo-ml-sm-2 my-boo-ml-md-0 power-text-center">Coursework</h2>
-          <p class="my-boo-position-absolute my-boo-text-center my-boo-fixed-bottom" style="padding-bottom: 10px;">Hover for more <i class="fas fa-angle-right font-1-5 my-boo-align-middle"></i></p>
-          <section class="my-boo-position-absolute my-boo-fixed-top my-boo-text-left hover-content my-boo-h-100 my-boo-px-5 my-boo-py-2 parent-that-centers-vertically">
-            <h2 class="my-boo-reason-h2 font-1-5">Coursework</h2>
-            <p class="my-boo-reason-p font-1-2">Self-paced learning featuring pre-recorded videos, assessments, projects, and other interactive learning experiences.</p>
-          </section>
-        </section>
-      </div>
-      <hr class="my-boo-my-5 my-boo-d-xl-none my-boo-d-lg-none my-boo-d-md-none my-boo-w-100">
-      <div class="my-boo-col my-boo-xl-4 my-boo-lg-4 my-boo-md-4 my-boo-sm-12 my-boo-px-4 my-boo-my-lg-4 my-boo-mx-sm-auto">
-        <section class="reason-sec my-boo-position-relative my-boo-text-white parent-that-centers-vertically">
-          <figure class="tint-reason">
-            <img class="my-boo-rounded-circle" src="${static.url('images/mymain/04-2.jpg')}" alt="reason">
-          </figure>
-          <h2 class="my-boo-reason-h2 title-2 my-boo-ml-3 my-boo-ml-sm-2 my-boo-ml-md-0 power-text-center">Student Support</h2>
-          <p class="my-boo-position-absolute my-boo-text-center my-boo-fixed-bottom" style="padding-bottom: 10px;">Hover for more <i class="fas fa-angle-right font-1-5 my-boo-align-middle"></i></p>
-          <section class="my-boo-position-absolute my-boo-fixed-top my-boo-text-left hover-content my-boo-h-100 my-boo-px-5 my-boo-py-2 parent-that-centers-vertically">
-            <h2 class="my-boo-reason-h2 font-1-5">Student Support</h2>
-            <p class="my-boo-reason-p font-1-2 my-boo-font-weight-light">Connect with your peers and other professionals online to discuss, debate, and gain mastery of topics.</p>
-          </section>
-        </section>
-      </div>
-      <hr class="my-boo-my-5 my-boo-d-xl-none my-boo-d-lg-none my-boo-d-md-none my-boo-w-100">
-      <div class="my-boo-col my-boo-xl-4 my-boo-lg-4 my-boo-md-4 my-boo-sm-12 my-boo-px-4 my-boo-my-lg-4 my-boo-mx-sm-auto">
-        <section class="reason-sec my-boo-position-relative my-boo-text-white parent-that-centers-vertically">
-          <figure class="tint-reason">
-            <img class="my-boo-rounded-circle" src="${static.url('images/mymain/04-3.jpg')}" alt="reason">
-          </figure>
-        <h2 class="my-boo-reason-h2 title-2 my-boo-ml-3 my-boo-ml-sm-2 my-boo-ml-md-0 power-text-center">CPD &#38; Credentials</h2>
-        <p class="my-boo-position-absolute my-boo-text-center my-boo-fixed-bottom" style="padding-bottom: 10px;">Hover for more <i class="fas fa-angle-right font-1-5 my-boo-align-middle"></i></p>
-        <section class="my-boo-position-absolute my-boo-fixed-top my-boo-text-left hover-content my-boo-h-100 my-boo-px-5 my-boo-py-2 parent-that-centers-vertically">
-          <h2 class="my-boo-reason-h2 font-1-5">CPD &#38; Credentials</h2>
-          <p class="my-boo-reason-p font-1-2 my-boo-font-weight-light">Earn certificate and CPD units upon completion from accredited providers by the Professional Regulatory Board.</p>
-        </section>
-      </section>
-    </div>
-  </div>
-</div>
+          <!-- UPDATES/BLOG -->
+          <div class="fluid-container parent-that-centers-vertically half-page py-5 bg-onahau">
+              <h1 class="title-2 px-md-5 mx-auto mx-md-0 font-weight-light"><span class="cerulean font-weight-bold">New</span>&nbsp;Courses</h1>
+              <div class="fluid-container my-5 px-4">
+                  <div id="course-carousel" class="carousel slide carousel-multi-item" data-ride="carousel">
+                      <div class="carousel-inner" role="listbox">
+                          <div class="carousel-item active fluid-container mr-5">
+                              <div class="row px-5">
+                                  <div class="col-xl-4 col-12 mb-3 mb-xl-0 d-flex justify-content-center">
+                                      <a href="#" class="my-course">
+                                          <figure class="tint">
+                                              <img class="my-course-img" src="images/photography.jpg" alt="course image">
+                                          </figure>
+                                          <section class="position-relative">
+                                              <section class="position-absolute px-3 px-sm-4 py-4 container fixed-top my-course-img">
+                                                  <div class="overlay"></div>
+                                                  <div class="row">
+                                                      <div class="col-8 px-0">
+                                                          <h2><span class="badge badge-pill">New</span></h2>
+                                                          <label>Advertising Photography</label>
+                                                          <p class="mb-0">iACADEMY</p>
+                                                          <p class="mb-0 pr-3 align-bottom d-none d-sm-block">4-course expert<strong>TRACK</strong></p>
+                                                      </div>
+                                                      <div class="col-4 px-0">
+                                                          <p class="text-right cerulean">Learn More <i class="fas fa-angle-right ml-2"></i></p>
+                                                      </div>
+                                                  </div>
+                                                  <span class="position-absolute fixed-bottom mb-3 mr-3 text-right"><i class="fas fa-signal"></i>&nbsp;Earn CPD Units</span>
+                                              </section>
+                                          </section>
+                                      </a>
+                                  </div>
+                                  <div class="col-xl-4 col-12 mb-3 mb-xl-0 d-flex justify-content-center">
+                                      <a href="#" class="my-course">
+                                          <figure class="tint">
+                                              <img class="my-course-img" src="images/data-analytics.jpg" alt="course image">
+                                          </figure>
+                                          <section class="position-relative">
+                                              <section class="position-absolute px-3 px-sm-4 py-4 container fixed-top my-course-img">
+                                                  <div class="overlay"></div>
+                                                  <div class="row">
+                                                      <div class="col-8 px-0">
+                                                          <h2><span class="badge badge-pill">New</span></h2>
+                                                          <label>Data Analytics for Marketing</label>
+                                                          <p class="mb-0">iACADEMY</p>
+                                                          <p class="mb-0 pr-3 align-bottom d-none d-sm-block">4-course expert<strong>TRACK</strong></p>
+                                                      </div>
+                                                      <div class="col-4 px-0 my-auto">
+                                                          <p class="text-right cerulean">Learn More <i class="fas fa-angle-right ml-2"></i></p>
+                                                      </div>
+                                                  </div>
+                                                  <span class="position-absolute fixed-bottom mb-3 mr-3 text-right"><i class="fas fa-signal"></i>&nbsp;Earn CPD Units</span>
+                                              </section>
+                                          </section>
+                                      </a>
+                                  </div>
+                                  <div class="col-xl-4 col-12 mb-3 mb-xl-0 d-flex justify-content-center">
+                                      <a href="#" class="my-course">
+                                          <figure class="tint">
+                                              <img class="my-course-img" src="images/property-management.jpg" alt="course image">
+                                          </figure>
+                                          <section class="position-relative">
+                                              <section class="position-absolute px-3 px-sm-4 py-4 container fixed-top my-course-img">
+                                                  <div class="overlay"></div>
+                                                  <div class="row">
+                                                      <div class="col-8 px-0">
+                                                          <h2><span class="badge badge-pill">New</span></h2>
+                                                          <label>Property Management Fundamentals</label>
+                                                          <p class="mb-0 line-hide-2">SOSAJB Property Mangement Corp.</p>
+                                                          <p class="mb-0 pr-3 align-bottom d-none d-sm-block">4-course expert<strong>TRACK</strong></p>
+                                                      </div>
+                                                      <div class="col-4 px-0 my-auto">
+                                                          <p class="text-right cerulean">Learn More <i class="fas fa-angle-right ml-2"></i></p>
+                                                      </div>
+                                                  </div>
+                                                  <span class="position-absolute fixed-bottom mb-3 mr-3 text-right"><i class="fas fa-signal"></i>&nbsp;Earn CPD Units</span>
+                                              </section>
+                                          </section>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="carousel-item fluid-container mr-5">
+                              <div class="row px-5">
+                                  <div class="col-xl-4 col-12 mb-3 mb-xl-0 d-flex justify-content-center">
+                                      <a href="#" class="my-course">
+                                          <figure class="tint">
+                                              <img class="my-course-img" src="images/photography.jpg" alt="course image">
+                                          </figure>
+                                          <section class="position-relative">
+                                              <section class="position-absolute px-3 px-sm-4 py-4 container fixed-top my-course-img">
+                                                  <div class="overlay"></div>
+                                                  <div class="row">
+                                                      <div class="col-8 px-0">
+                                                          <h2><span class="badge badge-pill">New</span></h2>
+                                                          <label>Advertising Photography</label>
+                                                          <p class="mb-0">iACADEMY</p>
+                                                          <p class="mb-0 pr-3 align-bottom d-none d-sm-block">4-course expert<strong>TRACK</strong></p>
+                                                      </div>
+                                                      <div class="col-4 px-0 my-auto">
+                                                          <p class="text-right cerulean">Learn More <i class="fas fa-angle-right ml-2"></i></p>
+                                                      </div>
+                                                  </div>
+                                                  <span class="position-absolute fixed-bottom mb-3 mr-3 text-right"><i class="fas fa-signal"></i>&nbsp;Earn CPD Units</span>
+                                              </section>
+                                          </section>
+                                      </a>
+                                  </div>
+                                  <div class="col-xl-4 col-12 mb-3 mb-xl-0 d-flex justify-content-center">
+                                      <a href="#" class="my-course">
+                                          <figure class="tint">
+                                              <img class="my-course-img" src="images/data-analytics.jpg" alt="course image">
+                                          </figure>
+                                          <section class="position-relative">
+                                              <section class="position-absolute px-3 px-sm-4 py-4 container fixed-top my-course-img">
+                                                  <div class="overlay"></div>
+                                                  <div class="row">
+                                                      <div class="col-8 px-0">
+                                                          <h2><span class="badge badge-pill">New</span></h2>
+                                                          <label>Data Analytics for Marketing</label>
+                                                          <p class="mb-0">iACADEMY</p>
+                                                          <p class="mb-0 pr-3 align-bottom d-none d-sm-block">4-course expert<strong>TRACK</strong></p>
+                                                      </div>
+                                                      <div class="col-4 px-0 my-auto">
+                                                          <p class="text-right cerulean">Learn More <i class="fas fa-angle-right ml-2"></i></p>
+                                                      </div>
+                                                  </div>
+                                                  <span class="position-absolute fixed-bottom mb-3 mr-3 text-right"><i class="fas fa-signal"></i>&nbsp;Earn CPD Units</span>
+                                              </section>
+                                          </section>
+                                      </a>
+                                  </div>
+                                  <div class="col-xl-4 col-12 mb-3 mb-xl-0 d-flex justify-content-center">
+                                      <a href="#" class="my-course">
+                                          <figure class="tint">
+                                              <img class="my-course-img" src="images/property-management.jpg" alt="course image">
+                                          </figure>
+                                          <section class="position-relative">
+                                              <section class="position-absolute px-3 px-sm-4 py-4 container fixed-top my-course-img">
+                                                  <div class="overlay"></div>
+                                                  <div class="row">
+                                                      <div class="col-8 px-0">
+                                                          <h2><span class="badge badge-pill">New</span></h2>
+                                                          <label>Property Management Fundamentals</label>
+                                                          <p class="mb-0">SOSAJB Property Mangement Corp.</p>
+                                                          <p class="mb-0 pr-3 align-bottom d-none d-sm-block">4-course expert<strong>TRACK</strong></p>
+                                                      </div>
+                                                      <div class="col-4 px-0 my-auto">
+                                                          <p class="text-right cerulean">Learn More <i class="fas fa-angle-right ml-2"></i></p>
+                                                      </div>
+                                                  </div>
+                                                  <span class="position-absolute fixed-bottom mb-3 mr-3 text-right"><i class="fas fa-signal"></i>&nbsp;Earn <strong>CPD Units</strong></span>
+                                              </section>
+                                          </section>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <a class="carousel-control-prev width-auto height-fit-content" href="#course-carousel" role="button" data-slide="prev">
+                          <span class="display-4 bigstone" aria-hidden="true"><i class="fas fa-angle-left"></i></span>
+                          <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next width-auto height-fit-content" href="#course-carousel" role="button" data-slide="next">
+                          <h1 class="display-4 font-weight-800 bigstone" aria-hidden="true"><i class="fas fa-angle-right"></i></h1>
+                          <span class="sr-only">Next</span>
+                      </a>
+                  </div>
+              </div>
+              <button class="btn bg-cerulean text-white mx-auto d-block font-1-2 rounded-1 px-5 py-2 font-weight-bold">See More</button>
+          </div>
+
+          <!-- DESERVE -->
+          <div id="deserve" class="py-4 px-1 text-center text-white parent-that-centers-vertically">
+              <section>
+                  <h1 class="title-2 mb-3">You deserve the <span class="font-weight-bold">best.</span></h1>
+                  <p class="font-1-2 font-weight-light">Coursebank offers top-notch courses that will develop your career or academic wise.<br>It&#39;s time for you to discover more because this is where learning begins.</p>
+                  <a href="/register"class="btn bg-white cerulean font-weight-bold font-1-2 px-5 rounded-1-5 my-4">Get Started</a>
+              </section>
+          </div>
+
+          <!-- LEARNING EXPERIENCE LIKE NO OTHER -->
+          <div id="power" class="fluid-container py-5 px-2 px-sm-1">
+              <h1 class="title-2 text-center">Learning experience</label> like no other</label></h1>
+              <p class="text-center text-secondary font-1-2 px-2 font-weight-light">Through careful construction of courses and collaboration with industry partners,<br>Coursebank offers an interactive and convenient learning atmosphere for everybody.</p>
+              <div class="my-5 px-1 px-sm-2 px-md-2 px-lg-5">
+                  <div class="row">
+                      <div class="col col-sm-9 col-md-7 col-xl-4 px-4 my-lg-4 mx-sm-auto">
+                          <section class="reason-sec position-relative text-white parent-that-centers-vertically">
+                              <figure class="tint-reason">
+                                  <img class="rounded-circle" src="${static.url('images/mymain/04-1.jpg')}" alt="reason">
+                              </figure>
+                              <h2 class="title-2 ml-3 ml-sm-2 ml-md-0 power-text-center">Coursework</h2>
+                              <p class="position-absolute text-center fixed-bottom">Hover for more <i class="fas fa-angle-right font-1-5 align-middle"></i></p>
+                              <section class="position-absolute fixed-top text-left hover-content h-100 px-5 py-2 parent-that-centers-vertically">
+                                  <h2 class="font-1-5">Coursework</h2>
+                                  <p class="font-1-2">Self-paced learning featuring pre-recorded videos, assessments, projects and other interactive learning experiences.</p>
+                              </section>
+                          </section>
+                      </div>
+                      <hr class="my-5 d-xl-none w-100">
+                      <div class="col col-sm-9 col-md-7 col-xl-4 px-4 my-lg-4 mx-sm-auto">
+                          <section class="reason-sec position-relative text-white parent-that-centers-vertically">
+                              <figure class="tint-reason">
+                                  <img class="rounded-circle" src="${static.url('images/mymain/04-2.jpg')}" alt="reason">
+                              </figure>
+                              <h2 class="title-2 ml-3 ml-sm-2 ml-md-0 power-text-center">Student Support</h2>
+                              <p class="position-absolute text-center fixed-bottom">Hover for more <i class="fas fa-angle-right font-1-5 align-middle"></i></p>
+                              <section class="position-absolute fixed-top text-left hover-content h-100 px-5 py-2 parent-that-centers-vertically">
+                                  <h2 class="font-1-5">Student Support</h2>
+                                  <p class="font-1-2 font-weight-light">Connect with your peers and other professionals online to discuss, debate, and gain mastery of topics.</p>
+                              </section>
+                          </section>
+                      </div>
+                      <hr class="my-5 d-xl-none w-100">
+                      <div class="col col-sm-9 col-md-7 col-xl-4 px-4 my-lg-4 mx-sm-auto">
+                          <section class="reason-sec position-relative text-white parent-that-centers-vertically">
+                              <figure class="tint-reason">
+                                  <img class="rounded-circle" src="${static.url('images/mymain/04-3.jpg')}" alt="reason">
+                              </figure>
+                              <h2 class="title-2 ml-3 ml-sm-2 ml-md-0 power-text-center">CPD &#38; Credentials</h2>
+                              <p class="position-absolute text-center fixed-bottom">Hover for more <i class="fas fa-angle-right font-1-5 align-middle"></i></p>
+                              <section class="position-absolute fixed-top text-left hover-content h-100 px-5 py-2 parent-that-centers-vertically">
+                                  <h2 class="font-1-5">CPD &#38; Credentials</h2>
+                                  <p class="font-1-2 font-weight-light">Earn certificate and CPD units upon completion from accredited providers by the Professional Regulatory Board.</p>
+                              </section>
+                          </section>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
 </div>
 
