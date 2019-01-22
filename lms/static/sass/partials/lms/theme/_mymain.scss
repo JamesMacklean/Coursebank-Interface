@@ -251,6 +251,14 @@ a.my-boo-carousel-link:hover {text-decoration: none;}
   display: none; /*makes the field not visible to humans*/
 }
 
+@media (max-width: 576px) {
+  .contact-form-email #name,
+  .contact-form-email #email,
+  .contact-form-email #message {
+    width: 95%;
+  }
+}
+
 
 // HEADER //
 
@@ -266,4 +274,11 @@ a.my-boo-carousel-link:hover {text-decoration: none;}
   #user-menu {
     top: 40%;
   }
+}
+
+//CPD Credentials
+
+.cpd-styles p {
+  display: flex;
+  flex-direction: column;
 }

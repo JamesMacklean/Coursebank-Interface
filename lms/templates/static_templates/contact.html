@@ -5,9 +5,12 @@
 <%block name="pagetitle">${_("Contact")}</%block>
 
 <main id="main" aria-label="Content" tabindex="-1">
-  <div class="contact-form-email">
+  <section class="container about">
 
-    <%block name="pageheader">${page_header or _("Contact Us")}</%block>
+  <div class="contact-form-email">
+    <h1>
+      <%block name="pageheader">${page_header or _("Contact Us")}</%block>
+    </h1>
     <aside>
       <p>
         What can we help you with? Do you have a question? Do you want to become a partner?
@@ -26,23 +29,28 @@
       <div class="form-elements">
         <fieldset class="pure-group">
           <label for="name">Name: </label>
+          <br>
           <input id="name" name="name" placeholder="Your full name or organization name" />
         </fieldset>
-
+        <br>
+        <br>
         <fieldset class="pure-group">
           <label for="message">Message: </label>
+          <br>
           <textarea id="message" name="message" rows="10"
           placeholder="What do you want to tell us?"></textarea>
         </fieldset>
-
+        <br>
+        <br>
         <fieldset class="pure-group">
           <label for="email">Email Address:</label>
+          <br>
           <input id="email" name="email" type="email" value=""
           required placeholder="example@email.com"/>
           <span class="email-invalid" style="display:none">
             Must be a valid email address</span>
         </fieldset>
-
+        <br>
         <button class="button-success pure-button button-xlarge">
           <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
       </div>
@@ -184,4 +192,5 @@
     </script>
   </div>
 
+  </section>
 </main>
