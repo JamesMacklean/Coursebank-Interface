@@ -10,7 +10,7 @@ img.max-height{max-height:9vh}.color-reset{color:unset!important}
 .title-2{font-size:2rem}
 .font-1{font-size:1rem}
 .font-0-8{font-size:0.8rem}
-div.half-page{min-height:500px;}
+div.half-page{min-height:50vh;}
 div.parallax-1,div.parallax-2,div.parallax-3,div.parallax-4{height:105vh;background-attachment:fixed;background-position:center;background-repeat:no-repeat;background-size:cover;}
 div.parallax-1{background-image:url("../images/mymain/01-1.jpg");}
 div.parallax-2{background-image:url("../images/mymain/01-2.jpg");}
@@ -187,9 +187,20 @@ a.my-boo-carousel-link {color: white;}
 a.my-boo-carousel-link:hover {text-decoration: none;}
 .my-boo-reason-h2 {color: white; font-family: inherit;}
 
+.reason-sec h2 {
+  font-size: 1.2rem;
+}
+.reason-sec section h2 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.reason-sec section p {
+  font-size: 0.8rem;
+  line-height: 1.6em;
+}
 @media (min-width: 576px) {
   .reason-sec h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .reason-sec section h2 {
     font-size: 1rem;
@@ -202,41 +213,37 @@ a.my-boo-carousel-link:hover {text-decoration: none;}
 }
 @media (min-width: 768px) {
   .reason-sec h2 {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
   .reason-sec section h2 {
     font-size: 1rem;
     margin-bottom: 5px;
   }
   .reason-sec section p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     line-height: 1.6em;
   }
 }
 @media (min-width: 992px) {
   .reason-sec h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .reason-sec section h2 {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     margin-bottom: 5px;
   }
   .reason-sec section p {
-    font-size: 1rem;
-    line-height: 1.6em;
+    font-size: 0.6rem;
+    line-height: 1.5em;
   }
 }
 @media (min-width: 1200px) {
   .reason-sec h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .reason-sec section h2 {
-    font-size: 1.5rem;
-    margin-bottom: 5px;
-  }
-  .reason-sec section p {
     font-size: 1.2rem;
-    line-height: 1.6em;
+    margin-bottom: 5px;
   }
 }
 //////////////////////////
