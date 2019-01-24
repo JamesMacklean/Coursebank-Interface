@@ -18,12 +18,14 @@ from openedx.core.djangoapps.lang_pref.api import header_language_selector_is_en
 
 %>
 
+% if user.is_authenticated:
 <%
 ## This template should not use the target student's details when masquerading, see TNL-4895
 self.real_user = getattr(user, 'real_user', user)
 username = self.real_user.username
 resume_block = retrieve_last_sitewide_block_completed(username)
 %>
+% endif
 
 ## Provide a hook for themes to inject branding on top.
 <%block name="navigation_top" />
@@ -82,11 +84,11 @@ resume_block = retrieve_last_sitewide_block_completed(username)
     <!-- </div> -->
     </nav>
   % if user.is_authenticated:
-    <div class="dropdown-user-menu hidden" aria-label=${_("More Options")} role="menu" id="user-menu" tabindex="-1">
+    <div class="dropdown-user-menu hidden-mobile hidden" aria-label=${_("More Options")} role="menu" id="user-menu" tabindex="-1">
       % if resume_block:
       <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="${resume_block}" role="menuitem">${_("Resume")}</a></div>
       % endif
-      <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="${reverse('dashboard')}" role="menuitem">${_("Dashboard")}</a></div>
+      <!-- <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="${reverse('dashboard')}" role="menuitem">${_("Dashboard")}</a></div> -->
       <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="${reverse('learner_profile', kwargs={'username': username})}" role="menuitem">${_("Profile")}</a></div>
       <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="${reverse('account_settings')}" role="menuitem">${_("Account")}</a></div>
       <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="${reverse('user-credentials', kwargs={'username': username})}" role="menuitem">${_("CPD Credentials")}</a></div>

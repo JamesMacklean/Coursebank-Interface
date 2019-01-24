@@ -324,11 +324,12 @@ a.my-boo-carousel-link:hover {text-decoration: none;}
 
 #user-menu {
   position: absolute;
-  right: 5vw;
-  border: 1px solid #13293D;
+  right: 50px;
+  border: 1px solid lightgray;
   width: 140px;
-  top: 10%;
+  top: 40px;
   background-color: white;
+  text-align: justify;
 }
 @media (max-width: 576px) {
   #user-menu {
