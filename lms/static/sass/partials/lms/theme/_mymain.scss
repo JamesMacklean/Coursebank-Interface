@@ -216,12 +216,15 @@ a.my-boo-carousel-link:hover {text-decoration: none;}
     font-size: 1.2rem;
   }
   .reason-sec section h2 {
-    font-size: 1rem;
+    font-size: 0.8rem;
     margin-bottom: 5px;
   }
   .reason-sec section p {
-    font-size: 0.7rem;
-    line-height: 1.6em;
+    font-size: 0.5rem;
+    line-height: 1.4em;
+  }
+  .reason-more {
+    font-size: 0.8rem;
   }
 }
 @media (min-width: 992px) {
@@ -235,6 +238,9 @@ a.my-boo-carousel-link:hover {text-decoration: none;}
   .reason-sec section p {
     font-size: 0.6rem;
     line-height: 1.5em;
+  }
+  .reason-more {
+    font-size: 0.9rem;
   }
 }
 @media (min-width: 1200px) {
