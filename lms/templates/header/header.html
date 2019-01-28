@@ -52,7 +52,7 @@ resume_block = retrieve_last_sitewide_block_completed(username)
   % else:
     <nav id="header" class="main-header my-boo-navbar my-boo-navbar-expand-lg my-boo-fixed-top navbar-shadow my-boo-p-3 my-boo-px-5" data-startColor="navbar-shadow" data-intoColor="navbar-secondary" style="height: auto;">
   % endif
-      <a class="my-boo-navbar-brand my-boo-sm-mx-auto" href="/dashboard">
+      <a class="my-boo-navbar-brand my-boo-sm-mx-auto" href="${marketing_link('ROOT')}">
         <img id="logo" src="/static/my-bootstrap/images/mymain/Coursebank%20Logo%20-%20Main.png">
       </a>
       <hr class="my-boo-my-5 my-boo-d-xl-none my-boo-d-lg-none my-boo-d-md-none my-boo-d-sm-none my-boo-w-100">
@@ -84,7 +84,7 @@ resume_block = retrieve_last_sitewide_block_completed(username)
     <!-- </div> -->
     </nav>
   % if user.is_authenticated:
-    <div class="dropdown-user-menu hidden-mobile hidden" aria-label=${_("More Options")} role="menu" id="user-menu" tabindex="-1">
+    <div class="dropdown-user-menu hidden-mobile hidden" aria-label=${_("More Options")} role="menu" id="user-menu" tabindex="-1" style="box-shadow: 0 1px 1px rgba(0,0,0,0.1); z-index: 9;">
       % if resume_block:
       <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="${resume_block}" role="menuitem">${_("Resume")}</a></div>
       % endif
