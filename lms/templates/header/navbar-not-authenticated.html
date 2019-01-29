@@ -36,13 +36,9 @@ from six import text_type
 <li>
   <a class="nav-link my-boo-mx-lg-5 my-boo-px-2" href="#">Partners</a>
 </li>
-% if allows_login:
-  % if can_discover_courses:
   <li class="my-boo-mt-auto my-boo-mb-auto">
     <a class="nav-link my-boo-mx-lg-5 my-boo-px-2" href="/courses">Courses</a>
   </li>
-  % endif
-% endif
 <li class="parent-that-centers-vertically"><label class="border-spacing-right my-boo-d-none my-boo-d-md-none my-boo-d-lg-block my-boo-d-xl-block my-boo-mx-5 my-boo-mb-0 my-boo-h-75">&nbsp;</label></li>
 % if allows_login:
   % if restrict_enroll_for_course:
