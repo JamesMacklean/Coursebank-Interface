@@ -84,7 +84,7 @@ resume_block = retrieve_last_sitewide_block_completed(username)
     <!-- </div> -->
     </nav>
   % if user.is_authenticated:
-    <div class="dropdown-user-menu hidden-mobile hidden" aria-label=${_("More Options")} role="menu" id="user-menu" tabindex="-1" style="box-shadow: 0 1px 1px rgba(0,0,0,0.1); z-index: 9;">
+    <div class="dropdown-user-menu hidden-mobile hidden" aria-label=${_("More Options")} role="menu" id="user-menu" tabindex="-1" style="box-shadow: 1px 2px 5px rgba(0,0,0,0.125); z-index: 10; border-radius: 3px;">
       % if resume_block:
       <div class="mobile-nav-item dropdown-item dropdown-nav-item"><a href="${resume_block}" role="menuitem">${_("Resume")}</a></div>
       % endif
