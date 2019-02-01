@@ -29,11 +29,13 @@
 % endif
 
 <%block name="pagetitle">${_("Courses")}</%block>
+% if not user.is_authenticated:
 <br>
 <br>
 <br>
 <br>
 <br>
+% endif
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="find-courses">
       <section class="courses-container">
