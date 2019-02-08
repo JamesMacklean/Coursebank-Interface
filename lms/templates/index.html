@@ -8,7 +8,6 @@ from django.urls import reverse
 from openedx.core.djangolib.markup import HTML, Text
 %>
 
-<!-- MAIN BANNER -->
 <div class="fluid-container parent-that-centers-vertically">
   <div class="my-boo-position-absolute my-boo-mx-3 my-boo-mx-sm-5 my-boo-z-index-1 my-boo-font-weight-light">
     <h1 class="title cerulean my-boo-font-weight-bold my-boo-mb-4" style="text-align: left"><b>Enhance your career</b></h1>
@@ -23,11 +22,10 @@ from openedx.core.djangolib.markup import HTML, Text
   <div class="parallax-1"></div>
 </div>
 
-<!-- COLLABORATION SECTION -->
 <div class="fluid-container parent-that-centers-vertically half-page my-boo-text-center my-boo-align-items-center my-boo-p-5" id="logo-section">
   <h1 class="title-2 my-boo-mb-3"><label class="cerulean my-boo-font-weight-bold my-boo-mb-0">Collaboration</label>&nbsp;at its finest</h1>
   <p class="font-1-2 my-boo-font-weight-light" style="line-height: 1.4;">We deliver top quality courses through partnerships with esteemed institutions</p>
-  <div class="my-boo-row my-boo-px-5 my-boo-mt-5">
+  <div class="my-boo-row my-boo-px-5 my-boo-mt-5" style="width: 90%;">
     <div class="my-boo-col my-boo-align-items-center my-boo-my-auto"><a href="https://www.iacademy.edu.ph/"><img src="${static.url('images/mymain/logo_iacademy.png')}" class="img-fluid max-height"></a></div>
     <div class="my-boo-col my-boo-align-items-center my-boo-my-auto"><a href="https://www.sosajbph.com/"><img src="${static.url('images/mymain/logo_sosajb.png')}" class="img-fluid max-height"></a></div>
     <div class="my-boo-col my-boo-align-items-center my-boo-my-auto"><a href="#"><img src="${static.url('images/mymain/logo_norphil.png')}" class="img-fluid max-height"></a></div>
@@ -38,7 +36,6 @@ from openedx.core.djangolib.markup import HTML, Text
   </div>
 </div>
 
-<!-- COURSE LIST SECTION -->
 <main class="my-boo-px-4">
   <section class="home">
     <h1 style="text-align: left;top: 50px;position: relative;" class="title-2"><label class="cerulean my-boo-font-weight-bold my-boo-mb-0">New</label>&nbsp; Courses</h1>
@@ -46,7 +43,6 @@ from openedx.core.djangolib.markup import HTML, Text
   </section>
 </main>
 
-<!-- ENTER A FUTURE SECTION -->
 <div id="deserve" class="my-boo-py-4 my-boo-px-1 my-boo-text-center my-boo-text-white parent-that-centers-vertically">
   <section>
     <h1 class="title-2 my-boo-mb-3 my-boo-text-white"><b>Enter a future of possibilities.</b></h1>
@@ -57,7 +53,6 @@ from openedx.core.djangolib.markup import HTML, Text
   </section>
 </div>
 
-<!-- Learning Experience Section -->
 <div id="power" class="fluid-container my-boo-py-5 my-boo-px-2 my-boo-px-sm-1">
   <h1 class="title-2 my-boo-text-center"><label class="cerulean my-boo-font-weight-bold">Learning experience</label> like no other</h1>
   <p class="my-boo-text-center font-1-2 my-boo-px-2 my-boo-font-weight-light" style="line-height: 1.4;">Succeed in an interactive online learning environment developed for learners of today.</p>

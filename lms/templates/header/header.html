@@ -56,32 +56,14 @@ resume_block = retrieve_last_sitewide_block_completed(username)
         <img id="logo" src="/static/my-bootstrap/images/mymain/Coursebank%20Logo%20-%20Main.png">
       </a>
       <hr class="my-boo-my-5 my-boo-d-xl-none my-boo-d-lg-none my-boo-d-md-none my-boo-d-sm-none my-boo-w-100">
-      <!--div class="my-boo-navbar-toggler" type="button" data-toggle="my-boo-collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-bars"></i>
-      </div>
-      <div class="my-boo-collapse my-boo-navbar-collapse" id="navbarSupportedContent"-->
       <ul class="my-boo-navbar-nav my-boo-ml-auto my-boo-sm-mx-auto">
-          <!-- <li class="d-block d-lg-none mt-2">
-            <input id="search-bar" class="form-control mr-2 mt-sm-0 bg-cerulean text-white" type="text" placeholder="What do you want to learn?" aria-label="Search" required="true">
-          </li> -->
           % if user.is_authenticated:
-          <!-- HEADER OPTIONS WHEN USER IS LOGGED IN -->
             <%include file="navbar-authenticated.html" args="online_help_token=online_help_token"/>
           % else:
-            <!-- HEADER OPTIONS WHEN USER IS LOGGED OUT -->
             <%include file="navbar-not-authenticated.html" args="online_help_token=online_help_token"/>
           % endif
-          <!-- <li class="ml-5 mr-2 my-auto d-none d-lg-block">
-              <i id="sb" class="fa fa-search"></i>
-              <form class="search-box form-inline position-absolute bg-cerulean rounded-1-5 p-2">
-                  <div class="form-group mb-0">
-                      <input id="search-bar" class="form-control mr-3 mt-sm-0 bg-cerulean text-white m" type="text" placeholder="What do you want to learn?" aria-label="Search" required="true">
-                      <a href="#"><i class="fas fa-angle-right text-white font-1-5 float-right"></i></a>
-                  </div>
-              </form>
           </li> -->
         </ul>
-    <!-- </div> -->
     </nav>
   % if user.is_authenticated:
     <div class="dropdown-user-menu hidden-mobile hidden" aria-label=${_("More Options")} role="menu" id="user-menu" tabindex="-1" style="box-shadow: 1px 2px 5px rgba(0,0,0,0.125); z-index: 10; border-radius: 3px;">

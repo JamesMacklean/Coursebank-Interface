@@ -5,6 +5,13 @@
 
 <%block name="pagetitle">${_("In the Press")}</%block>
 
+% if not user.is_authenticated:
+<br>
+<br>
+<br>
+<br>
+% endif
+
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="container about">
         <h1>

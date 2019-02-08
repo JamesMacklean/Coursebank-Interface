@@ -26,7 +26,6 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
     help_link = doc_link
 %>
 
-<!-- % if show_dashboard_tabs: -->
   <li class="my-boo-mt-auto my-boo-mb-auto">
     <a class="${'active ' if reverse('dashboard') == request.path else ''}tab-nav-link my-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="${reverse('dashboard')}">
       ${_("Dashboard")}
@@ -39,14 +38,14 @@ from openedx.core.djangoapps.site_configuration import helpers as configuration_
     </a>
   </li>
   % endif
-<!-- % endif -->
+
 % if show_explore_courses:
   <li class="my-boo-mt-auto my-boo-mb-auto">
     <a class="tab-nav-link my-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="${marketing_link('COURSES')}">${_('Courses')}</a>
   </li>
 % endif
 <li>
-  <!-- <a class="tab-nav-link my-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="#">${_('Partners')}</a> -->
+  <a class="tab-nav-link my-boo-nav-link my-boo-mx-lg-5 my-boo-px-2" href="#">${_('Partners')}</a>
 </li>
 <li class="parent-that-centers-vertically"><label class="border-spacing-right my-boo-d-none my-boo-d-md-none my-boo-d-lg-block my-boo-d-xl-block my-boo-mx-5 my-boo-mb-0 my-boo-h-75">&nbsp;</label></li>
 % if show_sysadmin_dashboard:
