@@ -357,8 +357,8 @@ body > div > div.container.row.mb-md-5.mb-3 > a > div:hover {
 .caption {position: absolute;top: 0;bottom: 0;left: 0;right: 0;font: 0/0 a;}
 .caption:before {content: ' ';display: inline-block;height: 100%;vertical-align: middle}
 .caption h1 {font: 2.5rem/1 'Montserrat';display: inline-block;vertical-align: middle;color:white;text-align:center;width: 100%;padding: 1% 0;font-weight:900}
-.tint {position: relative;float: left;cursor: pointer;}
-.tint:before {
+.p-tint {position: relative;float: left;cursor: pointer;}
+.p-tint:before {
     content: "";display: block;position: absolute;
     top: 0;bottom: 0;left: 0;right: 0;
     background-color: rgba(6,190,229,0.2);
