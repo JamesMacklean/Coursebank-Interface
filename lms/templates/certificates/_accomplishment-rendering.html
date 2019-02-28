@@ -78,8 +78,14 @@ course_mode_class = course_mode if course_mode else ''
           <b>${certificate_date_issued_title} ${certificate_date_issued}</b>
         </div>
         <div class="col p-0 ">
-          PRC ID<br>
-          <b>Unique ID</b>
+          % if cert_cpd_info:
+            % for credential in cert_cpd_info:
+            <div>
+              PRC Reg. No. for ${credential['license']} License:<br>
+              <b>${credential['registration_number']}</b>
+            </div>
+            % endfor
+          % endif
         </div>
       </div>
 
