@@ -349,11 +349,14 @@ a.my-boo-carousel-link:hover {text-decoration: none;}
 .partner-card {
   border-bottom: 3px solid #126f9a;
   box-shadow: 0 1px 10px 0 rgba(0,0,0,0.125),inset 0 0 0 1px rgba(255,255,255,0.75);
+  height: 210px;
+  width: 210px;
 }
 // h5.card-title {font-weight: 700}
 p.card-text {font-size:.75rem}
-.partner-card-img {max-width: 100%; height: 160px;}
-.partner-card-title {height: 150px;}
+.partner-img-cover {height:160px; overflow: auto;display: flex;align-items: center;}
+.partner-card-img {width: 100%; height: auto;}
+.partner-card-title {height: auto;}
 // img.card-img-top {border:2px solid #d0d0d0}
 body > div > div.container.row.mb-md-5.mb-3 > a > div:hover {
     border:2px solid var(--cerulean) !important
@@ -397,7 +400,7 @@ div.mx-auto.mt-3.mt-lg-5 > div > a > div{height: 240px; max-height: 240px;max-wi
     .partnerheader > div > img {height:135px;width:135px!important}
     .partnerheader > div > h1 {font-size:2.75vw}
     .partnerheader {min-height:215px}
-    h5.card-title {font-size: 1.25rem}
+    h5.card-title {font-size: 1rem}
 }
 
 @media (min-width: 992px) {
