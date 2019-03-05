@@ -1,0 +1,60 @@
+<%page expression_filter="h"/>
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+
+<%block name="pagetitle">${_("Submitted - Identification Verification")}</%block>
+
+% if not user.is_authenticated:
+<br>
+<br>
+<br>
+<br>
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader">${page_header or _("Identification Verification")}</%block>
+        </h1>
+        <p>
+            <%block name="pagecontent">${page_content or _("Please log-in to verify your identification and start earning verified certificates and CPD units.")}</%block>
+        </p>
+    </section>
+</main>
+
+% elif:
+
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader">${page_header or _("Identification Verification")}</%block>
+        </h1>
+
+        <div>
+          <h3 class="title">Submitted!</h3>
+          <p class="copy">You've submitted your Face and ID photos to our verification service. Please wait while your verifification is pending for approval. This normally takes 1 to 3 days to process. Once approved, you will be eligible to earn verified certificates and CPD units for verified courses you enroll in. You will receive a prompt in your <a href="${reverse('dashboard')}">Dashboard</a> once you have been verified. Thank you!</p>
+        </div>
+
+        <div class="help help-faq facefaq">
+          <h3 class="sr title">Frequently Asked Questions</h3>
+          <div class="copy">
+            <dl class="list-faq">
+              <dt class="faq-question">
+                Why does CourseBank need my photo?
+              </dt>
+              <dd class="faq-answer">As part of the verification process, you take a photo of both your face and a government-issued photo ID. Our authorization service confirms your identity by comparing the photo you take with the photo on your ID.</dd>
+              <dt class="faq-question">
+                What does CourseBank do with this photo?
+              </dt>
+              <dd class="faq-answer">We directly send the submissions to our authorization service for review. Your photo and information are not saved or visible anywhere on CourseBank after the verification process is complete.</dd>
+              <dt class="faq-question">
+                How long is the validity of my verification?
+              </dt>
+              <dd class="faq-answer">Your verification is good for 1 year upon approval of your verification submission. This means that you only need to re-submit your ID photos once this validity is expired.</dd>
+            </dl>
+          </div>
+        </div>
+
+    </section>
+</main>
+
+% endif
