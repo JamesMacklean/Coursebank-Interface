@@ -37,7 +37,7 @@ body > div.my-boo-carousel.slide > div > div.my-boo-carousel-item.active > div >
 strong,.my-course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > label,#blog-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active > div > div > div > div.my-boo-card-body > h4,#blog-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active > div > div > div > div.my-boo-card-footer.bg-cerulean.my-boo-py-1.my-boo-pr-2 > a,#power > div > div > div > section h2,#my-boo-course-carousel > div > div.my-boo-carousel-item.fluid-container.my-boo-mr-5.active > div > div > a > section > section > div.my-boo-row > div.my-boo-col-4.my-boo-px-0.my-auto > p{font-weight:700!important}
 
 .full-page-height{min-height:1000px;height:auto;}
-.border-spacing-right{border-right:3px solid #dee2e6}
+.border-spacing-right{border-right:1.5px solid var(--teal)}
 .bg-transparent{background-color:transparent;border:0px;}.row{margin:0px;}
 .parent-that-centers-vertically {display: flex;flex-direction: column;justify-content: center;}
 footer {background-color: var(--bigstone);}
@@ -59,7 +59,7 @@ ul{margin-bottom:0px;}
 .tint:before,.tint-reason:before {
     content: "";display: block;position: absolute;
     top: 0;bottom: 0;left: 0;right: 0;
-    background-color: rgba(6,190,229,0.4);
+    background-color: rgba(134, 170, 74,0.4);
     transition: all .3s linear;
     max-width: 505px;
     max-height: 509.5px;
