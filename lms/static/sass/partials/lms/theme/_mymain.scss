@@ -53,7 +53,7 @@ footer > div > div:nth-child(3) > div.my-boo-col-lg-6.my-boo-col-12 > ul > li> a
 }
 ul{margin-bottom:0px;}
 #logo-section{background-image: linear-gradient(to bottom, var(--onahau) 1%, white); background-color: var(--onahau);}
-#deserve{ min-height: 200px; background-color: var(--cerulean); }
+#deserve{ min-height: 200px; background-image: linear-gradient(to right, var(--green) , teal); background-color: var(--teal); }
 
 .tint,.tint-reason {position: relative;float: left;cursor: pointer; max-width: 505px; max-height: 509.5px;}
 .tint:before,.tint-reason:before {
@@ -69,7 +69,7 @@ ul{margin-bottom:0px;}
 .my-course section{color:white}
 .my-course section h2 span {color:var(--cerulean);background-color:white;z-index: 2;}
 .my-course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > h2 > span{font-size:1rem}
-.my-course:hover .tint:before,.reason-sec:hover .tint-reason:before { background:rgba(6,190,229,0.8); }
+.my-course:hover .tint:before,.reason-sec:hover .tint-reason:before { background:rgba(134, 170, 74,0.8); }
 .my-course:hover section h2 span {color:white;background-color:var(--cerulean);z-index: 2;}
 .my-course:hover section h2, .my-course:hover section p, .my-course:hover section label, .my-course:hover section section div div.my-boo-col-4.my-boo-px-0.my-auto p, .my-course:hover section section > span{ color:var(--cerulean); z-index: 3;opacity: 100}
 .my-course > section > section > div.my-boo-row > div.my-boo-col-4 > p{opacity:0;transition:0.4s}
@@ -126,16 +126,22 @@ nav.navbar-shadow{background-color: rgba(0,0,0,0);}
     --jellybean:#247BA0;
     --bahamablue:#006494;
     --bigstone:#13293D;
+    --teal:#6CC3B1;
+    --green:#86AA4A;
 }
 figure{margin-bottom:0px;}
 .cerulean{color:var(--cerulean)}
 .bigstone{color:var(--bigstone)}
 .bahamablue{color:var(--bahamablue)}
+.teal{color:var(--teal)}
+.green{coloe:var(--green)}
 .bg-cerulean{background-color: #06BEE5}
 .bg-onahau{background-color: #C5FFFD}
 .bg-jellybean{background-color: #247BA0}
 .bg-bahamablue{background-color: #006494}
 .bg-bigstone{background-color: #13293D}
+.bg-teal{background-color: #6CC3B1}
+.bg-green{background-color: #86AA4A}
 #gradient-title {
     background: linear-gradient(to right, var(--cerulean) 70%, var(--onahau));
     -webkit-background-clip: text;
@@ -164,6 +170,11 @@ nav > div > ul > li:nth-child(5) > a{font-weight: 900;}
 .line-hide-2, .line-hide-3,.my-course > section > section > div.row > div.my-boo-col-8.my-boo-px-0 > p:nth-child(1),.my-course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > label{overflow: hidden;display: -webkit-box;-webkit-box-orient: vertical;}
 .line-hide-2,.my-course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > p:nth-child(1),.my-course > section > section > div.my-boo-row > div.my-boo-col-8.my-boo-px-0 > label{-webkit-line-clamp: 2;}
 .line-hide-3{-webkit-line-clamp: 3;}
+
+.section-btn {
+  line-height: 1.6em;
+  font-size: 1.4rem;
+}
 
 .blog-height{min-height:65vh;}
 .blog-img{height:30vh;width:100%;}
