@@ -46,7 +46,7 @@ course_mode_class = course_mode if course_mode else ''
           </div>
         </div>
 
-        <div class="col-3 justify-content-end right ">
+        <div class="col-3 justify-content-end right " style="right: -30px;">
           % if certificate_data:
             % for signatory in certificate_data.get('signatories', []):
               <div class="row justify-content-end">
@@ -70,7 +70,7 @@ course_mode_class = course_mode if course_mode else ''
       </div>
 
       <div class="row px-4 pb-4 mt-auto d-flex align-items-end cert-footer">
-        <div class="logo-coursebank col-3 p-0 mr-4 my-auto ">
+        <div class="col-3 p-0 mr-4 my-auto ">
           <img src="${logo_src}" alt="${platform_name}">
         </div>
         <div class="col-4 p-0">
