@@ -394,16 +394,18 @@ div.mx-auto.mt-3.mt-lg-5 > div > a > div{height: 240px; max-height: 240px;max-wi
     .caption h1 {font-size: 2rem}
     .partnerheader > img {height:100px}
     .partnerheader > div > img {height:100px;width:100px!important}
-    .partnerheader > div > h1 {font-size:2.5vw}
+    .partnerheader > div > h1 {font-size:2.5vw; padding-top: 3rem; text-align: center;}
     .partnerheader {min-height:150px}
+    #partner-name-padding {width: 0;}
     h5.card-title {font-size: 0.7rem}
 }
 @media (min-width: 576px) {
     #containerHolderOfPartner{width:85%!important}
     .partnerheader > img {height:125px}
     .partnerheader > div > img {height:125px;width:125px!important}
-    .partnerheader > div > h1 {font-size:2.5vw}
+    .partnerheader > div > h1 {font-size:2.5vw; text-align: right;}
     .partnerheader {min-height:175px}
+    #partner-name-padding {width: 150px;}
     h5.card-title {font-size: 0.7rem}
 }
 @media (min-width: 768px) {
