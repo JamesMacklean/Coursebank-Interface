@@ -11,9 +11,15 @@ course_mode_class = course_mode if course_mode else ''
      <div class="row px-4 pt-5 pb-5">
        <div class="col-9 ">
          <p class="text-verify">${course_mode_class.capitalize()}<br>Certificate</p>
-         <p class="text-content">
+         <div class="text-content">
            ${certificate_id_number_title}: ${certificate_id_number}
-         </p>
+         </div>
+         % if cert_cpd_info:
+          <div class="text-content">
+             PTR: ${cert_cpd_info[0]['cpd_ptr']}
+           </div>
+           % endfor
+         % endif
        </div>
        <div class="col-3 d-flex justify-content-end p-0 right ">
          <div class="logo-partner">
