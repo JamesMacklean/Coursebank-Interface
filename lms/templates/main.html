@@ -26,13 +26,19 @@ from pipeline_mako import render_require_js_path_overrides
 %>
 <!DOCTYPE html>
 <!--[if lte IE 9]><html class="ie ie9 lte9" lang="${LANGUAGE_CODE}"><![endif]-->
-<!--[if !IE]><!--><html lang="${LANGUAGE_CODE}"><!--<![endif]-->
+<!--[if !IE]><!--><html lang="${LANGUAGE_CODE}" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
 <head dir="${static.dir_rtl()}">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Making quality education and life long learning more accessible and affordable in the Philippines.">
     <meta name="keywords" content="Quality education,affordable,accessible,learn,Philippines">
     <meta name="author" content="Coursebank">
+
+    <meta property="og:title" content="Coursebank" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://coursebank.ph/" />
+    <meta property="og:image" content="https://coursebank.ph/static/my-bootstrap/images/mymain/Coursebank%20Logo%20-%20Main.png" />
+    <meta property="og:description" content="Coursebank curates online courses, built with reputable institutions, to help professionals advance their careers and enhance their credentials." />
 
     <link rel="canonical" href="https://coursebank.ph/">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
