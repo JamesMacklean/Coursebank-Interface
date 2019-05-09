@@ -15,9 +15,11 @@ course_mode_class = course_mode if course_mode else ''
            ${certificate_id_number_title}: ${certificate_id_number}
          </div>
          % if cert_cpd_info:
-          <div class="text-content">
-             PTR: ${cert_cpd_info[0]['cpd_ptr']}
-           </div>
+          % if 'cpd_ptr' in cert_cpd_info[0]:
+            <div class="text-content">
+              Accreditation No.: ${cert_cpd_info[0]['cpd_ptr']}
+            </div>
+           % endif
          % endif
        </div>
        <div class="col-3 d-flex justify-content-end p-0 right ">
