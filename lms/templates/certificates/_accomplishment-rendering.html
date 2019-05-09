@@ -14,13 +14,6 @@ course_mode_class = course_mode if course_mode else ''
          <div class="text-content">
            ${certificate_id_number_title}: ${certificate_id_number}
          </div>
-         % if cert_cpd_info:
-          % if 'cpd_ptr' in cert_cpd_info[0]:
-            <div class="text-content">
-              Accreditation No.: ${cert_cpd_info[0]['cpd_ptr']}
-            </div>
-           % endif
-         % endif
        </div>
        <div class="col-3 d-flex justify-content-end p-0 right ">
          <div class="logo-partner">
@@ -41,14 +34,29 @@ course_mode_class = course_mode if course_mode else ''
                ${accomplishment_copy_name}
              </p>
              <p class="text-content">
-               ${accomplishment_copy_description_full}
+               successfully completed, received a passing grade, and was awarded this ${course_mode_class.capitalize()} Coursebank Certificate of Completion in
              </p>
              <p class="text-course">
-               ${accomplishment_copy_course_org} ${course_number}: ${accomplishment_copy_course_name}
+               ${accomplishment_copy_course_name}
              </p>
              <p class="text-content">
                ${accomplishment_copy_course_description}
              </p>
+             % if cert_cpd_info:
+                <p class="text-content">
+                  This course grants the following Continuing Professional Development (CPD) units to the awardee:
+                </p>
+                % for credential in cert_cpd_info:
+                  <p class="text-content">
+                    ${credential['cpd_units']} Units for Profession ${credential['license']}
+                  </p>
+                % endfor
+                % if 'cpd_ptr' in cert_cpd_info[0]:
+                  <p class="text-content">
+                    Accreditation No.: ${cert_cpd_info[0]['cpd_ptr']}
+                  </p>
+                % endif
+              % endif
             </div>
           </div>
         </div>
@@ -88,7 +96,7 @@ course_mode_class = course_mode if course_mode else ''
           % if cert_cpd_info:
             % for credential in cert_cpd_info:
             <div>
-              PRC Reg. No. for ${credential['license']} License:<br>
+              ${credential['license']} License No.:<br>
               <b>${credential['registration_number']}</b>
             </div>
             % endfor
