@@ -43,14 +43,18 @@ course_mode_class = course_mode if course_mode else ''
                ${accomplishment_copy_course_description}
              </p>
              % if cert_cpd_info:
+                <br />
                 <p class="text-content">
                   This course grants the following Continuing Professional Development (CPD) units to the awardee:
                 </p>
                 % for credential in cert_cpd_info:
-                  <p class="text-content">
-                    ${credential['cpd_units']} Units for Profession ${credential['license']}
-                  </p>
+                  <ul class="text-content">
+                    <li>
+                      ${credential['cpd_units']} Units for Profession ${credential['license']}
+                    </li>
+                  </ul>
                 % endfor
+                <br />
                 % if 'cpd_ptr' in cert_cpd_info[0]:
                   <p class="text-content">
                     Accreditation No.: ${cert_cpd_info[0]['cpd_ptr']}
