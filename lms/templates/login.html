@@ -136,7 +136,7 @@ from third_party_auth import provider, pipeline
 
 <%include file="forgot_password_modal.html" />
 
-<section class="introduction">
+<section class="introduction" style="width: 100%;">
   <header>
     <h1 class="title">
       <span class="title-super">${_("Please log in")}</span>
@@ -145,8 +145,8 @@ from third_party_auth import provider, pipeline
   </header>
 </section>
 
-<section class="login container">
-  <section role="main" class="content">
+<section class="login container" style="width: 100%;">
+  <section role="main" class="content my-boo-col-sm-8" style="width: 100%;">
     <form role="form" id="login-form" method="post" data-remote="true" action="/login_ajax" novalidate>
 
       <!-- status messages -->
@@ -215,7 +215,7 @@ from third_party_auth import provider, pipeline
 
     % if third_party_auth.is_enabled():
 
-      <span class="deco-divider">
+      <span class="deco-divider" style="display: none;">
         ## Developers: this is a sentence fragment, which is usually frowned upon.  The design of the pags uses this fragment to provide an "else" clause underneath a number of choices.  It's OK to leave it.
         ## Translators: this is the last choice of a number of choices of how to log in to the site.
         <span class="copy">${_('or')}</span>
@@ -241,7 +241,7 @@ from third_party_auth import provider, pipeline
 
   </section>
 
-  <aside role="complementary">
+  <aside class="my-boo-col my-boo-col-sm-3" role="complementary">
 
 <%
   # allow for theming overrides on the registration sidebars, otherwise default to pre-existing ones
