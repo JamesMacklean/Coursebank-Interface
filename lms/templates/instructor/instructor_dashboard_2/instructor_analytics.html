@@ -3,14 +3,15 @@
 <%!
 from django.utils.encoding import escape_uri_path
 from django.utils.translation import ugettext as _
-
+from django.urls import reverse
+from six import text_type
 from openedx.core.djangolib.markup import HTML, Text
 %>
 
 <div>
     <p>
         <div>
-            For analytics about your course, go to <a href="{% url 'course-enrollments-reports' course_id=course.id %}"></a>
+            For analytics about your course, go to <a href="${reverse('course-enrollments-reports', args=[text_type(course.id)])}">Enrollment Reports</a>.
         </div>
     </p>
 </div>

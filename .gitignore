@@ -1,0 +1,18 @@
+#Open EdX static assets
+cms/static/css/
+lms/static/css/bootstrap/
+lms/static/css/discussion/
+lms/static/css/lms-course-rtl.css
+lms/static/css/lms-course.css
+lms/static/css/lms-footer-edx-rtl.css
+lms/static/css/lms-footer-edx.css
+lms/static/css/lms-footer-rtl.css
+lms/static/css/lms-footer.css
+lms/static/css/lms-learner-dashboard-rtl.css
+lms/static/css/lms-learner-dashboard.css
+lms/static/css/lms-main-v1-rtl.css
+lms/static/css/lms-main-v1.css
+lms/static/css/lms-main-v2-rtl.css
+lms/static/css/lms-main-v2.css
+lms/static/css/lms-mobile-rtl.css
+lms/static/css/lms-mobile.css
