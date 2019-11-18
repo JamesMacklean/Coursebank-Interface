@@ -3,8 +3,8 @@
     <div class="requirements">
         <h2 class="title"><%- gettext( "What You Need for Verification" ) %></h2>
         <div class="requirement">
-            <h3 class="title"><%- gettext( "Webcam" ) %></h3>
-            <p class="copy"><%- gettext( "You need a computer that has a webcam. When you receive a browser prompt, make sure that you allow access to the camera." ) %></p>
+            <h3 class="title"><%- gettext( "Webcam/Mobile Device Camera" ) %></h3>
+            <p class="copy"><%- gettext( "You need a computer that has a webcam or mobile device that has a camera. When you receive a browser prompt, make sure that you allow access to the camera." ) %></p>
         </div>
         <div class="requirement">
             <h3 class="title"><%- gettext( "Photo Identification" ) %></h3>
@@ -47,8 +47,8 @@
                 <%- _.sprintf( gettext( "What does %(platformName)s do with this photo?" ), { platformName: platformName } ) %>
               </dt>
               <dd class="faq-answer"><%- _.sprintf( gettext( "We use the highest levels of security available to encrypt your photo and send it to our authorization service for review. Your photo and information are not saved or visible anywhere on %(platformName)s after the verification process is complete." ), { platformName: platformName } ) %></dd>
-              <dt class="faq-question"><%- gettext( "Data Privacy Consent" ) %></dt>
-              <dd class="faq-answer"><%- gettext( "By sending this face photo, you consent to the Coursebank Privacy Policy." ) %></dd>
+              <dt class="faq-question"><%- gettext( "Data Privacy Consent:" ) %></dt>
+              <dd class="faq-answer"><em>By sending this face photo, you consent to the Coursebank <a href="/privacy" target=”_blank”>Privacy Policy</a>.</em></dd>
             </dl>
           </div>
         </div>

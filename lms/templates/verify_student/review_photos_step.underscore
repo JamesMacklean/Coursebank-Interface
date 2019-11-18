@@ -61,8 +61,8 @@
 
     <nav class="nav-wizard">
       <div class="prompt-verify">
-        <h3 class="title"><%- gettext( "Before proceeding, please confirm that your details match" ) %></h3>
-        <div class="copy"><%- gettext( "By sending these photos, you consent to the Coursebank Privacy Policy." ) %></div>
+        <h3 class=""><%- gettext( "Before proceeding, please confirm that your details match" ) %></h3>
+        <p class="copy" style="padding: 2px 0;"><em>By sending these photos, you consent to the Coursebank <a href="/privacy" target=”_blank”>Privacy Policy</a>.</p>
       </div>
 
       <ol class="wizard-steps">
