@@ -47,12 +47,8 @@
                 <%- _.sprintf( gettext( "What does %(platformName)s do with this photo?" ), { platformName: platformName } ) %>
               </dt>
               <dd class="faq-answer"><%- _.sprintf( gettext( "We use the highest levels of security available to encrypt your photo and send it to our authorization service for review. Your photo and information are not saved or visible anywhere on %(platformName)s after the verification process is complete." ), { platformName: platformName } ) %></dd>
-              <dt class="faq-question">
-                 Data Privacy Consent
-              </dt>
-              <dd class="faq-answer">
-                By sending this face photo, you agree to the <a href="/data-privacy-agreement/">Coursebank Data Privacy Consent/Agreement</a>.
-              </dd>
+              <dt class="faq-question"><%- gettext( "Data Privacy Consent" ) %></dt>
+              <dd class="faq-answer"><%- gettext( "By sending this face photo, you consent to the Coursebank Privacy Policy." ) %></dd>
             </dl>
           </div>
         </div>
