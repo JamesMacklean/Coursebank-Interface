@@ -974,7 +974,7 @@ div.responsive-picture.aap_logo.mx-auto {
   background-blend-mode: normal, normal;
 }
 
-button.apply-now-1_button.btn.mx-auto {
+a.apply-now-1_button.btn.mx-auto {
   padding: 0;
   min-width: 160px;
   min-height: 50px;
@@ -1387,19 +1387,19 @@ div.responsive-picture.mx-auto.sparta_logo {
   background-blend-mode: normal;
 }
 
-button.btn.mx-auto:hover {
+a.btn.mx-auto:hover {
   background-color: #fff;
   color: #acd84f;
 }
 
-button.apply-now-1_button.btn.mx-auto:hover {
+a.apply-now-1_button.btn.mx-auto:hover {
   border-width: .125rem;
   border-color: #fff;
   background-color: transparent;
   color: #fff;
 }
 
-button.apply-now-2_button.btn.mx-auto:hover {
+a.apply-now-2_button.btn.mx-auto:hover {
   border-width: .125rem;
   border-color: #fff;
   background-color: transparent;
@@ -1486,7 +1486,7 @@ button.apply-now-2_button.btn.mx-auto:hover {
     background-size: cover, cover;
   }
 
-  button.apply-now-1_button.btn.mx-auto {
+  a.apply-now-1_button.btn.mx-auto {
     padding: 0;
   }
 
@@ -1557,7 +1557,7 @@ button.apply-now-2_button.btn.mx-auto:hover {
     background-color: #630b00;
   }
 
-  button.apply-now-1_button.btn.mx-auto {
+  a.apply-now-1_button.btn.mx-auto {
     padding: 0;
   }
 
@@ -1574,7 +1574,7 @@ button.apply-now-2_button.btn.mx-auto:hover {
     min-height: 220px;
   }
 
-  button.apply-now-2_button.btn.mx-auto {
+  a.apply-now-2_button.btn.mx-auto {
     color: #6d954f;
   }
 }
@@ -1623,7 +1623,7 @@ button.apply-now-2_button.btn.mx-auto:hover {
     background-color: #630b00;
   }
 
-  button.apply-now-1_button.btn.mx-auto {
+  a.apply-now-1_button.btn.mx-auto {
     color: #9d3535;
   }
 
@@ -1684,7 +1684,7 @@ button.apply-now-2_button.btn.mx-auto:hover {
     background-blend-mode: normal, normal;
   }
 
-  button.apply-now-2_button.btn.mx-auto {
+  a.apply-now-2_button.btn.mx-auto {
     color: #630b00;
   }
 
@@ -1822,12 +1822,12 @@ button.apply-now-2_button.btn.mx-auto:hover {
     background-color: #630b00;
   }
 
-  button.apply-now-1_button.btn.mx-auto {
+  a.apply-now-1_button.btn.mx-auto {
     border-color: #000;
     color: #9d3535;
   }
 
-  button.apply-now-2_button.btn.mx-auto {
+  a.apply-now-2_button.btn.mx-auto {
     color: #630b00;
   }
 
