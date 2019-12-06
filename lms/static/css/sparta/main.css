@@ -1250,7 +1250,7 @@ div.responsive-picture.mx-auto.sparta_logo {
   background-color: #fff;
 }
 
-.container-grid.dataassociate_image {
+.container-grid.data-associate_image {
   min-width: 200px;
   min-height: 200px;
   background-image: -webkit-linear-gradient(top, rgba(114, 0, 0, .57) 0%, rgba(0, 0, 0, 0) 100%), url('../../images/sparta/data%20associsate.jpg');
@@ -1267,7 +1267,7 @@ div.responsive-picture.mx-auto.sparta_logo {
   background-blend-mode: normal, normal;
 }
 
-.container-grid.datascientist_image {
+.container-grid.data-scientist_image {
   min-width: 200px;
   min-height: 200px;
   background-image: -webkit-linear-gradient(top, rgba(114, 0, 0, .5) 0%, rgba(29, 30, 33, .5) 100%), url('../../images/sparta/data%20scientist.jpg');
@@ -1284,7 +1284,7 @@ div.responsive-picture.mx-auto.sparta_logo {
   background-blend-mode: normal, normal;
 }
 
-.container-grid.dataengineer_image {
+.container-grid.data-engineer_image {
   min-width: 200px;
   min-height: 200px;
   background-image: -webkit-linear-gradient(top, rgba(114, 0, 0, .5) 0%, rgba(29, 30, 33, .5) 100%), url('../../images/sparta/data%20engineer.jpg');
@@ -1301,7 +1301,7 @@ div.responsive-picture.mx-auto.sparta_logo {
   background-blend-mode: normal, normal;
 }
 
-.container-grid.analyticsmanager_image {
+.container-grid.analytics-manager_image {
   min-width: 200px;
   min-height: 200px;
   background-image: -webkit-linear-gradient(top, rgba(114, 0, 0, .5) 0%, rgba(29, 30, 33, .5) 100%), url('../../images/sparta/analytic%20manager.jpg');
@@ -1318,7 +1318,7 @@ div.responsive-picture.mx-auto.sparta_logo {
   background-blend-mode: normal, normal;
 }
 
-.container-grid.functionalanalyst_image {
+.container-grid.functional-analyst_image {
   min-width: 200px;
   min-height: 200px;
   background-image: -webkit-linear-gradient(top, rgba(114, 0, 0, .5) 0%, rgba(29, 30, 33, .5) 100%), url('../../images/sparta/functionl%20analyst.jpg');
@@ -1335,7 +1335,7 @@ div.responsive-picture.mx-auto.sparta_logo {
   background-blend-mode: normal, normal;
 }
 
-.container-grid.datasteward_image {
+.container-grid.data-steward_image {
   min-width: 200px;
   min-height: 200px;
   background-image: -webkit-linear-gradient(top, rgba(114, 0, 0, .5) 0%, rgba(29, 30, 33, .5) 100%), url('../../images/sparta/data%20steward.jpg');
