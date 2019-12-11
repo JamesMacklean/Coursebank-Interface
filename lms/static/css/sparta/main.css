@@ -550,13 +550,13 @@ div.responsive-picture.mx-auto.picture-1 {
   max-width: 200px;
 }
 
-button.btn {
+a.btn {
   border-radius: 6px;
   background-color: #f00;
   color: #b2b2b2;
 }
 
-button.btn.mx-auto {
+a.btn.mx-auto {
   display: block;
   min-width: 150px;
   min-height: 50px;
@@ -1003,7 +1003,7 @@ a.apply-now-1_button.btn.mx-auto {
   padding: 20px 10px;
 }
 
-button.apply-now-2_button.btn.mx-auto {
+a.apply-now-2_button.btn.mx-auto {
   border-width: 0;
   border-radius: 5px;
   background-color: #fff;
@@ -1603,7 +1603,7 @@ a.apply-now-2_button.btn.mx-auto:hover {
     background-blend-mode: normal;
   }
 
-  button.btn.mx-auto {
+  a.btn.mx-auto {
     border-width: .125rem;
     border-color: #fff;
     border-radius: 15px;
