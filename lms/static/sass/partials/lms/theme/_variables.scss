@@ -12,6 +12,10 @@ $primary: $cteal;
 
 //$homepage-bg-image: url('#{$static-path}/images/banner.png') no-repeat;
 
+$button-bg-image: none !default;
+$button-bg-color: rgba(0, 0, 0, 0) !default;
+$button-bg-hover-color: rgba(0, 0, 0, 0) !default;
+
 //Font Things
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700,800,900');
 $font-family-sans-serif: 'Montserrat';
