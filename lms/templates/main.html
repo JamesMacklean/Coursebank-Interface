@@ -149,8 +149,19 @@ from pipeline_mako import render_require_js_path_overrides
 
   <% google_site_verification_id = configuration_helpers.get_value('GOOGLE_SITE_VERIFICATION_ID', settings.GOOGLE_SITE_VERIFICATION_ID) %>
   % if google_site_verification_id:
-    <meta name="google-site-verification" content="${google_site_verification_id}" />
+    <!-- <meta name="google-site-verification" content="${google_site_verification_id}" /> -->
   % endif
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155167813-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-155167813-2');
+  </script>
+
 
   <meta name="openedx-release-line" content="${RELEASE_LINE}" />
 
