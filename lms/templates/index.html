@@ -21,7 +21,7 @@ from openedx.core.djangolib.markup import HTML, Text
       Learn new knowledge and skills online.
     </p>
     <div class="my-boo-btn bg-teal my-boo-text-white rounded-1 my-boo-font-weight-bold section-btn my-boo-mt-5 my-boo-px-5">
-      <a class="my-boo-carousel-link" href="/register" style="color: inherit;">Join Now</a>
+      <a id="indexRegisterJoinNowLink" class="my-boo-carousel-link" href="/register" style="color: inherit;">Join Now</a>
     </div>
   </div>
   <div class="parallax-1"></div>
@@ -126,6 +126,16 @@ from openedx.core.djangolib.markup import HTML, Text
          }
       })
    </script>
+   <script>
+     $(document).ready(function(){
+       $("#indexRegisterJoinNowLink").click(function(){
+         gtag('event', 'Link', {
+           'event_category': 'Click',
+             'event_label': '#indexRegisterJoinNowLink: Landing Page Register Entry'
+             });
+           });
+         });
+    </script>
 </%block>
 
 % if show_signup_immediately is not UNDEFINED:
