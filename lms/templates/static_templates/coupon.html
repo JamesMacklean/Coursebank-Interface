@@ -1,0 +1,53 @@
+<%page expression_filter="h"/>
+<%!
+from django.urls import reverse
+from django.utils.translation import ugettext as _
+%>
+<%inherit file="../main.html" />
+<%block name="pagetitle">${_("Payment Option: Enrollment/Discount Code")}</%block>
+
+% if not user.is_authenticated:
+<br>
+<br>
+<br>
+<br>
+% endif
+<main id="main" aria-label="Content" tabindex="-1">
+    <section class="container about">
+        <h1>
+            <%block name="pageheader">${page_header or _("Enrollment/Discount Code")}</%block>
+        </h1>
+
+        <div>
+          <h3 class="title">How to Enroll by Enrollment/Discount Code</h3>
+          <p class="copy">
+            <ol>
+              <li>
+                An Enrollment/Discount Code is a unique code which you may only use once. To use this code:<br>
+                <ol>
+                  <li>Go to your <a href="${reverse('dashboard')}">Dashboard</a> page.</li>
+                  <li>Find the course you enrolled for.</li>
+                  <li>Click the "Upgrade to Verified" button. This will take you to the Order page.</li>
+                </ol>
+              </li>
+              <br>
+              <li>
+                At the Order page, find the "Enter Enrollment/Discount Code" section at the upper left part of the page. Enter your enrollment code here then click "Apply". Once you've applied it, click the "Place Order" button at the bottom right of the page to finish the order process. (Ignore the Card Holder and Billing Information sections. You will NOT enter anything here.)
+              </li>
+              <br>
+              <li>
+                Once you've successfully ordered the course using your enrollment code, you have officially been enrolled on a Verified Course on CourseBank.
+              </li>
+            </ol>
+            <br>
+            <p>
+              <i>
+                *Audit mode is the course mode where you can access the course content for free but you may not earn a verified certificate or CPD units.
+              </i>
+            </p>
+          </p>
+
+        </div>
+
+    </section>
+</main>
