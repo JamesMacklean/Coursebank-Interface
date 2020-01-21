@@ -65,7 +65,7 @@ course_mode_class = course_mode if course_mode else ''
       <div class="row px-4 pb-4 mt-auto d-flex align-items-end cert-footer">
 
         % if certificate_data:
-        <div class="row justify-content-between pb-5">
+        <div class="row justify-content-between px-4 pb-4">
         % for signatory in certificate_data.get('signatories', []):
           <div class="col col-4">
             <div class="text-signature">
