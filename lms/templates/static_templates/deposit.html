@@ -15,28 +15,56 @@ from django.utils.translation import ugettext as _
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="container about">
         <h1>
-            <%block name="pageheader">${page_header or _("Bank Deposit")}</%block>
+            <%block name="pageheader">${page_header or _("How to Pay through Bank Deposit")}</%block>
         </h1>
 
-        <div>
-          <h3 class="title">How to Pay through Bank Deposit</h3>
-          <p class="copy">
+          <div class="copy">
             <ol>
-              <li>Deposit your payment with the correct course price noting the following details:<br>
-                <ul>
+              <li>Deposit your payment with the correct course price noting the following details of <b>one (1)</b> of these Payment Sources:<br>
+                <ol>
                   <li>
-                    Bank: <b>Security Bank</b>
+                    <ul>
+                      <li>
+                        Bank: <b>Security Bank</b>
+                      </li>
+                      <li>
+                        Account Name: <b>MOOCSX PH Incorporated</b>
+                      </li>
+                      <li>
+                        Account Number: <b>0000014188742</b>
+                      </li>
+                      <li>
+                        Branch: <b>Tomas Morato</b>
+                      </li>
+                    </ul>
                   </li>
                   <li>
-                    Account Name: <b>MOOCSX PH Incorporated</b>
+                    <ul>
+                      <li>
+                        Bank: <b>Bank of the Philippine Islands (BPI)</b>
+                      </li>
+                      <li>
+                        Account Name: <b>MOOCSX PH INCORPORATED</b>
+                      </li>
+                      <li>
+                        Account Number: <b>000361-0196-28</b>
+                      </li>
+                    </ul>
                   </li>
                   <li>
-                    Account Number: <b>0000014188742</b>
+                    <ul>
+                      <li>
+                        Bank: <b>Sterling Bank of Asia </b>
+                      </li>
+                      <li>
+                        Account Name: <b>MOOCSX PH. INCORPORATED</b>
+                      </li>
+                      <li>
+                        Account Number: <b>245/6/000179/45</b>
+                      </li>
+                    </ul>
                   </li>
-                  <li>
-                    Branch: <b>Tomas Morato</b>
-                  </li>
-                </ul>
+                </ol>
               </li>
               <br>
               <li>Once you've deposited your payment, keep the deposit receipt and email it as an attachment to <a href="mailto:learn@coursebank.ph">learn@coursebank.ph</a>. Send an email with the following details:<br>
@@ -72,7 +100,7 @@ from django.utils.translation import ugettext as _
               </li>
               <br>
               <li>
-                Once you've received the email, you will see an enrollment code. This is a unique code which you may only use once. To use this code:<br>
+                Once you've received the email, you will see an enrollment code. This is a unique code which you may only use once. To use this code, you may read the instructions <a href="/coupon">here</a> or below:<br>
                 <ol>
                   <li>Go to your <a href="${reverse('dashboard')}">Dashboard</a> page.</li>
                   <li>Find the course you enrolled for.</li>
@@ -94,9 +122,7 @@ from django.utils.translation import ugettext as _
                 *Audit mode is the course mode where you can access the course content for free but you may not earn a verified certificate or CPD units.
               </i>
             </p>
-          </p>
-
-        </div>
+          </div>
 
     </section>
 </main>
