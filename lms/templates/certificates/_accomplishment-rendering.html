@@ -56,7 +56,17 @@ course_mode_class = course_mode if course_mode else ''
 
         <div class="col-4 d-flex justify-content-end p-0 right ">
           <div class="logo-partner">
-            <img src="/static/my-bootstrap/images/certificates/logo-${accomplishment_copy_course_org}.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
+            <!-- <img src="/static/my-bootstrap/images/certificates/logo-${accomplishment_copy_course_org}.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}"> -->
+            % if accomplishment_copy_course_org == 'Adarna House Inc.':
+              <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-Adarna+House+Inc..png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
+            % elif accomplishment_copy_course_org == 'Development Academy of the Philippines':
+              <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-Professional+Development+and+Advancement+Training+Center.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
+            % elif accomplishment_copy_course_org == 'Insurance Institute for Asia and the Pacific, Inc':
+              <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-Insurance+Institute+for+Asia+and+the+Pacific%2C+Inc.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
+            % elif accomplishment_copy_course_org == 'Professional Development and Advancement Training Center':
+              <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-Professional+Development+and+Advancement+Training+Center.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
+            & else:
+              <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-${accomplishment_copy_course_org}.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
           </div>
         </div>
 
