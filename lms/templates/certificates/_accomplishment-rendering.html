@@ -65,8 +65,9 @@ course_mode_class = course_mode if course_mode else ''
               <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-Insurance+Institute+for+Asia+and+the+Pacific%2C+Inc.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
             % elif accomplishment_copy_course_org == 'Professional Development and Advancement Training Center':
               <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-Professional+Development+and+Advancement+Training+Center.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
-            & else:
+            % else:
               <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-${accomplishment_copy_course_org}.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
+            % endif
           </div>
         </div>
 
