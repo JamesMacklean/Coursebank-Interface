@@ -91,7 +91,7 @@ from pipeline_mako import render_require_js_path_overrides
   <script type="text/javascript" src="${static.url(jsi18n_path)}"></script>
   <script type="text/javascript" src="${static.url(ie11_fix_path)}"></script>
 
-  <link rel="icon" type="image/x-icon" href="${static.url(static.get_value('favicon_path', settings.FAVICON_PATH))}" />
+  <link rel="icon" type="image/x-icon" href="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/theme/favicon.ico" />
 
   <%static:css group='style-vendor'/>
   % if '/' in self.attr.main_css:
