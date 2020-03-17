@@ -58,6 +58,8 @@ course_mode_class = course_mode if course_mode else ''
           <div class="logo-partner">
             % if accomplishment_copy_course_org == 'Adarna House Inc.':
               <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-Adarna+House+Inc..png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
+            % elif accomplishment_copy_course_org == 'Development Academy of the Philippines ':
+              <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-DAP.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
             % elif accomplishment_copy_course_org == 'Development Academy of the Philippines':
               <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-Professional+Development+and+Advancement+Training+Center.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
             % elif accomplishment_copy_course_org == 'Insurance Institute for Asia and the Pacific, Inc':
