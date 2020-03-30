@@ -81,8 +81,8 @@ course_mode_class = course_mode if course_mode else ''
         % for signatory in certificate_data.get('signatories', []):
           <div class="col col-6">
             <div class="text-signature">
-              <div class="img-signature" style="max-width: 240px;text-align: right;padding-bottom: 5px;">
-                <img src="${static.url(signatory['signature_image_path'])}" alt="${signatory['name']}">
+              <div class="img-signature">
+                <img src="${static.url(signatory['signature_image_path'])}" alt="${signatory['name']}" style="max-height: 64px;">
               </div>
               <p>
                 <b>${signatory['name']}</b>
