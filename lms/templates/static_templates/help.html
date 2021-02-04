@@ -237,11 +237,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/help">Help</a>
                     </li>
-                    {% if not request.user.is_authenticated %}
+                    % if not request.user.is_authenticated:
                     <li class="nav-item">
                         <a class="nav-link" href="/login">Login</a>
                     </li>
-                    {% else %}
+                    % else:
                     <li class="nav-item">
                         <a class="nav-link" href="/dashboard">Dashboard</a>
                     </li>
@@ -251,14 +251,14 @@
                             Menu
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/u/{{ request.user.username }}">Profile</a>
+                            <a class="dropdown-item" href="/u/${ request.user.username }">Profile</a>
                             <a class="dropdown-item" href="/account/settings">Account</a>
                             <a class="dropdown-item" href="/sparta/profile/">SPARTA Profile</a>
-                            <a class="dropdown-item" href="/usercredentials/{{ request.user.username }}">CPD Credentials</a>
+                            <a class="dropdown-item" href="/usercredentials/${ request.user.username }">CPD Credentials</a>
                             <a class="dropdown-item" href="/logout">Sign Out</a>
                         </div>
                     </li>
-                    {% endif %}
+                    % endif
                     
                 </ul>
             </div>
