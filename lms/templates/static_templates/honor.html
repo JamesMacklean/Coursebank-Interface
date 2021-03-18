@@ -197,6 +197,9 @@ footer a:hover {
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
+                        <a class="nav-link" href="/courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/partners/"><b>Partners</b></a>
                     </li>
                     <li class="nav-item">
@@ -205,11 +208,11 @@ footer a:hover {
                     <li class="nav-item">
                         <a class="nav-link" href="https://help.coursebank.ph/">Help</a>
                     </li>
-                    <!-- % if not request.user.is_authenticated: -->
+                     % if not request.user.is_authenticated: 
                      <li class="nav-item">
                         <a class="nav-link" href="/login">Login</a>
                     </li> 
-                   <!-- % else:
+                    % else:
                     <li class="nav-item">
                         <a class="nav-link" href="/dashboard">Dashboard</a>
                     </li>
@@ -226,7 +229,7 @@ footer a:hover {
                             <a class="dropdown-item" href="/logout">Sign Out</a>
                         </div>
                     </li>
-                    % endif -->
+                    % endif
                 </ul>
             </div>
         </div>
@@ -276,7 +279,7 @@ footer a:hover {
                     <p>By enrolling in a <strong>CourseBank course</strong> or <strong>program</strong>, I agree that I will:</p><br>
                     <ul class="fa-ul py-2">
                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span> Complete all tests and assignments on my own, including peer evaluation, unless collaboration on an assignment is explicitly permitted.</li>
-                       <li><span class="fa-li"><i class="fas fa-check-square"></i></span> Assess and mark peers’ outputs in accordance with the rubric provided.</li>
+                       <li><span class="fa-li"><i class="fas fa-check-square"></i></span> Assess and mark peersï¿½ outputs in accordance with the rubric provided.</li>
                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span> Maintain only one user account, unless Coursebank has approved the use of  a separate user account in connection with an   employer-sponsored or university-sponsored program.</li>
                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span> Not let anyone else use my username and/or password.</li>
                        <li><span class="fa-li"><i class="fas fa-check-square"></i></span> Not engage in any activity that would dishonestly improve my results, or improve or hurt the results of others.</li>
@@ -289,7 +292,7 @@ footer a:hover {
                     <p>By enrolling in a <strong>CourseBank course</strong> or <strong>program</strong>, I agree that I will:</p><br>
                     <ul class="fa-ul py-2">
                        <li><span class="fa-li"><i class="fas fa-exclamation-triangle"></i></span> Complete all tests and assignments on my own, including peer evaluation, unless collaboration on an assignment is explicitly permitted.</li>
-                       <li><span class="fa-li"><i class="fas fa-exclamation-triangle"></i></span> Assess and mark peers’ outputs in accordance with the rubric provided.</li>
+                       <li><span class="fa-li"><i class="fas fa-exclamation-triangle"></i></span> Assess and mark peersï¿½ outputs in accordance with the rubric provided.</li>
                        <li><span class="fa-li"><i class="fas fa-exclamation-triangle"></i></span> Maintain only one user account, unless Coursebank has approved the use of  a separate user account in connection with an   employer-sponsored or university-sponsored program.</li>
                        <li><span class="fa-li"><i class="fas fa-exclamation-triangle"></i></span> Not let anyone else use my username and/or password.</li>
                        <li><span class="fa-li"><i class="fas fa-exclamation-triangle"></i></span> Not engage in any activity that would dishonestly improve my results, or improve or hurt the results of others.</li>
