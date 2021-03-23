@@ -1,79 +1,391 @@
-<%page expression_filter="h"/>
-<%! from django.utils.translation import ugettext as _ %>
-<%inherit file="../main.html" />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/acc49c074c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="icon" type="image/x-icon" href="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/theme/favicon.ico">
+    <style>
+        html, body {
+    font-family: 'Lato', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
 
-<%block name="pagetitle">${_("Terms of Service")}</%block>
+#logo {
+    height: 35px;
+}
 
-% if not user.is_authenticated:
-<br>
-<br>
-<br>
-<br>
-% endif
+.nav-link, .navbar-light, .navbar-toggler {
+    color: #6CC3B1 !important;
+    border-color: rgb(108, 195, 177) !important;
+}
 
-<main id="main" aria-label="Content" tabindex="-1">
-    <section class="container about">
-        <h1>
-            <%block name="pageheader">${page_header or _("Terms of Service")}</%block>
-        </h1>
-        <p>
-          <p>Last updated: November 06, 2018</p>
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 195, 177, 1.0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
 
-          <p>Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the https://coursebank.ph website (the "Service") operated by Coursebank ("us", "we", or "our").</p>
+.nav-link:hover {
+    color: #28826F !important;
+}
 
-          <p>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.</p>
+.nav-item {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+}
 
-          <p>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service. This Terms of Service agreement  for Coursebank is managed by <a href="https://termsfeed.com/terms-conditions/generator/">the Terms and Conditions Generator</a>.</p>
+.header {
+    background-color: #247BA0;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.header p {
+    color: #FFFFFF;
+    font-weight: 500;
+}
+
+.header h2 {
+    color: #FFFFFF;
+    font-weight: bolder;
+}
+
+#tos {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#tos h3 {
+    font-weight: bold;
+}
+
+#tos hr {
+    max-width: 60px;
+    border: 2px solid #247BA0;
+    opacity: 0.85;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.80;
+}
+
+#tos a {
+    color: #247BA0;
+    text-decoration: none;
+}
+
+#tos a:hover {
+    color: #0b4057;
+    text-decoration: none;
+}
+
+#accounts h5, #links h5, #termination h5, #govern h5, #changes h5, #contact h5 {
+    font-weight: bolder;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+    .header p {
+        margin-bottom: 3rem;
+    }
+}
 
 
-          <h2>Accounts</h2>
+/* Footer  */
 
-          <p>When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.</p>
+footer {
+    background-color: #484848;
+}
 
-          <p>You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.</p>
+.wrapper {
+    flex-shrink: 0;
+}
 
-          <p>You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.</p>
+footer h5 {
+    font-size: 16px;
+    color: white;
+}
 
+footer hr {
+    color: white;
+}
 
-          <h2>Links To Other Web Sites</h2>
+.footer-copyright {
+    color: white;
+    opacity: 0.5;
+}
 
-          <p>Our Service may contain links to third-party web sites or services that are not owned or controlled by Coursebank.</p>
+footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
 
-          <p>Coursebank has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Coursebank shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.</p>
+footer a:hover {
+    color: #dcdbe1;
+}
 
-          <p>We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.</p>
+.footer-img {
+    height: 3.7rem;
+}
 
-
-          <h2>Termination</h2>
-
-          <p>We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>
-
-          <p>All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.</p>
-
-          <p>We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>
-
-          <p>Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.</p>
-
-          <p>All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.</p>
-
-
-          <h2>Governing Law</h2>
-
-          <p>These Terms shall be governed and construed in accordance with the laws of Philippines, without regard to its conflict of law provisions.</p>
-
-          <p>Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.</p>
-
-
-          <h2>Changes</h2>
-
-          <p>We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
-
-          <p>By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</p>
+.fb-icon, .copyright {
+    text-align: center;
+}
 
 
-          <h2>Contact Us</h2>
+@media (max-width: 991px) {
+    .footer-img {
+        height: 2.6rem;
+    }
 
-          <p>If you have any questions about these Terms, please contact us.</p>
-        </p>
-    </section>
-</main>
+    footer h5{
+        font-size: 14px;
+    }
+
+    footer a {
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+
+    footer {
+        text-align: center;
+    }
+
+    .footer-copyright {
+        margin-left: unset;
+    }
+
+
+    #footer-content {
+        padding-top: 1.7rem;
+    }
+
+    footer .py-5 {
+        padding-top: unset !important;
+        padding-bottom: unset !important;
+    }
+
+}
+    </style>
+    <title>Terms of Service |</title>
+</head>
+<body>
+
+      <!-- Navbar Section -->
+      <nav class="text-center navbar navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img id="logo" src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/theme/Coursebank+Logo+-+Main.png">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/courses">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/partners/"><b>Partners</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/sparta/"><b><strong>SPARTA</strong></b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://help.coursebank.ph/">Help</a>
+                    </li>
+                     % if not request.user.is_authenticated:
+                     <li class="nav-item">
+                        <a class="nav-link" href="/login">Login</a>
+                    </li> 
+                    % else:
+                    <li class="nav-item">
+                        <a class="nav-link" href="/dashboard">Dashboard</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Menu
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/u/${ request.user.username }">Profile</a>
+                            <a class="dropdown-item" href="/account/settings">Account</a>
+                            <a class="dropdown-item" href="/sparta/profile/">SPARTA Profile</a>
+                            <a class="dropdown-item" href="/usercredentials/${ request.user.username }">CPD Credentials</a>
+                            <a class="dropdown-item" href="/logout">Sign Out</a>
+                        </div>
+                    </li>
+                    % endif 
+                </ul>
+            </div>
+        </div>
+    </nav>      
+    
+
+    <!-- Main Content -->
+    <main>
+
+        <header class="header">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-sm-12 col-md-6 text-center text-md-end">
+                        <h2>Policies and Agreements</h2>
+                        <p>Updated November 6, 2018</p>
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 text-center">
+                        <img class="img-fluid" src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/tos.png" alt="Honor">
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <section id="tos">
+
+            <div class="container h-100">
+
+               <div class="row text-center">
+                    <h3>Terms of Service</h3>
+                    <hr class="mx-auto mt-2 mb-5">
+                </div>
+
+                <div class="row text-center text-md-start mt-2">
+                    <p>Please read these <u><strong>Terms of Service</strong></u> (<strong>"Terms", "Terms of Service"</strong> ) carefully before using the <a href="https://coursebank.ph">CourseBank</a> website (the "<strong>Service</strong>") operated by <strong>CourseBank</strong> ("us", "we", or "our").</p>
+                </div>
+                
+                <div class="row text-center text-md-start mt-2">
+                    <p>Your access to and use of the <strong>Service</strong> is conditioned on your acceptance of and compliance with these <strong><u>Terms</u></strong>. These Terms apply to all <u>visitors</u>, <u>users</u> and <u>others</u> who access or use the Service.</p>
+                </div>
+
+                <div class="row text-center text-md-start mt-2">
+                    <p>By accessing or using the <strong>Service</strong> you agree to be bound by these <strong><u>Terms</u></strong>. If you disagree with any part of the terms then you may not access the Service. This <strong><u>Terms of Service</u></strong> agreement for <strong>CourseBank</strong> is managed by the Terms and Conditions Generator.</p>
+                </div>
+
+                <div id="accounts" class="mt-5 row text-center text-md-start">
+                    <h5>A. Accounts</h5>
+                    <p class="pt-3">When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the <strong><u>Terms</u></strong>, which may result in immediate <strong><u>termination of your account</u></strong> on our <strong>Service</strong>.</p>
+                    <p class="pt-2">You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.</p>
+                    <p class="pt-2">You agree <strong><u>not to disclose your password</u></strong> to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.</p>
+                </div>
+
+                <div id="links" class="mt-5 row text-center text-md-start">
+                    <h5>B. Links to Websites</h5>
+                    <p class="pt-3">Our Service may contain <u>links to third-party web sites</u> or <u>services</u> that are not owned or controlled by <strong>CourseBank</strong>.</p>
+                    <p class="pt-2"><strong>CourseBank</strong> has no control over, and assumes no responsibility for, the <u>content</u>, <u>privacy policies</u>, or <u>practices of any third party web sites</u> or <u>services</u>. You further acknowledge and agree that CourseBank shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services</p>
+                    <p class="pt-2">We strongly advise you to <strong><u>read the terms and conditions</u></strong> and <strong><u>privacy policies</u></strong> of any third-party web sites or services that you visit.</p>
+                </div>
+
+                <div id="termination" class="mt-5 row text-center text-md-start">
+                    <h5>C. Termination</h5>
+                    <p class="pt-3">We may <u>terminate</u> or <u>suspend</u> access to our Service immediately, <strong>without prior notice or liability</strong>, for any reason whatsoever, including without limitation if you breach the Terms.</p>
+                    <p class="pt-2">All provisions of the <strong><u>Terms</u></strong> which by their nature should survive termination shall survive termination, including, <u>without limitation</u>, <u>ownership provisions</u>, <u>warranty disclaimers</u>, <u>indemnity</u> and <u>limitations of liability</u>.</p>
+                    <p class="pt-2">We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>
+                    <p class="pt-2">Upon termination, <strong>your right to use the Service will immediately cease</strong>. If you wish to terminate your account, you may simply discontinue using the Service.</p>
+                </div>
+
+                <div id="govern" class="mt-5 row text-center text-md-start">
+                    <h5>D. Governing Law</h5>
+                    <p class="pt-3">These <strong><u>Terms</u></strong> shall be governed and construed <strong>in accordance with the laws of Philippines</strong>, without regard to its conflict of law provisions.</p>
+                    <p class="pt-2">Our failure to enforce any right or provision of these Terms will <strong>not be considered a waiver of those rights</strong>. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.</p>
+                </div>
+
+                <div id="changes" class="mt-5 row text-center text-md-start">
+                    <h5>E. Changes</h5>
+                    <p class="pt-3">We reserve the right, at our sole discretion, to modify or replace these <strong><u>Terms</u></strong> at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</p>
+                    <p class="pt-2">By continuing to access or use our <strong>Service</strong> after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.</p>
+                </div>
+            
+                <div id="contact" class="mt-5 row text-center text-md-start">
+                    <h5>Contact Us</h5>
+                    <p class="pt-3">If you have any questions about these <strong><u>Terms</u></strong>, please <a href="https://coursebank.ph/contact">contact us</a>.</p>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+      <!-- Footer -->
+      <section class="wrapper">
+        <footer class="footer py-3">
+            <div class="container text-left">
+                <div class="row py-5">
+                    <div class="pl-5 pb-4 col-md-5 mt-md-0 mt-3">
+                        <img class="footer-img" src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/theme/Coursebank+Logo+-+White.png" alt="Coursebank Logo White">
+                    </div>
+                    <hr class="clearfix w-100 d-md-none pb-2">
+                    <div id="footer-content" class="col-md-2 mb-md-0 mb-3">
+                        <h5><strong>COURSEBANK</strong></h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="https://help.coursebank.ph/">Help</a>
+                            </li>
+                            <li>
+                                <a href="/about">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-md-0 mb-3">
+                        <h5><strong>CONNECT</strong></h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="/blog">Blog</a>
+                            </li>
+                            <li>
+                                <a href="/contact">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 mb-md-0 mb-3">
+                        <h5><strong>MORE INFORMATION</strong></h5>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="/tos">Terms of Service</a>
+                            </li>
+                            <li>
+                                <a href="/honor">Honor Code</a>
+                            </li>
+                            <li>
+                                <a href="/privacy">Legal & Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <hr>
+                <div class="footer-copyright pt-2 pb-4">
+        
+                <div class="footer-text row">
+                    <div class="copyright col-sm-12 col-md-6">
+                        <strong> CourseBank Copyright 2021 </strong>
+                    </div>
+                    <div class="fb-icon col-sm-12 col-md-6">
+                        <a href="https://www.facebook.com/coursebank.ph/"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                </div>
+        
+                </div>
+            
+            </div>
+            
+        </footer>
+        </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
