@@ -5,35 +5,67 @@
 course_mode_class = course_mode if course_mode else ''
 %>
 
+<% change = 0
+ list = ["course-v1:DAP+SPCapstone001+2021_Q2","course-v1:Test+CT101+2021_T1"]
+ for x in list:
+   if x == course_id :
+     change = 1
+   endif
+ endfor
+ %>
+
   <div class="bootstrap-iso">
 	 <div class="cert-frame">
 
      <div class="row px-4 pb-3 pt-5 mb-auto">
 
        <div class="col-8 ">
-
-         <p class="text-verify">${course_mode_class.capitalize()}<br>Certificate</p>
+         % if change == 1 :
+          <p class="text-verify">CERTIFICATE OF COMPLETION</p>
+         % else :
+          <p class="text-verify">${course_mode_class.capitalize()}<br>Certificate</p>
+         % endif
          <div class="text-content">
            ${certificate_id_number_title}: ${certificate_id_number}
+           % if course_id == "course-v1:DAP+SPCapstone001+2021_Q2" :
+              <p>Project Code: TFDQF<p>
+           % endif   
          </div>
 
+         % if change == 1 :
            <p class="text-content">
-             This is to certify that
+             <br><br>
+             This is presented to
            </p>
+         % else :
+           <p class="text-content">
+           This is to certify that
+           </p>
+         % endif
            <p class="text-content-name pt-4 pb-4">
              ${accomplishment_copy_name}
            </p>
-           <p class="text-content">
+         % if change == 1 :
+            <p class="text-content">
+             for having completed the
+            </p>
+         % else :
+            <p class="text-content">
              successfully completed and received a passing grade in
-           </p>
+            </p>
+         % endif    
            <p class="text-course">
              ${accomplishment_copy_course_name}
            </p>
            <p class="text-content">
+           % if change == 1 :
+            <p>conducted by Development Academy of the Philippines under Project Smarter Philippines through Data Analytics, R&D, Training and Adoption through Coursebank.</p>
+           % else : 
              ${accomplishment_copy_course_description}
-             % if cert_cpd_info:
+           % endif  
+           % if cert_cpd_info:
               This course grants the following Continuing Professional Development (CPD) units to the awardee:
-             % endif
+           % endif
             </p>
             % if cert_cpd_info:
               <ul class="text-content" style="font-size: 0.9rem;">
@@ -118,3 +150,4 @@ course_mode_class = course_mode if course_mode else ''
 
     </div>
   </div>
+
