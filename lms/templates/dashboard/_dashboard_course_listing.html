@@ -426,6 +426,7 @@ from util.course import get_link_for_about_page, get_encoded_course_sharing_utm_
                 % if sp101_trig == 1:
                   <a href="https://coursebank.ph/verify_student/reverify" class="btn" data-course-id="${course_overview.id}">${_('Verify Now')}</a>
                 % else :
+                  <p>${sp101_trig}</p>
                   <a href="${reverse('verify_student_verify_now', kwargs={'course_id': unicode(course_overview.id)})}" class="btn" data-course-id="${course_overview.id}">${_('Verify Now')}</a>
                 % endif
               </div>
