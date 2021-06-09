@@ -416,17 +416,8 @@ from util.course import get_link_for_about_page, get_encoded_course_sharing_utm_
                 % endif
               </div>
               <div class="verification-cta">
-                <%
-                sp101_trig = ${course_overview.id.lower()}
-                special_course = 'course-v1:DAP+SP201+2020_Q1'
-                special_course = ${special_course.lower()}
-                current_course = course_overview.id
-                if current_course == special_course :
-                  sp101_trig = 1
-                endif
-                 %>
                 <p>${sp101_trig} , ${special_course}</p>
-                % if sp101_trig == 1:
+                % if "DAP+SP201" in course_overview.id:
                   <a href="https://coursebank.ph/verify_student/reverify" class="btn" data-course-id="${course_overview.id}">${_('Verify Now')}</a>
                 % else :
                   <a href="${reverse('verify_student_verify_now', kwargs={'course_id': unicode(course_overview.id)})}" class="btn" data-course-id="${course_overview.id}">${_('Verify Now')}</a>
