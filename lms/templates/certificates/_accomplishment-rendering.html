@@ -29,7 +29,7 @@ course_mode_class = course_mode if course_mode else ''
            ${certificate_id_number_title}: ${certificate_id_number}
            % if course_id == "course-v1:DAP+SPCapstone001+2021_Q2" :
               <p>Project Code: TFDQF<p>
-           % endif   
+           % endif
          </div>
 
          % if change == 1 :
@@ -53,16 +53,16 @@ course_mode_class = course_mode if course_mode else ''
             <p class="text-content">
              successfully completed and received a passing grade in
             </p>
-         % endif    
+         % endif
            <p class="text-course">
              ${accomplishment_copy_course_name}
            </p>
            <p class="text-content">
            % if change == 1 :
             <p>conducted by Development Academy of the Philippines under Project Smarter Philippines through Data Analytics, R&D, Training and Adoption through Coursebank.</p>
-           % else : 
+           % else :
              ${accomplishment_copy_course_description}
-           % endif  
+           % endif
            % if cert_cpd_info:
               This course grants the following Continuing Professional Development (CPD) units to the awardee:
            % endif
@@ -93,7 +93,7 @@ course_mode_class = course_mode if course_mode else ''
             % elif accomplishment_copy_course_org == 'Development Academy of the Philippines ':
               <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-DAP.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
             % elif accomplishment_copy_course_org == 'Development Academy of the Philippines':
-              <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-Professional+Development+and+Advancement+Training+Center.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
+              <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-Professional+Development+and+Advancement+Training+Center+plus+AAP.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
             % elif accomplishment_copy_course_org == 'Insurance Institute for Asia and the Pacific, Inc':
               <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-Insurance+Institute+for+Asia+and+the+Pacific%2C+Inc.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
             % elif accomplishment_copy_course_org == 'Professional Development and Advancement Training Center':
@@ -150,4 +150,3 @@ course_mode_class = course_mode if course_mode else ''
 
     </div>
   </div>
-
