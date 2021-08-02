@@ -75,6 +75,8 @@ course_mode_class = course_mode if course_mode else ''
            <p class="text-content">
            % if change == 1 :
             <p>conducted by Development Academy of the Philippines under Project Smarter Philippines through Data Analytics, R&D, Training and Adoption through Coursebank.</p>
+           % elif course_id == "course-v1:CirroLytix+CX101+2019_T4":
+            <p>a course of study offered by Development Academy of the Philippines under the project Smarter Philippines through Data Analytics, R&D, Training and Adoption through Coursebank</p>
            % else :
              ${accomplishment_copy_course_description}
            % endif
