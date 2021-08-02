@@ -13,6 +13,21 @@ course_mode_class = course_mode if course_mode else ''
    endif
  endfor
  %>
+ <%
+ effort_hrs = "N/A"
+ course_hrs = [
+ ["course-v1:DAP+SP101+2020_Q1","3"],
+ ["course-v1:DAP+SPCapstone001+2021_Q2","5"],["course-v1:DAP+SPCapstone002+2021_Q3","5"],["course-v1:DAP+SPCapstone005+2021_Q3","5"],["course-v1:DAP+SPCapstone006+2021_Q3","5"],
+ ["course-v1:DAP+SP501+2020_Q1","8"],["course-v1:DAP+SP802+2020_Q2","8"],["course-v1:DAP+SP1005+2020_Q3","8"],["course-v1:DAP+SP1006+2020_Q3","8"],["course-v1:DAP+SP1008+2020_Q4","8"],["course-v1:DAP+SP1002+2020_Q3","8"],["course-v1:DAP+SP503+2020_Q2","8"],
+ ["course-v1:DAP+SP201+2020_Q1","10"],["course-v1:CirroLytix+CX101+2019_T4","10"],["course-v1:DAP+SP1001+2020_Q3","10"],["course-v1:DAP+SP301+2020_Q1","10"],["course-v1:DAP+SP702+2020_Q2","10"],["course-v1:DAP+SP1003+2020_Q3","10"],["course-v1:PCOO-FOIPMO+FOI101+2020_Q3","10"],["course-v1:DAP+SP901+2020_Q2","10"],["course-v1:DAP+SP902+2020_Q3","10"],["course-v1:DAP+SP102+2020_Q3","10"],["course-v1:DAP+SP701+2020_Q1","10"],["course-v1:DAP+SP1007+2020_Q4","10"],["course-v1:DAP+SP1010+2020_Q4","10"],["course-v1:DAP+SP602+2020_Q2","10"],["course-v1:DAP+SP801+2020_Q1","10"],
+ ["course-v1:DAP+SP703+2020_Q2","12"],["course-v1:DAP+SP601+2020_Q1","12"],["course-v1:DAP+SP1009+2020_Q4","12"],
+ ["course-v1:DAP+SP502+2020_Q2","14"],
+ ]
+ for a in range(len(course_hrs)):
+    if course_id == course_hrs[a][0]:
+        effort_hrs = course_hrs[a][1]
+        break;
+ %>
 
   <div class="bootstrap-iso">
 	 <div class="cert-frame">
@@ -29,7 +44,7 @@ course_mode_class = course_mode if course_mode else ''
            ${certificate_id_number_title}: ${certificate_id_number}
            % if course_id == "course-v1:DAP+SPCapstone001+2021_Q2" :
               <p>Project Code: TFDQF<p>
-           % endif   
+           % endif
          </div>
 
          % if change == 1 :
@@ -53,16 +68,17 @@ course_mode_class = course_mode if course_mode else ''
             <p class="text-content">
              successfully completed and received a passing grade in
             </p>
-         % endif    
+         % endif
            <p class="text-course">
              ${accomplishment_copy_course_name}
            </p>
            <p class="text-content">
            % if change == 1 :
             <p>conducted by Development Academy of the Philippines under Project Smarter Philippines through Data Analytics, R&D, Training and Adoption through Coursebank.</p>
-           % else : 
+           % else :
              ${accomplishment_copy_course_description}
-           % endif  
+           % endif
+           <p>Training Hours : ${effort_hrs} </p>
            % if cert_cpd_info:
               This course grants the following Continuing Professional Development (CPD) units to the awardee:
            % endif
@@ -93,7 +109,7 @@ course_mode_class = course_mode if course_mode else ''
             % elif accomplishment_copy_course_org == 'Development Academy of the Philippines ':
               <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-DAP.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
             % elif accomplishment_copy_course_org == 'Development Academy of the Philippines':
-              <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-Professional+Development+and+Advancement+Training+Center.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
+              <img src="https://coursebank-static-assets.s3.ap-northeast-1.amazonaws.com/certificates/logo-Professional+Development+and+Advancement+Training+Center.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
             % elif accomplishment_copy_course_org == 'Insurance Institute for Asia and the Pacific, Inc':
               <img src="https://coursebank-static-assets.s3-ap-northeast-1.amazonaws.com/certificates/logo-Insurance+Institute+for+Asia+and+the+Pacific%2C+Inc.png" alt="Image for logo of course organization ${accomplishment_copy_course_org}">
             % elif accomplishment_copy_course_org == 'Professional Development and Advancement Training Center':
@@ -150,4 +166,3 @@ course_mode_class = course_mode if course_mode else ''
 
     </div>
   </div>
-
