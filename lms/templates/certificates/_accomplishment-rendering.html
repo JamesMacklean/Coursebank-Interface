@@ -45,7 +45,7 @@ course_mode_class = course_mode if course_mode else ''
          <div class="text-content">
            ${certificate_id_number_title}: ${certificate_id_number}
            % if change == 1 :
-              <p>Project Code: TFDQF<p>
+              <p>Project Code: TFDQH<p>
            % endif
          </div>
 
@@ -82,7 +82,9 @@ course_mode_class = course_mode if course_mode else ''
            % else :
              ${accomplishment_copy_course_description}
            % endif
-           <p>Training Hours : ${effort_hrs} </p>
+           % if change != 1 :
+            <p>Training Hours : ${effort_hrs} </p>
+           % endif  
            % if cert_cpd_info:
               This course grants the following Continuing Professional Development (CPD) units to the awardee:
            % endif
